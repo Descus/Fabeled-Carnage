@@ -9,14 +9,18 @@ public class LaneManager: MonoBehaviour
     public static readonly int LANECOUNT = 5;
     public static readonly float MINLANEY = 0f;
     public static readonly int SPAWNX = 11;
+    public static readonly int SPAWNERCOUNT = 6;
 
-    public static readonly Vector3[] SPAWNS = new Vector3[LANECOUNT];
+    public static readonly Vector3[,] SPAWNS = new Vector3[LANECOUNT, SPAWNERCOUNT];
 
     public static void generateSpawns()
     {
         for (int i = 0; i < LANECOUNT; i++)
         {
-            SPAWNS[i] = new Vector3(SPAWNX, i * LANEHEIGHT + MINLANEY, 0);
+            for(int j = 0; j < SPAWNERCOUNT; j++)
+            {
+                SPAWNS[i, j] = new Vector3(SPAWNX + LANEHEIGHT * j, i * LANEHEIGHT + MINLANEY, 0);
+            }
         }
     }
 }

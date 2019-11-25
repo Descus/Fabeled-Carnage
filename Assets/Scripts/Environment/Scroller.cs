@@ -12,8 +12,29 @@ public class Scroller : MonoBehaviour
         
     }
 
-    void LateUpdate()
+    void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            if (Time.timeScale != 0.0f)
+            {
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                Time.timeScale = 1f;
+            }
+        }
+
+        GameObject[] movables = GameObject.FindGameObjectsWithTag("Movable");
+        foreach (GameObject movable in movables)
+        {
+            IsMovable mov = movable.GetComponent<IsMovable>();
+            mov.Move(5 * Time.deltaTime);
+            if (movable.transform.position.x <= -11)
+            {
+                Destroy(movable);
+            }
+        }
     }
 }

@@ -15,9 +15,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ColorPrefab.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F94C1EB-F56E-4093-9016-8300CFA09D94/96/15c1b193/Display.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/New Sprite 1.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IsMovable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F58CDE91-96FF-4D57-AE94-5F019534AF41/bc/ec73ff25/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -25,15 +28,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ColorPrefab.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Spawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Movable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/isMovable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ColorPrefab.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsMovable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" />
       </list>
     </option>
   </component>
@@ -90,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574418589506</updated>
       <workItem from="1574418594562" duration="8961000" />
-      <workItem from="1574675179634" duration="7655000" />
+      <workItem from="1574675179634" duration="16108000" />
     </task>
     <servers />
   </component>

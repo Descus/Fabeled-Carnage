@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackgroundSpawner : MonoBehaviour
+public class Sheep : Animal
 {
     // Start is called before the first frame update
     void Start()
     {
-        SpawnBackground(6);
+        
     }
 
     // Update is called once per frame
@@ -15,9 +15,10 @@ public class BackgroundSpawner : MonoBehaviour
     {
         
     }
-    
-    private void SpawnBackground(float x)
+
+    public override void Move(float speed)
     {
-        
+        Vector3 pos = transform.position;
+        transform.position = new Vector3(pos.x - speed, pos.y, pos.z);
     }
 }
