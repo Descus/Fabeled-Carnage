@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
-        LaneManager.generateLanes();
+        LaneManager.generateSpawns();
     }
     void FixedUpdate()
     {
@@ -57,12 +57,14 @@ public class Spawner : MonoBehaviour
 
     private void SpawnPrefab(int x, int y, Color color)
     {
+        int i = 0;
         foreach (ColorPrefab colorMapping in colorMappings)
         {
             if (colorMapping.color.Equals(color))
             {
                 int index = rnd.Next(colorMapping.prefabs.Length - 1);
-                Instantiate(colorMapping.prefabs[index].gameObject, new Vector3(LaneManager.COLWIDTH * x, LaneManager.LANEHEIGHT * y), Quaternion.identity);
+                Instantiate(colorMapping.prefabs[index].gameObject, LaneManager.SPAWNS[i], Quaternion.identity);
+                i++;
             }
         }
     }
