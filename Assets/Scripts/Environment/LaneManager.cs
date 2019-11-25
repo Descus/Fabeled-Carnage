@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class LaneManager: MonoBehaviour
 {
-    public static float LANEHEIGHT = 1f;
+    public static float LANEHEIGHT = 1.5f;
     public static float COLWIDTH = 1f;
     public static readonly int LANECOUNT = 5;
     public static readonly float MINLANEX = 0f;
+    public static readonly int SPAWNX = 11;
 
-    public static readonly Vector3[] LANES = new Vector3[LANECOUNT];
+    public static readonly Vector3[] SPAWNS = new Vector3[LANECOUNT];
 
-    public static void generateLanes()
+    public static void generateSpawns()
     {
         for (int i = 0; i < LANECOUNT; i++)
         {
-            LANES[i] = new Vector3(0, i * LANEHEIGHT + MINLANEX, 0);
+            SPAWNS[i] = new Vector3(SPAWNX, i * LANEHEIGHT + MINLANEX, 0);
         }
     }
 }
