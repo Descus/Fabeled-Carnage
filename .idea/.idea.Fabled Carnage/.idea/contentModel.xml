@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\niklas.schmiedel\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -8,9 +8,14 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Environment" t="Include">
+            <e p="BackgroundSpawner.cs" t="Include" />
             <e p="ColorPrefab.cs" t="Include" />
             <e p="LaneManager.cs" t="Include" />
-            <e p="Spawner.cs" t="Include" />
+            <e p="NPCSpawner.cs" t="Include" />
+            <e p="Scroller.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="isMovable.cs" t="Include" />
           </e>
         </e>
       </e>

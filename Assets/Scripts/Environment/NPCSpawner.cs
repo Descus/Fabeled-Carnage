@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Environment;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class Spawner : MonoBehaviour
+public class NPCSpawner : MonoBehaviour
 {
     public Texture2D map;
     public ColorPrefab[] colorMappings;
-    private System.Random rnd = new System.Random();
 
     void Start()
     {
@@ -34,6 +35,11 @@ public class Spawner : MonoBehaviour
 
     void GeneratePattern(Texture2D map)
     {
+        StartCoroutine(Wait(map));
+    }
+
+    private IEnumerator Wait(Texture2D map)
+    {
         for (int x = 0; x < map.width; x++)
         {
             for (int y = 0; y < map.height; y++)
@@ -41,6 +47,7 @@ public class Spawner : MonoBehaviour
                 if (y > 5) break;
                 GenerateTile(x, y, map);
             }
+            yield return new WaitForSeconds(1);
         }
     }
 
@@ -57,14 +64,15 @@ public class Spawner : MonoBehaviour
 
     private void SpawnPrefab(int x, int y, Color color)
     {
-        int i = 0;
         foreach (ColorPrefab colorMapping in colorMappings)
         {
             if (colorMapping.color.Equals(color))
             {
-                int index = rnd.Next(colorMapping.prefabs.Length - 1);
-                Instantiate(colorMapping.prefabs[index].gameObject, LaneManager.SPAWNS[i], Quaternion.identity);
-                i++;
+                if (y <= LaneManager.LANECOUNT)
+                {
+                    int index = Random.Range(0, colorMapping.prefabs.Length);
+                    Instantiate(colorMapping.prefabs[index].gameObject, LaneManager.SPAWNS[y], Quaternion.identity);
+                }
             }
         }
     }
