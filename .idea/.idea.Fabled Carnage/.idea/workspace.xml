@@ -36,10 +36,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsMovable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" />
       </list>
     </option>
   </component>
@@ -98,7 +98,7 @@
       <workItem from="1574418594562" duration="8961000" />
       <workItem from="1574675179634" duration="16108000" />
       <workItem from="1574758722007" duration="910000" />
-      <workItem from="1574759661056" duration="13990000" />
+      <workItem from="1574759661056" duration="14398000" />
     </task>
     <servers />
   </component>

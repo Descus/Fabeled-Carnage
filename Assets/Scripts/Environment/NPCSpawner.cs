@@ -22,6 +22,7 @@ public class NPCSpawner : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
+            Debug.Log("");
             OnSpawnPattern();
         }
 
