@@ -32,13 +32,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Movable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/isMovable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ColorPrefab.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsMovable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
       </list>
     </option>
@@ -98,7 +98,7 @@
       <workItem from="1574418594562" duration="8961000" />
       <workItem from="1574675179634" duration="16108000" />
       <workItem from="1574758722007" duration="910000" />
-      <workItem from="1574759661056" duration="10195000" />
+      <workItem from="1574759661056" duration="13990000" />
     </task>
     <servers />
   </component>

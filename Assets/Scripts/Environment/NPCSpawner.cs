@@ -9,8 +9,10 @@ public class NPCSpawner : MonoBehaviour
 {
     public static int EnemiesOnField = 0;
     public static int MaxEnemies = 20;
+    public float spawnCooldownSec = 2f;
     public Texture2D[] maps;
     public ColorPrefab[] colorMappings;
+    private float nextSpawn = 2;
     
     void Start()
     {
@@ -22,10 +24,16 @@ public class NPCSpawner : MonoBehaviour
         {
             OnSpawnPattern();
         }
+
+        if (nextSpawn <= Time.time)
+        {
+            OnSpawnPattern();
+        }
     }
 
     void OnSpawnPattern()
     {
+        nextSpawn = Time.time + spawnCooldownSec;
         if (EnemiesOnField < MaxEnemies)
         {
             GeneratePattern(GetNewMap());

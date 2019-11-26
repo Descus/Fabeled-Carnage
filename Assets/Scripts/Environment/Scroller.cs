@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Scroller : MonoBehaviour
 {
+    public float speed = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +31,7 @@ public class Scroller : MonoBehaviour
         foreach (GameObject movable in movables)
         {
             IsMovable mov = movable.GetComponent<IsMovable>();
-            mov.Move(5 * Time.deltaTime);
+            mov.Move(speed * Time.deltaTime);
             if (movable.transform.position.x <= -11)
             {
                 Destroy(movable);

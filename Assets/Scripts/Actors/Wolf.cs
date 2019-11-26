@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class Wolf: MonoBehaviour
 {
     public float speed = 1f;
-    public bool snapToLane = false;
+    private bool snapToLane = false;
     public int currentLane = 2;
     public int xDefault = -4;
-    public static float maxStamina = 1000f;
+    public static float maxStamina = 100f;
     private float stamina = maxStamina;
     public float staminaMult = 1.0f;
 
@@ -20,7 +20,7 @@ public class Wolf: MonoBehaviour
     
     void Update()
     {
-        stamina = stamina - staminaMult;
+        stamina -= staminaMult * Time.deltaTime;
         GameObject.Find("StaminaBar").GetComponent<Image>().fillAmount = stamina/maxStamina;
         Vector3 pos = transform.position;
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) && !snapToLane)
@@ -38,7 +38,6 @@ public class Wolf: MonoBehaviour
                 transform.position = pos + Vector3.down * speed;
             }
         }
-        
         
         //Snapping Enabled #Clunky AF
         //
