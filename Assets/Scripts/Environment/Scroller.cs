@@ -34,6 +34,7 @@ public class Scroller : MonoBehaviour
             if (movable.transform.position.x <= -11)
             {
                 Destroy(movable);
+                NPCSpawner.ReduceEnemyCount();
             }
         }
     }

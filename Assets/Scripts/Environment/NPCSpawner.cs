@@ -7,6 +7,8 @@ using Random = UnityEngine.Random;
 
 public class NPCSpawner : MonoBehaviour
 {
+    public static int EnemiesOnField = 0;
+    public static int MaxEnemies = 20;
     public Texture2D[] maps;
     public ColorPrefab[] colorMappings;
     
@@ -16,7 +18,7 @@ public class NPCSpawner : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             OnSpawnPattern();
         }
@@ -24,7 +26,10 @@ public class NPCSpawner : MonoBehaviour
 
     void OnSpawnPattern()
     {
-        GeneratePattern(GetNewMap());
+        if (EnemiesOnField < MaxEnemies)
+        {
+            GeneratePattern(GetNewMap());
+        }
     }
 
     Texture2D GetNewMap()
@@ -64,8 +69,14 @@ public class NPCSpawner : MonoBehaviour
                 {
                     int index = Random.Range(0, colorMapping.prefabs.Length);
                     Instantiate(colorMapping.prefabs[index].gameObject, LaneManager.SPAWNS[y, x], Quaternion.identity);
+                    EnemiesOnField++;
                 }
             }
         }
+    }
+
+    public static void ReduceEnemyCount()
+    {
+        EnemiesOnField--;
     }
 }
