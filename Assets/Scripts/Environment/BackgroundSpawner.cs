@@ -20,4 +20,9 @@ public class BackgroundSpawner : MonoBehaviour
     {
         
     }
+
+    private void AppendTile()
+    {
+        
+    }
 }

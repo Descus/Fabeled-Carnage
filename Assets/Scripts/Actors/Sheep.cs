@@ -22,4 +22,20 @@ public class Sheep : Animal
         Vector3 pos = transform.position;
         transform.position = new Vector3(pos.x - speed, pos.y, pos.z);
     }
+    
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("geht");
+        
+        
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Leap();
+        }
+    }
+
+    protected override void Leap()
+    {
+        Debug.Log("Leap");
+    }
 }

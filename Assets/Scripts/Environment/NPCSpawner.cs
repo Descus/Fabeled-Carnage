@@ -12,21 +12,21 @@ public class NPCSpawner : MonoBehaviour
     public float spawnCooldownSec = 2f;
     public Texture2D[] maps;
     public ColorPrefab[] colorMappings;
-    private float nextSpawn = 2;
+    private float _nextSpawn = 2;
     
     void Start()
     {
         LaneManager.generateSpawns();
     }
+    
     void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            Debug.Log("");
             OnSpawnPattern();
         }
 
-        if (nextSpawn <= Time.time)
+        if (_nextSpawn <= Time.time)
         {
             OnSpawnPattern();
         }
@@ -34,7 +34,7 @@ public class NPCSpawner : MonoBehaviour
 
     void OnSpawnPattern()
     {
-        nextSpawn = Time.time + spawnCooldownSec;
+        _nextSpawn = Time.time + spawnCooldownSec;
         if (EnemiesOnField < MaxEnemies)
         {
             GeneratePattern(GetNewMap());
