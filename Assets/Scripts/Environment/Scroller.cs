@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Scroller : MonoBehaviour
 {
-    public float speed = 5;
+    public float speed = 4;
     // Start is called before the first frame update
     void Start()
     {

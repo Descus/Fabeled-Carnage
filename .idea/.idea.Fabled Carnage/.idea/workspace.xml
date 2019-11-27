@@ -45,8 +45,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" />
       </list>
     </option>
@@ -107,7 +107,7 @@
       <workItem from="1574675179634" duration="16108000" />
       <workItem from="1574758722007" duration="910000" />
       <workItem from="1574759661056" duration="18398000" />
-      <workItem from="1574845272315" duration="14425000" />
+      <workItem from="1574845272315" duration="16118000" />
     </task>
     <servers />
   </component>

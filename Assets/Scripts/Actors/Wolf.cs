@@ -5,17 +5,18 @@ using UnityEngine.UI;
 
 public class Wolf: MonoBehaviour
 {
-    public float speed = 1f;
+    public float speed = .1f;
     private bool snapToLane = false;
     public int currentLane = 2;
     public int xDefault = 4;
     public static float maxStamina = 100f;
     private float stamina = maxStamina;
     public float staminaMult = 1.0f;
-    private Image staminaBar = GameObject.Find("StaminaBar").GetComponent<Image>();
+    private Image staminaBar;
 
     void Start()
     {
+        staminaBar = GameObject.Find("StaminaBar").GetComponent<Image>();
         transform.position = new Vector3(xDefault, LaneManager.LANEHEIGHT * 2);
     }
     
@@ -68,7 +69,7 @@ public class Wolf: MonoBehaviour
         //Debug Keybinds
         if (Input.GetKeyDown(KeyCode.Keypad8))
         {
-            
+            speed += 0.1f;
         }
     }
 

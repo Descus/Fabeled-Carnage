@@ -9,7 +9,7 @@ public class NPCSpawner : MonoBehaviour
 {
     public static int EnemiesOnField = 0;
     public static int MaxEnemies = 20;
-    public float spawnCooldownSec = 2f;
+    public float spawnCooldownSec = 6f;
     public Texture2D[] maps;
     public ColorPrefab[] colorMappings;
     private float _nextSpawn = 2;
