@@ -32,7 +32,7 @@ public class Scroller : MonoBehaviour
         {
             IsMovable mov = movable.GetComponent<IsMovable>();
             mov.Move(speed * Time.deltaTime);
-            if (movable.transform.position.x <= -11)
+            if (movable.transform.position.x <= -LaneManager.SPAWNX)
             {
                 Destroy(movable);
                 NPCSpawner.ReduceEnemyCount();

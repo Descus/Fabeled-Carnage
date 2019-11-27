@@ -13,10 +13,19 @@ public class NPCSpawner : MonoBehaviour
     public Texture2D[] maps;
     public ColorPrefab[] colorMappings;
     private float _nextSpawn = 2;
+    public static float rightSreenX;
+    private Camera _cam;
     
     void Start()
-    {
+    { 
+        _cam= GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        
         LaneManager.generateSpawns();
+    }
+
+    void Update()
+    {
+        adjustSpawnPositions();
     }
     
     void FixedUpdate()
@@ -37,6 +46,7 @@ public class NPCSpawner : MonoBehaviour
         _nextSpawn = Time.time + spawnCooldownSec;
         if (EnemiesOnField < MaxEnemies)
         {
+            LaneManager.generateSpawns();
             GeneratePattern(GetNewMap());
         }
     }
@@ -87,5 +97,11 @@ public class NPCSpawner : MonoBehaviour
     public static void ReduceEnemyCount()
     {
         EnemiesOnField--;
+    }
+
+    private void adjustSpawnPositions()
+    {
+        rightSreenX = ScreenUtil.getRightScreenBorderX(_cam);
+        LaneManager.SPAWNX = rightSreenX + 2;
     }
 }

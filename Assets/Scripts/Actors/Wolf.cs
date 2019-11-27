@@ -8,10 +8,11 @@ public class Wolf: MonoBehaviour
     public float speed = 1f;
     private bool snapToLane = false;
     public int currentLane = 2;
-    public int xDefault = -4;
+    public int xDefault = 4;
     public static float maxStamina = 100f;
     private float stamina = maxStamina;
     public float staminaMult = 1.0f;
+    private Image staminaBar = GameObject.Find("StaminaBar").GetComponent<Image>();
 
     void Start()
     {
@@ -20,9 +21,11 @@ public class Wolf: MonoBehaviour
     
     void Update()
     {
-        stamina -= staminaMult * Time.deltaTime;
-        GameObject.Find("StaminaBar").GetComponent<Image>().fillAmount = stamina/maxStamina;
+        AdjustPos();
+        handleStamina();
+        
         Vector3 pos = transform.position;
+        
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) && !snapToLane)
         {
             if (pos.y < (LaneManager.MINLANEY + LaneManager.LANEHEIGHT * (LaneManager.LANECOUNT - 1)))
@@ -67,5 +70,16 @@ public class Wolf: MonoBehaviour
         {
             
         }
+    }
+
+    private void handleStamina()
+    {
+        stamina -= staminaMult * Time.deltaTime;
+        staminaBar.fillAmount = stamina/maxStamina;
+    }
+
+    private void AdjustPos()
+    {
+        transform.position = new Vector3(-NPCSpawner.rightSreenX + xDefault, transform.position.y);
     }
 }

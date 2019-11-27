@@ -25,18 +25,9 @@ public class Sheep : Animal
             transform.position = new Vector3(pos.x - speed, pos.y, pos.z);
         }
     }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("geht");
-    }
 
-    protected override void Leap()
+    protected override void PlayLeapAnim()
     {
-        Stunned = true;
-        GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
-        Debug.Log(ScreenUtil.getRightScreenBorderX(cam.GetComponent<Camera>()));
-        transform.position = new Vector3();
         
-        Stunned = false;
     }
 }

@@ -15,14 +15,21 @@ public abstract class Animal : MonoBehaviour, IsMovable
 
         void OnTriggerEnter2D(Collider2D other)
         {
-                Debug.Log("geht");
-        
-        
                 if (other.gameObject.CompareTag("Player"))
                 {
                         Leap();
                 }
         }
 
-        protected abstract void Leap();
+        protected void Leap()
+        {
+                Stunned = true;
+                GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+                float rightSreenX = ScreenUtil.getRightScreenBorderX(cam.GetComponent<Camera>());
+                transform.position = new Vector3(rightSreenX - 0.5f, transform.position.y);
+                PlayLeapAnim();
+                Stunned = false;
+        }
+
+        protected abstract void PlayLeapAnim();
 }
