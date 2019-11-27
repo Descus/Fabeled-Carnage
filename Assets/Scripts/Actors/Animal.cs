@@ -3,7 +3,7 @@ using UnityEngine;
 
 public abstract class Animal : MonoBehaviour, IsMovable
 {
-        private float moveSpeedModifier;
+        private float _moveSpeedModifier;
         protected bool stunned = false;
         public bool Stunned
         {

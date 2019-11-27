@@ -2,10 +2,9 @@
 
 public class ScreenUtil
 {
-        public static int getRightScreenBorderX(Camera main)
+        public static float getRightScreenBorderX(Camera main)
         {
-                //main.orthographicSize0;
-                return 0;
+                return main.orthographicSize * getScreenRatio().width;
         }
 
         public static Resolution getScreenRatio()

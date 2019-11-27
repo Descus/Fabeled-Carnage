@@ -44,10 +44,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/../../UsefulScripts/Camera/SmoothFollow.cs" />
         <option value="$PROJECT_DIR$/../../UsefulScripts/Utility/Spin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ScreenUtil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ScreenUtil.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
       </list>
     </option>
   </component>
@@ -107,7 +107,7 @@
       <workItem from="1574675179634" duration="16108000" />
       <workItem from="1574758722007" duration="910000" />
       <workItem from="1574759661056" duration="18398000" />
-      <workItem from="1574845272315" duration="6733000" />
+      <workItem from="1574845272315" duration="7451000" />
     </task>
     <servers />
   </component>

@@ -29,7 +29,8 @@ public class Sheep : Animal
     protected override void Leap()
     {
         Stunned = true;
-        
+        GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+        Debug.Log(ScreenUtil.getRightScreenBorderX(cam.GetComponent<Camera>()));
         transform.position = new Vector3();
         
         Stunned = false;
