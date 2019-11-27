@@ -4,6 +4,13 @@ using UnityEngine;
 public abstract class Animal : MonoBehaviour, IsMovable
 {
         private float moveSpeedModifier;
+        protected bool stunned = false;
+        public bool Stunned
+        {
+                get => stunned;
+                set => stunned = value;
+        }
+        
         public abstract void Move(float speed);
 
         void OnTriggerEnter2D(Collider2D other)
