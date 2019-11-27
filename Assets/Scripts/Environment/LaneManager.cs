@@ -7,7 +7,7 @@ public class LaneManager: MonoBehaviour
     public static float LANEHEIGHT = 1.5f;
     public static float COLWIDTH = 1f;
     public static readonly int LANECOUNT = 5;
-    public static readonly float MINLANEY = 0f;
+    public static readonly float MINLANEY = 1.5f;
     public static readonly int SPAWNX = 11;
     public static readonly int SPAWNERCOUNT = 6;
 

@@ -19,13 +19,19 @@ public class Sheep : Animal
 
     public override void Move(float speed)
     {
-        Vector3 pos = transform.position;
-        transform.position = new Vector3(pos.x - speed, pos.y, pos.z);
+        if (!Stunned)
+        {
+            Vector3 pos = transform.position;
+            transform.position = new Vector3(pos.x - speed, pos.y, pos.z);
+        }
     }
-    
 
     protected override void Leap()
     {
-        Debug.Log("Leap");
+        Stunned = true;
+        
+        transform.position = new Vector3();
+        
+        Stunned = false;
     }
 }
