@@ -120,3 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2bbe1ed3f2b8b4fba91cb8957ef818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leaping: 0
+  speedMult: 0.9
+  staminaAmount: 20

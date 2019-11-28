@@ -1,8 +1,7 @@
-﻿
-     namespace Interfaces
+﻿namespace Interfaces
+{
+    public interface ISMovable
     {
-        public interface ISMovable
-        {
             void Move(float speed);
-        }
     }
+}

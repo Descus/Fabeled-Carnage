@@ -1,6 +1,7 @@
 ﻿using System.Numerics;
 using Interfaces;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Utility;
 using Vector3 = UnityEngine.Vector3;
 
@@ -8,16 +9,27 @@ namespace Actors
 {
         public abstract class Animal : MonoBehaviour, ISMovable
         {
-                private float _moveSpeedModifier;
-                public bool stunned;
+                public bool leaping;
                 private bool _bLerp;
 #pragma warning disable 649
                 private Vector3 _target;
                 private Vector3 _start;
 #pragma warning restore 649
                 private float _lerpfac;
-                
-                public abstract void Move(float speed);
+
+                public float speedMult = 1.0f;
+                [SerializeField]
+                private int staminaAmount = 25;
+
+                public void Move(float speed)
+                {
+                        if (!leaping)
+                        {
+                                Transform transform1 = transform;
+                                Vector3 pos = transform1.position;
+                                transform1.position = new Vector3(pos.x - (speed * 0.8f) * speedMult, pos.y, pos.z);
+                        }
+                }
 
                 void Update()
                 {
@@ -32,7 +44,7 @@ namespace Actors
                                 {
                                         _lerpfac = 0;
                                         _bLerp = false;
-                                        stunned = false;
+                                        leaping = false;
                                 }
                         }
                 }
@@ -47,7 +59,7 @@ namespace Actors
 
                 private void Leap()
                 {
-                        stunned = true;
+                        leaping = true;
                         GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
                         float rightSreenX = ScreenUtil.GetRightScreenBorderX(cam.GetComponent<Camera>());
                         Vector3 pos = transform.position;
@@ -58,5 +70,22 @@ namespace Actors
                 }
 
                 protected abstract void PlayLeapAnim();
+
+                public void Stun(float time)
+                {
+                        
+                }
+
+                public abstract void GetEffect();
+
+                public int GetStamina()
+                {
+                        return staminaAmount;
+                }
+
+                public void Kill()
+                {
+                        Destroy(this);
+                }
         }
 }

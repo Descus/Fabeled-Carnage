@@ -23,6 +23,7 @@
             <e p="isMovable.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
+            <e p="ColorPrefab.cs" t="Include" />
             <e p="ScreenUtil.cs" t="Include" />
           </e>
         </e>

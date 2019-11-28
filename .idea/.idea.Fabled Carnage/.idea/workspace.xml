@@ -15,11 +15,14 @@
     <setting file="file://$PROJECT_DIR$/../../UsefulScripts/Utility/Spin.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UsefulScripts/Camera/SmoothFollow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ColorPrefab.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F94C1EB-F56E-4093-9016-8300CFA09D94/96/15c1b193/Display.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F94C1EB-F56E-4093-9016-8300CFA09D94/50/bf8caa3f/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/tmpB01C.tmp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp5CC0.tmp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/New Sprite 1.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,15 +42,15 @@
         <option value="$PROJECT_DIR$/../../UsefulScripts/Camera/SmoothFollow.cs" />
         <option value="$PROJECT_DIR$/../../UsefulScripts/Utility/Spin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ColorPrefab.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsMovable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ScreenUtil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsMovable.cs" />
       </list>
     </option>
   </component>
