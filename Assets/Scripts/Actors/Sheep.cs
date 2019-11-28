@@ -1,33 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Transactions;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Sheep : Animal
+namespace Actors
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Sheep : Animal
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public override void Move(float speed)
-    {
-        if (!Stunned)
+        public override void Move(float speed)
         {
-            Vector3 pos = transform.position;
-            transform.position = new Vector3(pos.x - speed, pos.y, pos.z);
+            if (!stunned)
+            {
+                Transform transform1 = transform;
+                Vector3 pos = transform1.position;
+                transform1.position = new Vector3(pos.x - speed, pos.y, pos.z);
+            }
         }
-    }
 
-    protected override void PlayLeapAnim()
-    {
+        protected override void PlayLeapAnim()
+        {
         
+        }
     }
 }

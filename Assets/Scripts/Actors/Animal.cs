@@ -1,35 +1,35 @@
-﻿using System;
+﻿using Interfaces;
 using UnityEngine;
+using Utility;
 
-public abstract class Animal : MonoBehaviour, IsMovable
+namespace Actors
 {
-        private float _moveSpeedModifier;
-        protected bool stunned = false;
-        public bool Stunned
+        public abstract class Animal : MonoBehaviour, ISMovable
         {
-                get => stunned;
-                set => stunned = value;
-        }
-        
-        public abstract void Move(float speed);
+                private float _moveSpeedModifier;
+                public bool stunned;
 
-        void OnTriggerEnter2D(Collider2D other)
-        {
-                if (other.gameObject.CompareTag("Player"))
+                public abstract void Move(float speed);
+
+                void OnTriggerEnter2D(Collider2D other)
                 {
-                        Leap();
+                        if (other.gameObject.CompareTag("Player"))
+                        {
+                                Leap();
+                        }
                 }
-        }
 
-        protected void Leap()
-        {
-                Stunned = true;
-                GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
-                float rightSreenX = ScreenUtil.getRightScreenBorderX(cam.GetComponent<Camera>());
-                transform.position = new Vector3(rightSreenX - 0.5f, transform.position.y);
-                PlayLeapAnim();
-                Stunned = false;
-        }
+                protected void Leap()
+                {
+                        stunned = true;
+                        GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+                        float rightSreenX = ScreenUtil.GetRightScreenBorderX(cam.GetComponent<Camera>());
+                        Transform transform1 = transform;
+                        transform1.position = new Vector3(rightSreenX - 0.5f, transform1.position.y);
+                        PlayLeapAnim();
+                        stunned = false;
+                }
 
-        protected abstract void PlayLeapAnim();
+                protected abstract void PlayLeapAnim();
+        }
 }

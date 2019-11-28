@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 
-public class ScreenUtil
+namespace Utility
 {
-        public static float getRightScreenBorderX(Camera main)
+        public class ScreenUtil
         {
-                return main.orthographicSize * getScreenRatio();
-        }
+                public static float GetRightScreenBorderX(Camera main)
+                {
+                        return main.orthographicSize * GetScreenRatio();
+                }
 
-        public static float getScreenRatio()
-        {
-                return Screen.width / (float) Screen.height;
+                public static float GetScreenRatio()
+                {
+                        return Screen.width / (float) Screen.height;
+                }
         }
 }
