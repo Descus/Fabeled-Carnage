@@ -10,6 +10,7 @@ namespace Environment
         public static readonly float MINLANEY = 1.5f;
         public static float Spawnx = 11;
         public static readonly int SPAWNERCOUNT = 6;
+        public static bool debug = false;
 
         public static readonly Vector3[,] Spawns = new Vector3[LANECOUNT, SPAWNERCOUNT];
     
@@ -20,7 +21,7 @@ namespace Environment
                 for(int j = 0; j < SPAWNERCOUNT; j++)
                 {
                     Spawns[i, j] = new Vector3(Spawnx + COLWIDTH * j, i * LANEHEIGHT + MINLANEY, 0);
-                    Instantiate(new GameObject("Spawn"), Spawns[i, j], Quaternion.identity);
+                    if(debug) Instantiate(new GameObject("Spawn"), Spawns[i, j], Quaternion.identity);
                 }
             }
         }

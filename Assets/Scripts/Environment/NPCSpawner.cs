@@ -24,7 +24,7 @@ namespace Environment
 
         void Update()
         {
-            adjustSpawnPositions();
+            AdjustSpawnPositions();
         }
     
         void FixedUpdate()
@@ -99,7 +99,7 @@ namespace Environment
             EnemiesOnField--;
         }
 
-        private void adjustSpawnPositions()
+        private void AdjustSpawnPositions()
         {
             RightSreenX = ScreenUtil.GetRightScreenBorderX(_cam);
             LaneManager.Spawnx = RightSreenX + 2;
