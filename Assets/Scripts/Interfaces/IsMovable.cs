@@ -1,7 +1,8 @@
 ﻿
-    using UnityEngine;
-
-    public interface IsMovable
+     namespace Interfaces
     {
-        void Move(float speed);
+        public interface ISMovable
+        {
+            void Move(float speed);
+        }
     }

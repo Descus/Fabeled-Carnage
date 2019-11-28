@@ -1,41 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Interfaces;
 using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
-using UnityEngine.SceneManagement;
 
-public class Scroller : MonoBehaviour
+namespace Environment
 {
-    public float speed = 5;
-    // Start is called before the first frame update
-    void Start()
+    public class Scroller : MonoBehaviour
     {
-        
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.D))
+        public float speed = 4;
+    
+        void Update()
         {
-            if (Time.timeScale != 0.0f)
+            if (Input.GetKeyDown(KeyCode.D))
             {
-                Time.timeScale = 0f;
+                // ReSharper disable once CompareOfFloatsByEqualityOperator
+                if (Time.timeScale != 0.0f)
+                {
+                    Time.timeScale = 0f;
+                }
+                else
+                {
+                    Time.timeScale = 1f;
+                }
             }
-            else
-            {
-                Time.timeScale = 1f;
-            }
-        }
 
-        GameObject[] movables = GameObject.FindGameObjectsWithTag("Movable");
-        foreach (GameObject movable in movables)
-        {
-            IsMovable mov = movable.GetComponent<IsMovable>();
-            mov.Move(speed * Time.deltaTime);
-            if (movable.transform.position.x <= -11)
+            GameObject[] movables = GameObject.FindGameObjectsWithTag("Movable");
+            foreach (GameObject movable in movables)
             {
-                Destroy(movable);
-                NPCSpawner.ReduceEnemyCount();
+                ISMovable mov = movable.GetComponent<ISMovable>();
+                mov.Move(speed * Time.deltaTime);
+                if (movable.transform.position.x <= -LaneManager.Spawnx)
+                {
+                    Destroy(movable);
+                    NpcSpawner.ReduceEnemyCount();
+                }
             }
         }
     }
