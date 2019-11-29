@@ -121,5 +121,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leaping: 0
+  effect:
+    type: 0
+    duration: 0
+    amount: 0
   speedMult: 0.9
   staminaAmount: 20

@@ -9,8 +9,12 @@
         <e p="Scripts" t="Include">
           <e p="Actors" t="Include">
             <e p="Animal.cs" t="Include" />
+            <e p="GameActor.cs" t="Include" />
             <e p="Sheep.cs" t="Include" />
             <e p="Wolf.cs" t="Include" />
+          </e>
+          <e p="Enums" t="Include">
+            <e p="EffectTypes.cs" t="Include" />
           </e>
           <e p="Environment" t="Include">
             <e p="BackgroundSpawner.cs" t="Include" />
@@ -21,6 +25,9 @@
           </e>
           <e p="Interfaces" t="Include">
             <e p="isMovable.cs" t="Include" />
+          </e>
+          <e p="Structs" t="Include">
+            <e p="Effect.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
             <e p="ColorPrefab.cs" t="Include" />

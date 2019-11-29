@@ -1,5 +1,6 @@
 ﻿using System.Numerics;
 using Interfaces;
+using Structs;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Utility;
@@ -7,21 +8,21 @@ using Vector3 = UnityEngine.Vector3;
 
 namespace Actors
 {
-        public abstract class Animal : MonoBehaviour, ISMovable
+        public abstract class Animal : GameActor
         {
                 public bool leaping;
+                public float speedMult = 1.0f;
+                [SerializeField]
+                private int staminaAmount = 25;
+                //Privates
                 private bool _bLerp;
 #pragma warning disable 649
                 private Vector3 _target;
                 private Vector3 _start;
 #pragma warning restore 649
                 private float _lerpfac;
-
-                public float speedMult = 1.0f;
-                [SerializeField]
-                private int staminaAmount = 25;
-
-                public void Move(float speed)
+                
+                public override void Move(float speed)
                 {
                         if (!leaping)
                         {
@@ -30,7 +31,6 @@ namespace Actors
                                 transform1.position = new Vector3(pos.x - (speed * 0.8f) * speedMult, pos.y, pos.z);
                         }
                 }
-
                 void Update()
                 {
 
@@ -56,7 +56,6 @@ namespace Actors
                                 Leap();
                         }
                 }
-
                 private void Leap()
                 {
                         leaping = true;
@@ -68,24 +67,19 @@ namespace Actors
                         _bLerp = true;
                         PlayLeapAnim();
                 }
-
-                protected abstract void PlayLeapAnim();
-
                 public void Stun(float time)
                 {
                         
                 }
-
-                public abstract void GetEffect();
-
                 public int GetStamina()
                 {
                         return staminaAmount;
                 }
-
                 public void Kill()
                 {
                         Destroy(this);
                 }
+                
+                protected abstract void PlayLeapAnim();
         }
 }

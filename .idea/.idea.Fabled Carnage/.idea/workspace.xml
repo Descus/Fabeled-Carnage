@@ -24,13 +24,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp5CC0.tmp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/New Sprite 1.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ScreenUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IsMovable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structs/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F58CDE91-96FF-4D57-AE94-5F019534AF41/bc/ec73ff25/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -48,9 +51,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ScreenUtil.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsMovable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Structs/Effect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
       </list>
     </option>
   </component>
@@ -114,6 +121,7 @@
       <workItem from="1574934467324" duration="78000" />
       <workItem from="1574935347816" duration="1597000" />
       <workItem from="1574939447715" duration="4377000" />
+      <workItem from="1575018989633" duration="2694000" />
     </task>
     <servers />
   </component>
