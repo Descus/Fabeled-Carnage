@@ -39,10 +39,12 @@ namespace Environment
                 OnSpawnPattern();
             }
         }
-
+        
         void OnSpawnPattern()
         {
             _nextSpawn = Time.time + spawnCooldownSec;
+       
+            
             if (EnemiesOnField < MaxEnemies)
             {
                 LaneManager.GenerateSpawns();
@@ -54,7 +56,6 @@ namespace Environment
         {
             return maps[Random.Range(0, maps.Length)];
         }
-
         void GeneratePattern(Texture2D map)
         {
             for (int x = 0; x < map.width; x++)
