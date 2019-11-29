@@ -6,6 +6,6 @@ namespace Utility
     public class ColorPrefab
     {
         public Color color;
-        public GameObject[] prefabs;
+        public GameObject prefab;
     }
 }

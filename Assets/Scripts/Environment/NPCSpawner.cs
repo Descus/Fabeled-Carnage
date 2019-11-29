@@ -75,7 +75,11 @@ namespace Environment
             {
                 return;
             }
-            SpawnPrefab(x, y, pixelColor);
+
+            if (EnemiesOnField == 0)
+            {
+                SpawnPrefab(x, y, pixelColor);
+            }
         }
 
         private void SpawnPrefab(int x, int y, Color color)
@@ -86,8 +90,7 @@ namespace Environment
                 {
                     if (y <= LaneManager.LANECOUNT && x <= LaneManager.SPAWNERCOUNT)
                     {
-                        int index = Random.Range(0, colorMapping.prefabs.Length);
-                        Instantiate(colorMapping.prefabs[index].gameObject, LaneManager.Spawns[y, x], Quaternion.identity);
+                        Instantiate(colorMapping.prefab, LaneManager.Spawns[y, x], Quaternion.identity);
                         EnemiesOnField++;
                     }
                 }

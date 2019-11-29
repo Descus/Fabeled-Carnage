@@ -1,14 +1,13 @@
-﻿using System.Numerics;
+﻿using Environment;
 using Interfaces;
-using Structs;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Utility;
 using Vector3 = UnityEngine.Vector3;
 
 namespace Actors
 {
-        public abstract class Animal : GameActor
+        [RequireComponent(typeof(BoxCollider2D))]
+        public abstract class Animal : GameActor, ISKillable
         {
                 public bool leaping;
                 public float speedMult = 1.0f;
@@ -77,7 +76,8 @@ namespace Actors
                 }
                 public void Kill()
                 {
-                        Destroy(this);
+                        Destroy(gameObject);
+                        NpcSpawner.ReduceEnemyCount();
                 }
                 
                 protected abstract void PlayLeapAnim();

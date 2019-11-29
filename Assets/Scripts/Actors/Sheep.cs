@@ -1,7 +1,4 @@
-﻿using Structs;
-using UnityEngine;
-
-namespace Actors
+﻿namespace Actors
 {
     public class Sheep : Animal
     {

@@ -12,28 +12,33 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../UsefulScripts/Utility/Spin.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UsefulScripts/Camera/SmoothFollow.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ColorPrefab.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F94C1EB-F56E-4093-9016-8300CFA09D94/96/15c1b193/Display.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0F94C1EB-F56E-4093-9016-8300CFA09D94/50/bf8caa3f/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42FCC02F-EDE7-44D6-A4C9-920C103DDAD8/7c/6560d346/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A278EBD4-4AB0-472B-B8E6-38263E06CD61/bc/7019c305/SerializeField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ReadonlyAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/New Sprite 1.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UsefulScripts/Utility/ReadonlyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ScreenUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structs/Effect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IsKillable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UsefulScripts/Utility/Spin.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/tmpB01C.tmp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp5CC0.tmp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/New Sprite 1.prefab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ScreenUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IsMovable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structs/Effect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Killzone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F58CDE91-96FF-4D57-AE94-5F019534AF41/bc/ec73ff25/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,7 +49,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/../../UsefulScripts/Camera/SmoothFollow.cs" />
         <option value="$PROJECT_DIR$/../../UsefulScripts/Utility/Spin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ColorPrefab.cs" />
@@ -54,10 +58,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsMovable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/Effect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Killzone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsKillable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ReadonlyAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
+        <option value="$PROJECT_DIR$/../../UsefulScripts/Utility/ReadonlyAttribute.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +132,7 @@
       <workItem from="1574934467324" duration="78000" />
       <workItem from="1574935347816" duration="1597000" />
       <workItem from="1574939447715" duration="4377000" />
-      <workItem from="1575018989633" duration="2694000" />
+      <workItem from="1575018989633" duration="13611000" />
     </task>
     <servers />
   </component>
