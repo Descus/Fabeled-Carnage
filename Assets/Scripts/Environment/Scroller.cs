@@ -6,7 +6,10 @@ namespace Environment
     public class Scroller : MonoBehaviour
     {
         public float speed = 4;
-    
+
+        public delegate void MoveSubsriber(float speed);
+        public static event MoveSubsriber onMoveUpdate;
+
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.D))
@@ -22,16 +25,9 @@ namespace Environment
                 }
             }
 
-            GameObject[] movables = GameObject.FindGameObjectsWithTag("Movable");
-            foreach (GameObject movable in movables)
+            if (onMoveUpdate != null)
             {
-                ISMovable mov = movable.GetComponent<ISMovable>();
-                mov.Move(speed * Time.deltaTime);
-                if (movable.transform.position.x <= -LaneManager.Spawnx)
-                {
-                    Destroy(movable);
-                    NpcSpawner.ReduceEnemyCount();
-                }
+                onMoveUpdate(speed);
             }
         }
     }

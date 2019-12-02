@@ -28,7 +28,13 @@ namespace Actors
                                 Transform transform1 = transform;
                                 Vector3 pos = transform1.position;
                                 transform1.position = new Vector3(pos.x - (speed * 0.8f) * speedMult, pos.y, pos.z);
+                                if (transform.position.x <= -LaneManager.Spawnx)
+                                {
+                                        Destroy(gameObject);
+                                        NpcSpawner.ReduceEnemyCount();
+                                }
                         }
+                        
                 }
                 void Update()
                 {
