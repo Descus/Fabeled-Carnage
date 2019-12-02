@@ -33,6 +33,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
       </list>
     </option>
   </component>
@@ -89,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575288960856</updated>
       <workItem from="1575288964010" duration="2693000" />
-      <workItem from="1575291680352" duration="535000" />
+      <workItem from="1575291680352" duration="965000" />
     </task>
     <servers />
   </component>
