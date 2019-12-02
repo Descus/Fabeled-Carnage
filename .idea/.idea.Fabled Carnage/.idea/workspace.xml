@@ -53,14 +53,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ColorPrefab.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ScreenUtil.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsMovable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/Effect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Killzone.cs" />
@@ -69,6 +67,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ReadonlyAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
         <option value="$PROJECT_DIR$/../../UsefulScripts/Utility/ReadonlyAttribute.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NPCSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
       </list>
     </option>
   </component>
@@ -132,7 +132,8 @@
       <workItem from="1574934467324" duration="78000" />
       <workItem from="1574935347816" duration="1597000" />
       <workItem from="1574939447715" duration="4377000" />
-      <workItem from="1575018989633" duration="13611000" />
+      <workItem from="1575018989633" duration="13961000" />
+      <workItem from="1575040965754" duration="599000" />
     </task>
     <servers />
   </component>
