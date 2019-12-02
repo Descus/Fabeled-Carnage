@@ -5,19 +5,20 @@ namespace Environment
 {
     public class Scroller : MonoBehaviour
     {
-        public float speed = 4;
+        public float speed = 10f;
 
         public delegate void MoveSubsriber(float speed);
-        public static event MoveSubsriber onMoveUpdate;
+
+        public static event MoveSubsriber OnMoveUpdate;
 
         void Update()
         {
             if (Input.GetKeyDown(KeyCode.D))
             {
                 // ReSharper disable once CompareOfFloatsByEqualityOperator
-                if (Time.timeScale != 0.0f)
+                if (Time.timeScale != 0.1f)
                 {
-                    Time.timeScale = 0f;
+                    Time.timeScale = 0.1f;
                 }
                 else
                 {
@@ -25,10 +26,20 @@ namespace Environment
                 }
             }
 
-            if (onMoveUpdate != null)
+            if (OnMoveUpdate != null)
             {
-                onMoveUpdate(speed);
+                OnMoveUpdate(speed / 100);
             }
+        }
+
+        public static void SubscribeMoveEvent(MoveSubsriber add)
+        {
+            OnMoveUpdate += add;
+        }
+
+        public static void UnSubscribeMoveEvent(MoveSubsriber sub)
+        {
+            OnMoveUpdate -= sub;
         }
     }
 }

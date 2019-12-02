@@ -11,7 +11,7 @@ namespace Environment
         public float spawnCooldownSec = 6f;
         public Texture2D[] maps;
         public ColorPrefab[] colorMappings;
-        private float _nextSpawn = 2;
+        private float _nextSpawn = 6;
         public static float RightSreenX;
         private Camera _cam;
     
@@ -48,7 +48,10 @@ namespace Environment
             if (EnemiesOnField < MaxEnemies)
             {
                 LaneManager.GenerateSpawns();
-                GeneratePattern(GetNewMap());
+                if (EnemiesOnField == 0)
+                {
+                    GeneratePattern(GetNewMap());
+                }
             }
         }
 
@@ -76,11 +79,8 @@ namespace Environment
             {
                 return;
             }
-
-            if (EnemiesOnField == 0)
-            {
-                SpawnPrefab(x, y, pixelColor);
-            }
+            SpawnPrefab(x, y, pixelColor);
+            
         }
 
         private void SpawnPrefab(int x, int y, Color color)

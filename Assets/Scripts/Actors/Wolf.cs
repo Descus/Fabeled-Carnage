@@ -18,7 +18,7 @@ namespace Actors
         public int xDefault = 4;
 
         [Header("Stamina")]
-        public float staminaMult = 1.0f;
+        public float staminaMult = 2.0f;
         private static float maxStamina = 100f;
         [ReadOnly][SerializeField]private float stamina = maxStamina;
         private Image _staminaBar;

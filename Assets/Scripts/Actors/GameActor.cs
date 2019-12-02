@@ -11,12 +11,7 @@ using Interfaces;
          public Effect effect;
          
          public abstract void Move(float speed);
-
-         public ISScrollable OutOfScreen()
-         {
-             return transform.position.x <= -LaneManager.Spawnx ? this : null ;
-         }
-
+         
          public Effect GetEffect()
          {
              return effect;
@@ -24,12 +19,12 @@ using Interfaces;
 
          private void OnEnable()
          {
-             Scroller.onMoveUpdate += Move;
+             Scroller.SubscribeMoveEvent(Move);
          }
 
          private void OnDisable()
          {
-             Scroller.onMoveUpdate -= Move;
+             Scroller.UnSubscribeMoveEvent(Move);
          }
      }
  }

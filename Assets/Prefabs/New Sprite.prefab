@@ -120,6 +120,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2bbe1ed3f2b8b4fba91cb8957ef818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect:
+    type: 0
+    duration: 0
+    amount: 0
   leaping: 0
   speedMult: 1.1
-  staminaAmount: 40
+  staminaAmount: 10

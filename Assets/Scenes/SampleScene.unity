@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed6ce75e008b8c40b68752a66c85c41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,13 +649,18 @@ PrefabInstance:
     - target: {fileID: 1583114970183739191, guid: 756be819972d8ab4c8c310f4aad17300,
         type: 3}
       propertyPath: speed
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1583114970183739191, guid: 756be819972d8ab4c8c310f4aad17300,
         type: 3}
       propertyPath: killzoneCollider
       value: 
       objectReference: {fileID: 827284892}
+    - target: {fileID: 1583114970183739191, guid: 756be819972d8ab4c8c310f4aad17300,
+        type: 3}
+      propertyPath: staminaMult
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756be819972d8ab4c8c310f4aad17300, type: 3}
 --- !u!1 &1192782458
