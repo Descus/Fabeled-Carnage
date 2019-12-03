@@ -5,7 +5,7 @@ namespace Environment
 {
     public class Scroller : MonoBehaviour
     {
-        public float speed = 10f;
+        public float speed = 150f;
 
         public delegate void MoveSubsriber(float speed);
 
@@ -28,7 +28,7 @@ namespace Environment
 
             if (OnMoveUpdate != null)
             {
-                OnMoveUpdate(speed / 100);
+                OnMoveUpdate(speed / 100 * Time.deltaTime);
             }
         }
 
