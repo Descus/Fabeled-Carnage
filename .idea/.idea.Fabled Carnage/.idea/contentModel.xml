@@ -25,7 +25,7 @@
           </e>
           <e p="Interfaces" t="Include">
             <e p="IsKillable.cs" t="Include" />
-            <e p="isMovable.cs" t="Include" />
+            <e p="ISScrollable.cs" t="Include" />
           </e>
           <e p="Structs" t="Include">
             <e p="Effect.cs" t="Include" />
