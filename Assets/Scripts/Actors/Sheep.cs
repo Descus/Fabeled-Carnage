@@ -4,7 +4,6 @@
     {
         protected override void PlayLeapAnim()
         {
-            
         }
     }
 }

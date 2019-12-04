@@ -1,106 +1,112 @@
-﻿using UnityEngine;
+﻿using Enums;
+using UnityEngine;
 using Utility;
-using Random = UnityEngine.Random;
 
 namespace Environment
 {
     public class NpcSpawner : MonoBehaviour
     {
-        public static int EnemiesOnField;
-        public static int MaxEnemies = 20;
-        public float spawnCooldownSec = 6f;
-        public Texture2D[] maps;
-        public ColorPrefab[] colorMappings;
-        private float _nextSpawn = 6;
+        private static int _enemiesOnField;
+        private static readonly int MaxEnemies = 20;
         public static float RightSreenX;
+        private readonly Stage _currentStage = Stage.One;
         private Camera _cam;
-    
-        void Start()
-        { 
-            _cam= GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        
+        private float _nextSpawn = 6;
+
+        private float _timeStart;
+        public ColorPrefab[] colorMappings;
+        public Texture2D[] maps;
+
+        [Space(10)] [Range(0.0f, 50f)] public float spawnCooldownSec = 6f;
+
+        public int timeStageOne;
+        public int timeStageThree;
+        public int timeStageTwo;
+
+        private void Start()
+        {
+            _cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+
             LaneManager.GenerateSpawns();
+
+            _timeStart = Time.time;
         }
 
-        void Update()
+        private void Update()
         {
             AdjustSpawnPositions();
         }
-    
-        void FixedUpdate()
+
+        private void FixedUpdate()
         {
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(KeyCode.P)) OnSpawnPattern();
+
+            if (_nextSpawn <= Time.time) OnSpawnPattern();
+        }
+
+        private void IncreaseDifficulty()
+        {
+            if (_currentStage == Stage.One && _timeStart <= Time.time + timeStageOne)
             {
-                OnSpawnPattern();
+                
             }
 
-            if (_nextSpawn <= Time.time)
+            if (_currentStage == Stage.Two && _timeStart <= Time.time + timeStageTwo)
             {
-                OnSpawnPattern();
+            }
+
+            if (_currentStage == Stage.Three && _timeStart <= Time.time + timeStageThree)
+            {
             }
         }
-        
-        void OnSpawnPattern()
+
+        private void OnSpawnPattern()
         {
             _nextSpawn = Time.time + spawnCooldownSec;
-       
-            
-            if (EnemiesOnField < MaxEnemies)
+            if (_enemiesOnField < MaxEnemies)
             {
                 LaneManager.GenerateSpawns();
-                if (EnemiesOnField == 0)
-                {
-                    GeneratePattern(GetNewMap());
-                }
+                if (_enemiesOnField == 0) GeneratePattern(GetNewMap());
             }
         }
 
-        Texture2D GetNewMap()
+        private Texture2D GetNewMap()
         {
             return maps[Random.Range(0, maps.Length)];
         }
-        void GeneratePattern(Texture2D map)
+
+        private void GeneratePattern(Texture2D map)
         {
             for (int x = 0; x < map.width; x++)
+            for (int y = 0; y < map.height; y++)
             {
-                for (int y = 0; y < map.height; y++)
-                {
-                    if (y > 5) break;
-                    GenerateTile(x, y, map);
-                }
+                if (y > 5) break;
+                GenerateTile(x, y, map);
             }
         }
 
-        void GenerateTile(int x, int y, Texture2D map)
+        private void GenerateTile(int x, int y, Texture2D map)
         {
             Color pixelColor = map.GetPixel(x, y);
             // ReSharper disable once CompareOfFloatsByEqualityOperator
-            if (pixelColor.a == 0)
-            {
-                return;
-            }
+            if (pixelColor.a == 0) return;
             SpawnPrefab(x, y, pixelColor);
-            
         }
 
         private void SpawnPrefab(int x, int y, Color color)
         {
             foreach (ColorPrefab colorMapping in colorMappings)
-            {
                 if (colorMapping.color.Equals(color))
-                {
                     if (y <= LaneManager.LANECOUNT && x <= LaneManager.SPAWNERCOUNT)
                     {
                         Instantiate(colorMapping.prefab, LaneManager.Spawns[y, x], Quaternion.identity);
-                        EnemiesOnField++;
+                        _enemiesOnField++;
                     }
-                }
-            }
         }
 
         public static void ReduceEnemyCount()
         {
-            EnemiesOnField--;
+            _enemiesOnField--;
         }
 
         private void AdjustSpawnPositions()

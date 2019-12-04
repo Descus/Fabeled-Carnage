@@ -8,14 +8,12 @@ namespace Structs
     public struct Effect
     {
 #pragma warning disable 649
-        [SerializeField] private EffectTypes type;
-        [SerializeField] private int duration;
-        [SerializeField] private int amount;
 #pragma warning restore 649
-        
-        public int Amount => amount;
-        public int Duration => duration;
-        public EffectTypes Type => type;
-        
+
+        [field: SerializeField] public int Amount { get; }
+
+        [field: SerializeField] public int Duration { get; }
+
+        [field: SerializeField] public EffectTypes Type { get; }
     }
 }

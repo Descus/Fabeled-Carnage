@@ -2,6 +2,6 @@
 {
     public interface ISScrollable
     {
-            void Move(float speed);
+        void Move(float speed);
     }
 }

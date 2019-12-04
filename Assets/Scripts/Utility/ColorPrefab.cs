@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Utility
 {
-    [System.Serializable]
+    [Serializable]
     public class ColorPrefab
     {
         public Color color;

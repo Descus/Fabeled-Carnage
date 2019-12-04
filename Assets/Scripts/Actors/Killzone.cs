@@ -1,22 +1,19 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Actors
 {
-    public class Killzone: MonoBehaviour
+    public class Killzone : MonoBehaviour
     {
-        private GameObject inKillzone;
-
-        public GameObject InKillzone => inKillzone;
+        public GameObject InKillzone { get; private set; }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            inKillzone = other.gameObject;
+            InKillzone = other.gameObject;
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            inKillzone = null;
+            InKillzone = null;
         }
     }
 }

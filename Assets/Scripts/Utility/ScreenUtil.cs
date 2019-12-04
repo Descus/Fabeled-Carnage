@@ -2,16 +2,16 @@
 
 namespace Utility
 {
-        public class ScreenUtil
+    public class ScreenUtil
+    {
+        public static float GetRightScreenBorderX(Camera main)
         {
-                public static float GetRightScreenBorderX(Camera main)
-                {
-                        return main.orthographicSize * GetScreenRatio();
-                }
-
-                public static float GetScreenRatio()
-                {
-                        return Screen.width / (float) Screen.height;
-                }
+            return main.orthographicSize * GetScreenRatio();
         }
+
+        public static float GetScreenRatio()
+        {
+            return Screen.width / (float) Screen.height;
+        }
+    }
 }
