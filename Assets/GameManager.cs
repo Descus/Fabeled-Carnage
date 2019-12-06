@@ -9,12 +9,15 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*
         if (Application.platform != RuntimePlatform.Android)
         {
             GameObject.Find("btnUp").SetActive(false);
             GameObject.Find("btnDown").SetActive(false);
             GameObject.Find("btnAttack").SetActive(false);
+            
         }
+        */
     }
     
     

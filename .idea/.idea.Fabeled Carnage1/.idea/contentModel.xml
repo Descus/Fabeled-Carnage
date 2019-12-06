@@ -34,6 +34,7 @@
           </e>
           <e p="Utility" t="Include">
             <e p="ColorPrefab.cs" t="Include" />
+            <e p="CustomButton.cs" t="Include" />
             <e p="ReadonlyAttribute.cs" t="Include" />
             <e p="ScreenUtil.cs" t="Include" />
           </e>

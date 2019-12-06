@@ -1,6 +1,7 @@
 ﻿using Environment;
 using Interfaces;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Utility;
 
@@ -12,7 +13,8 @@ namespace Actors
         private static readonly float maxStamina = 100f;
         private Killzone _killzone;
         private Image _staminaBar;
-        
+
+        [SerializeField] public CustomButton pressHandler;
         
         public int currentLane = 2;
         
@@ -37,6 +39,7 @@ namespace Actors
 
         private void Update()
         {
+            GetTouchInput();
             AdjustPos();
             HandleStamina();
             
@@ -66,6 +69,23 @@ namespace Actors
 
             //Debug Keybinds
             if (Input.GetKeyDown(KeyCode.Keypad8)) speed += 0.1f;
+        }
+
+        private void GetTouchInput()
+        {
+            if (pressHandler.fingerPos.y <= (float)Screen.height / 2 && pressHandler.fingerPos.y > 0)
+            {
+                _botZone = true;
+            }
+            else if (pressHandler.fingerPos.y < 0)
+            {
+                _topZone = false;
+                _botZone = false;
+            } 
+            else
+            {
+                _topZone = true;
+            }
         }
 
         private void HandleStamina()
@@ -134,6 +154,11 @@ namespace Actors
         public void OnButtonAttack()
         {
             Attack();
+        }
+
+        public void OnDrag()
+        {
+            Debug.Log("Drag");
         }
     }
 }
