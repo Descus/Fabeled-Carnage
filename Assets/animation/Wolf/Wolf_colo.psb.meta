@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ea24b6593483306488ca099fb632b672
+guid: e576ec1b28996474eaa71386312caf26
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -11129,51 +11129,51 @@ ScriptedImporter:
     dimension: {x: 0, y: 0}
     characterGroups: []
   boneGOs:
-  - go: {fileID: -1834891057824059497, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -1834891057824059497, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 0
-  - go: {fileID: -7712208766113599982, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -7712208766113599982, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 1
-  - go: {fileID: -1843204589087666048, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -1843204589087666048, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 2
-  - go: {fileID: -8639134521419996468, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -8639134521419996468, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 3
-  - go: {fileID: -8890095457976470213, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -8890095457976470213, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 4
-  - go: {fileID: 1005103922938070898, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: 1005103922938070898, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 5
-  - go: {fileID: -1515809774375475256, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -1515809774375475256, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 6
-  - go: {fileID: -8450514807943494613, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -8450514807943494613, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 7
-  - go: {fileID: 6375059909538477306, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: 6375059909538477306, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 8
-  - go: {fileID: 5627406008429987593, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: 5627406008429987593, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 9
-  - go: {fileID: -572904345666799270, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -572904345666799270, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 10
-  - go: {fileID: -1475833449813132457, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -1475833449813132457, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 11
-  - go: {fileID: 1220650122692550091, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: 1220650122692550091, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 12
-  - go: {fileID: 7457051690462795262, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: 7457051690462795262, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 13
-  - go: {fileID: 4993179471619074347, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: 4993179471619074347, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 14
-  - go: {fileID: -6029030317329121010, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -6029030317329121010, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 15
-  - go: {fileID: -6633481821555826115, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -6633481821555826115, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 16
-  - go: {fileID: 6845058385344404357, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: 6845058385344404357, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 17
-  - go: {fileID: 6175955815557216745, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: 6175955815557216745, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 18
-  - go: {fileID: -6809165620016748418, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -6809165620016748418, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 19
-  - go: {fileID: 174193424988622351, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: 174193424988622351, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 20
-  - go: {fileID: 4384971192407113151, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: 4384971192407113151, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 21
-  - go: {fileID: -6720889771076952737, guid: ea24b6593483306488ca099fb632b672, type: 3}
+  - go: {fileID: -6720889771076952737, guid: e576ec1b28996474eaa71386312caf26, type: 3}
     index: 22
   generateGOHierarchy: 0
   textureAssetName: Wolf_colo Texture
