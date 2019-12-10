@@ -16,8 +16,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UsefulScripts/Utility/ButtonPressed.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -26,7 +29,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonPressed.cs" />
         <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/CustomButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
       </list>
     </option>
   </component>
@@ -83,6 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575631537209</updated>
       <workItem from="1575631539220" duration="15870000" />
+      <workItem from="1575971695760" duration="7684000" />
     </task>
     <servers />
   </component>
@@ -96,7 +103,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

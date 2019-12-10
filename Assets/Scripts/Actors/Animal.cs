@@ -19,7 +19,7 @@ namespace Actors
         public void Kill()
         {
             Destroy(gameObject);
-            NpcSpawner.ReduceEnemyCount();
+            NpcSpawner.RemoveEnemy();
         }
 
         public override void Move(float speed)
@@ -32,7 +32,7 @@ namespace Actors
                 if (transform.position.x <= -LaneManager.Spawnx)
                 {
                     Destroy(gameObject);
-                    NpcSpawner.ReduceEnemyCount();
+                    NpcSpawner.RemoveEnemy();
                 }
             }
         }

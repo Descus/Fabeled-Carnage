@@ -2,6 +2,7 @@
 using Interfaces;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Utility;
 
@@ -15,11 +16,13 @@ namespace Actors
         private Image _staminaBar;
 
         [SerializeField] public CustomButton pressHandler;
-        
+        public Animator animator;
         public int currentLane = 2;
-        
         private bool _topZone, _botZone, _attackZone, _snapToLane = false;
 
+        public float AttackCooldown;
+        private float startAttack;
+        
         [Header("Killzone")] public BoxCollider2D killzoneCollider;
 
         [Header("Positioning")] public float speed = .1f;
@@ -27,6 +30,8 @@ namespace Actors
         [ReadOnly] [SerializeField] private float stamina = maxStamina;
 
         [Header("Stamina")] public float staminaMult = 2.0f;
+        
+        private bool _hasAttacked;
 
         public int xDefault = 4;
 
@@ -42,6 +47,7 @@ namespace Actors
             GetTouchInput();
             AdjustPos();
             HandleStamina();
+            ResetAttackCooldown();
             
             if (!_snapToLane)
             {
@@ -52,7 +58,12 @@ namespace Actors
 
             if (Input.GetAxis("Jump") > 0)
             {
-                Attack();
+                if (!_hasAttacked)
+                {
+                    _hasAttacked = true;
+                    Attack();
+                }
+                
             }
 
             //Snapping Enabled #Clunky AF
@@ -71,6 +82,14 @@ namespace Actors
             if (Input.GetKeyDown(KeyCode.Keypad8)) speed += 0.1f;
         }
 
+        private void ResetAttackCooldown()
+        {
+            if (Time.time >= startAttack + AttackCooldown)
+            {
+                _hasAttacked = false;
+            }
+        }
+
         private void GetTouchInput()
         {
             if (pressHandler.fingerPos.y <= (float)Screen.height / 2 && pressHandler.fingerPos.y > 0)
@@ -82,7 +101,7 @@ namespace Actors
                 _topZone = false;
                 _botZone = false;
             } 
-            else
+            else if((pressHandler.fingerPos.y >= (float)Screen.height / 2 && pressHandler.fingerPos.y > 0))
             {
                 _topZone = true;
             }
@@ -124,6 +143,8 @@ namespace Actors
 
         void Attack()
         {
+            startAttack = Time.time;
+            animator.SetTrigger("Attack");
             GameObject other = _killzone.InKillzone;
             if (other != null)
             {
