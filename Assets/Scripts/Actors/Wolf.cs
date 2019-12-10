@@ -11,30 +11,39 @@ namespace Actors
     [RequireComponent(typeof(BoxCollider2D))]
     public class Wolf : MonoBehaviour
     {
-        private static readonly float maxStamina = 100f;
+        
         private Killzone _killzone;
         private Image _staminaBar;
 
         [SerializeField] public CustomButton pressHandler;
         public Animator animator;
-        public int currentLane = 2;
-        private bool _topZone, _botZone, _attackZone, _snapToLane = false;
+        
 
+        [Header("Attack")]
         public float AttackCooldown;
-        private float startAttack;
+        public float attackDuration;
+        [ReadOnly] [SerializeField] private float startAttack;
+        [ReadOnly] [SerializeField] private bool _hasAttacked;
+        [ReadOnly] [SerializeField] private bool _attacking = false;
         
         [Header("Killzone")] public BoxCollider2D killzoneCollider;
 
-        [Header("Positioning")] public float speed = .1f;
-
-        [ReadOnly] [SerializeField] private float stamina = maxStamina;
-
-        [Header("Stamina")] public float staminaMult = 2.0f;
+        [Header("Movement")] public float speed = .1f;
         
-        private bool _hasAttacked;
+        [Header("Stamina")] public float staminaMult = 2.0f;
+        private static readonly float maxStamina = 100f;
+        [ReadOnly] [SerializeField] private float stamina = maxStamina;
+        
+        
+        [Header("Debug")]
+        public bool debug;
+        public GameObject debugZone;
 
+        [Header("Positioning")]
         public int xDefault = 4;
-
+        public int currentLane = 2;
+        private bool _topZone, _botZone, _attackZone, _snapToLane = false;
+        
         private void Start()
         {
             _staminaBar = GameObject.Find("StaminaBar").GetComponent<Image>();
@@ -49,22 +58,38 @@ namespace Actors
             HandleStamina();
             ResetAttackCooldown();
             
-            if (!_snapToLane)
+            if (!_snapToLane && !_attacking)
             {
                 if (Input.GetAxis("Vertical") > 0 || _topZone) MoveUp();
 
                 if (Input.GetAxis("Vertical") < 0 || _botZone) MoveDown();
             }
 
-            if (Input.GetAxis("Jump") > 0)
+            if (Input.GetAxis("Jump") > 0 && !_hasAttacked)
             {
-                if (!_hasAttacked)
-                {
-                    _hasAttacked = true;
-                    Attack();
-                }
-                
+                _hasAttacked = true;
+                Attack();
             }
+
+            
+            if (_attacking)
+            {
+                GameObject other = _killzone.InKillzone;
+                if (other != null)
+                {
+                    ISKillable toKill = other.GetComponent<ISKillable>();
+                    if (toKill is Animal) AddStamina(((Animal) toKill).GetStamina());
+                    toKill.Kill();
+                }
+            }
+
+            if (startAttack + attackDuration <= Time.time)
+            {
+                _attacking = false;
+                debugZone.SetActive(false);
+            }
+
+
 
             //Snapping Enabled #Clunky AF
             //
@@ -145,41 +170,11 @@ namespace Actors
         {
             startAttack = Time.time;
             animator.SetTrigger("Attack");
-            GameObject other = _killzone.InKillzone;
-            if (other != null)
+            _attacking = true;
+            if (debug)
             {
-                ISKillable toKill = other.GetComponent<ISKillable>();
-                if (toKill is Animal) AddStamina(((Animal) toKill).GetStamina());
-                toKill.Kill();
+                debugZone.SetActive(true);
             }
-        }
-
-        public void OnButtonUpEnter()
-        {
-            _topZone = true;
-        }
-        public void OnButtonUpLeave()
-        {
-            _topZone = false;
-        }
-
-        public void OnButtonDownEnter()
-        {
-            _botZone = true;
-        }
-        public void OnButtonDownLeave()
-        {
-            _botZone = false;
-        }
-
-        public void OnButtonAttack()
-        {
-            Attack();
-        }
-
-        public void OnDrag()
-        {
-            Debug.Log("Drag");
         }
     }
 }
