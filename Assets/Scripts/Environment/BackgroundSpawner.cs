@@ -12,6 +12,7 @@ namespace Environment
 
         private void SpawnBackground(float x)
         {
+        
         }
 
         private void AppendTile()

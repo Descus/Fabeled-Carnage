@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Descus\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -6,7 +6,6 @@
     <e p="E:\UnityEngine\Fabeled-Carnage" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="GameManager.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Actors" t="Include">
             <e p="Animal.cs" t="Include" />
@@ -35,6 +34,7 @@
           <e p="Utility" t="Include">
             <e p="ColorPrefab.cs" t="Include" />
             <e p="CustomButton.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
             <e p="ReadonlyAttribute.cs" t="Include" />
             <e p="ScreenUtil.cs" t="Include" />
           </e>
