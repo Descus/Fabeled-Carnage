@@ -18,6 +18,7 @@
             <e p="EffectTypes.cs" t="Include" />
           </e>
           <e p="Environment" t="Include">
+            <e p="Background.cs" t="Include" />
             <e p="BackgroundSpawner.cs" t="Include" />
             <e p="LaneManager.cs" t="Include" />
             <e p="NpcSpawner.cs" t="Include" />
