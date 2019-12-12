@@ -9,19 +9,15 @@ namespace Environment
         private static int _enemiesOnField;
         private static readonly int MaxEnemies = 20;
         public static float RightSreenX;
-        private readonly Stage _currentStage = Stage.One;
         private Camera _cam;
         private float _nextSpawn = 6;
 
         private float _timeStart;
         public ColorPrefab[] colorMappings;
         public Texture2D[] maps;
+        public GameObject[,] onField;
 
         [Space(10)] [Range(0.0f, 50f)] public float spawnCooldownSec = 6f;
-
-        public int timeStageOne;
-        public int timeStageThree;
-        public int timeStageTwo;
 
         private void Start()
         {
@@ -42,22 +38,6 @@ namespace Environment
             if (Input.GetKeyDown(KeyCode.P)) OnSpawnPattern();
 
             if (_nextSpawn <= Time.time) OnSpawnPattern();
-        }
-
-        private void IncreaseDifficulty()
-        {
-            if (_currentStage == Stage.One && _timeStart <= Time.time + timeStageOne)
-            {
-                
-            }
-
-            if (_currentStage == Stage.Two && _timeStart <= Time.time + timeStageTwo)
-            {
-            }
-
-            if (_currentStage == Stage.Three && _timeStart <= Time.time + timeStageThree)
-            {
-            }
         }
 
         private void OnSpawnPattern()
@@ -99,12 +79,13 @@ namespace Environment
                 if (colorMapping.color.Equals(color))
                     if (y <= LaneManager.LANECOUNT && x <= LaneManager.SPAWNERCOUNT)
                     {
+                        //TODO Save Animal to array in order to move the whole lane at once on Touch
                         Instantiate(colorMapping.prefab, LaneManager.Spawns[y, x], Quaternion.identity);
                         _enemiesOnField++;
                     }
         }
 
-        public static void ReduceEnemyCount()
+        public static void RemoveEnemy()
         {
             _enemiesOnField--;
         }

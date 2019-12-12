@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿  using UnityEngine;
 
 namespace Actors
 {
@@ -10,7 +10,6 @@ namespace Actors
         {
             InKillzone = other.gameObject;
         }
-
         private void OnTriggerExit2D(Collider2D other)
         {
             InKillzone = null;

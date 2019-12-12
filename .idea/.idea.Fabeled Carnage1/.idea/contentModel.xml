@@ -6,7 +6,6 @@
     <e p="E:\GameProjects\Unity\Fabeled Carnage1" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="GameManager.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Actors" t="Include">
             <e p="Animal.cs" t="Include" />
@@ -17,12 +16,13 @@
           </e>
           <e p="Enums" t="Include">
             <e p="EffectTypes.cs" t="Include" />
-            <e p="Stage.cs" t="Include" />
           </e>
           <e p="Environment" t="Include">
+            <e p="Background.cs" t="Include" />
             <e p="BackgroundSpawner.cs" t="Include" />
             <e p="LaneManager.cs" t="Include" />
             <e p="NpcSpawner.cs" t="Include" />
+            <e p="ScoreManager.cs" t="Include" />
             <e p="Scroller.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
@@ -35,6 +35,7 @@
           <e p="Utility" t="Include">
             <e p="ColorPrefab.cs" t="Include" />
             <e p="CustomButton.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
             <e p="ReadonlyAttribute.cs" t="Include" />
             <e p="ScreenUtil.cs" t="Include" />
           </e>

@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
+using Utility;
 
 namespace Environment
 {
@@ -8,6 +10,11 @@ namespace Environment
 
         public float speed = 150f;
 
+        [ReadOnly][Range(1.0f, 3.0f)]
+        public float gameSpeed;
+        [Range(0, 300)]
+        public int speedIncreaseInterval;
+        
         public static event MoveSubsriber OnMoveUpdate;
 
         private void Update()
@@ -20,8 +27,13 @@ namespace Environment
                 else
                     Time.timeScale = 1f;
             }
+            if (OnMoveUpdate != null) OnMoveUpdate(speed / 100 * GetGameSpeed() * Time.deltaTime);
+            gameSpeed = GetGameSpeed();
+        }
 
-            if (OnMoveUpdate != null) OnMoveUpdate(speed / 100 * Time.deltaTime);
+        private float GetGameSpeed()
+        {
+            return  1 + (float)((int) Time.time / (speedIncreaseInterval/2)) / 2;
         }
 
         public static void SubscribeMoveEvent(MoveSubsriber add)
