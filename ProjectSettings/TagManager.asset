@@ -43,3 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2139847325
+    locked: 0
+  - name: Enemy
+    uniqueID: 3599032801
+    locked: 0
+  - name: Wolf
+    uniqueID: 4165022531
+    locked: 0

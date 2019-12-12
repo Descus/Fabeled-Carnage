@@ -1,15 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace Utility
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GameManager : MonoBehaviour
     {
-        /*
+        // Start is called before the first frame update
+        void Start()
+        {
+            /*
         if (Application.platform != RuntimePlatform.Android)
         {
             GameObject.Find("btnUp").SetActive(false);
@@ -18,16 +16,17 @@ public class GameManager : MonoBehaviour
             
         }
         */
-    }
+        }
     
     
-    public void OnCloseGame()
-    {
+        public void OnCloseGame()
+        {
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
+            UnityEditor.EditorApplication.isPlaying = false;
 #else
         Application.Quit();
 #endif
-    }
+        }
 
+    }
 }
