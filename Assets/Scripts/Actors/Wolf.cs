@@ -33,7 +33,8 @@ namespace Actors
         [Header("Stamina")] public float staminaMult = 2.0f;
         private static readonly float maxStamina = 100f;
         [ReadOnly] [SerializeField] private float stamina = maxStamina;
-        
+
+        private Scroller _scroller;
         
         [Header("Debug")]
         public bool debug;
@@ -49,6 +50,7 @@ namespace Actors
             _staminaBar = GameObject.Find("StaminaBar").GetComponent<Image>();
             transform.position = new Vector3(xDefault, LaneManager.LANEHEIGHT * 2);
             _killzone = killzoneCollider.GetComponent<Killzone>();
+            _scroller = GameObject.Find("Spawner").GetComponent<Scroller>();
         }
 
         private void Update()
@@ -134,7 +136,7 @@ namespace Actors
 
         private void HandleStamina()
         {
-            stamina -= staminaMult * Time.deltaTime;
+            stamina -= staminaMult * _scroller.gameSpeed * Time.deltaTime;
             _staminaBar.fillAmount = stamina / maxStamina;
         }
 

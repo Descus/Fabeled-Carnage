@@ -10,7 +10,7 @@ namespace Environment
 
         public float speed = 150f;
 
-        [ReadOnly][Range(1.0f, 3.0f)]
+        [ReadOnly]
         public float gameSpeed;
         [Range(0, 300)]
         public int speedIncreaseInterval;
@@ -19,6 +19,7 @@ namespace Environment
 
         private void Update()
         {
+            gameSpeed = GetGameSpeed();
             if (Input.GetKeyDown(KeyCode.D))
             {
                 // ReSharper disable once CompareOfFloatsByEqualityOperator
@@ -27,8 +28,8 @@ namespace Environment
                 else
                     Time.timeScale = 1f;
             }
-            if (OnMoveUpdate != null) OnMoveUpdate(speed / 100 * GetGameSpeed() * Time.deltaTime);
-            gameSpeed = GetGameSpeed();
+
+            if (OnMoveUpdate != null) OnMoveUpdate(speed / 100 * gameSpeed * Time.deltaTime);
         }
 
         private float GetGameSpeed()
