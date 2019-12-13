@@ -122,10 +122,10 @@ namespace Actors
             if (Input.GetKeyDown(KeyCode.KeypadPlus)&&Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec += 0.1f;
             if (Input.GetKeyDown(KeyCode.KeypadMinus)&&Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec -= 0.1f;
             
-            if (Input.GetKeyDown(KeyCode.Keypad4)&&!Input.GetKey(KeyCode.LeftShift)) _scroller.speed += 10;
-            if (Input.GetKeyDown(KeyCode.Keypad6)&&!Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 10;
-            if (Input.GetKeyDown(KeyCode.Keypad4)&&Input.GetKey(KeyCode.LeftShift)) _scroller.speed += 1;
-            if (Input.GetKeyDown(KeyCode.Keypad6)&&Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 1;
+            if (Input.GetKeyDown(KeyCode.Keypad6)&&!Input.GetKey(KeyCode.LeftShift)) _scroller.speed += 10;
+            if (Input.GetKeyDown(KeyCode.Keypad4)&&!Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 10;
+            if (Input.GetKeyDown(KeyCode.Keypad6)&&Input.GetKey(KeyCode.LeftShift)) _scroller.speed += 1;
+            if (Input.GetKeyDown(KeyCode.Keypad4)&&Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 1;
 
             speed = Mathf.Clamp(speed, 0, 1);
             _npcSpawner.spawnCooldownSec = Mathf.Clamp(_npcSpawner.spawnCooldownSec, 0.1f, 15);
