@@ -18,6 +18,7 @@
             <e p="EffectTypes.cs" t="Include" />
           </e>
           <e p="Environment" t="Include">
+            <e p="Background.cs" t="Include" />
             <e p="BackgroundSpawner.cs" t="Include" />
             <e p="LaneManager.cs" t="Include" />
             <e p="NpcSpawner.cs" t="Include" />
@@ -39,6 +40,7 @@
             <e p="ScreenUtil.cs" t="Include" />
           </e>
         </e>
+        <e p="SpriteRandomizer.cs" t="Include" />
       </e>
       <e p="Fabeled Carnage1.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
