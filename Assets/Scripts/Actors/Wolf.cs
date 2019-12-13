@@ -1,6 +1,8 @@
-﻿using Environment;
+﻿using System;
+using Environment;
 using Interfaces;
 using UnityEngine;
+using UnityEngine.Assertions.Comparers;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -35,6 +37,7 @@ namespace Actors
         [ReadOnly] [SerializeField] private float stamina = maxStamina;
 
         private Scroller _scroller;
+        private NpcSpawner _npcSpawner;
         
         [Header("Debug")]
         public bool debug;
@@ -50,7 +53,9 @@ namespace Actors
             _staminaBar = GameObject.Find("StaminaBar").GetComponent<Image>();
             transform.position = new Vector3(xDefault, LaneManager.LANEHEIGHT * 2);
             _killzone = killzoneCollider.GetComponent<Killzone>();
-            _scroller = GameObject.Find("Spawner").GetComponent<Scroller>();
+            GameObject spawner = GameObject.Find("Spawner");
+            _scroller = spawner.GetComponent<Scroller>();
+            _npcSpawner = spawner.GetComponent<NpcSpawner>();
         }
 
         private void Update()
@@ -106,7 +111,26 @@ namespace Actors
             if (_snapToLane) transform.position = new Vector3(xDefault, LaneManager.Spawns[currentLane, 0].y, 0);
 
             //Debug Keybinds
-            if (Input.GetKeyDown(KeyCode.Keypad8)) speed += 0.1f;
+            if (Input.GetKeyDown(KeyCode.Keypad8)&&!Input.GetKey(KeyCode.LeftShift)) speed += 0.1f;
+            if (Input.GetKeyDown(KeyCode.Keypad2)&&!Input.GetKey(KeyCode.LeftShift)) speed -= 0.1f;
+            if (Input.GetKeyDown(KeyCode.Keypad8)&&Input.GetKey(KeyCode.LeftShift)) speed += 0.01f;
+            if (Input.GetKeyDown(KeyCode.Keypad2)&&Input.GetKey(KeyCode.LeftShift)) speed -= 0.01f;
+
+
+            if (Input.GetKeyDown(KeyCode.KeypadPlus)&&!Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec += 1;
+            if (Input.GetKeyDown(KeyCode.KeypadMinus)&&!Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec -= 1;
+            if (Input.GetKeyDown(KeyCode.KeypadPlus)&&Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec += 0.1f;
+            if (Input.GetKeyDown(KeyCode.KeypadMinus)&&Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec -= 0.1f;
+            
+            if (Input.GetKeyDown(KeyCode.Keypad4)&&!Input.GetKey(KeyCode.LeftShift)) _scroller.speed += 10;
+            if (Input.GetKeyDown(KeyCode.Keypad6)&&!Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 10;
+            if (Input.GetKeyDown(KeyCode.Keypad4)&&Input.GetKey(KeyCode.LeftShift)) _scroller.speed += 1;
+            if (Input.GetKeyDown(KeyCode.Keypad6)&&Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 1;
+
+            speed = Mathf.Clamp(speed, 0, 1);
+            _npcSpawner.spawnCooldownSec = Mathf.Clamp(_npcSpawner.spawnCooldownSec, 0.1f, 15);
+            _scroller.speed = Mathf.Clamp(_scroller.speed, 10, float.MaxValue);
+
         }
 
         private void ResetAttackCooldown()
