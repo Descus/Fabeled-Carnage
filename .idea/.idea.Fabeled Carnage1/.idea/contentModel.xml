@@ -24,6 +24,7 @@
             <e p="NpcSpawner.cs" t="Include" />
             <e p="ScoreManager.cs" t="Include" />
             <e p="Scroller.cs" t="Include" />
+            <e p="SpriteRandomizer.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
             <e p="IsKillable.cs" t="Include" />
@@ -43,7 +44,6 @@
             <e p="ScreenUtil.cs" t="Include" />
           </e>
         </e>
-        <e p="SpriteRandomizer.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
             <e p="Fonts" t="Include">

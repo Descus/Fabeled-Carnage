@@ -7,7 +7,7 @@ namespace Environment
     public class BackgroundSpawner : MonoBehaviour
     {
 
-        public float tileWidth = 13;
+        public float tileWidth = 16;
         public static float SpawnX ;
         private GameObject latest;
 
@@ -18,7 +18,7 @@ namespace Environment
             Camera cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
             SpawnX = ScreenUtil.GetRightScreenBorderX(cam) + 1;
             SpawnBackground(0);
-            SpawnBackground(13);
+            SpawnBackground(16);
         }
 
         void Update()

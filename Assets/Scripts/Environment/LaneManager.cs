@@ -9,7 +9,7 @@ namespace Environment
         public static float LANEHEIGHT = 1.4f;
         public static float COLWIDTH = 1.5f;
         public static readonly int LANECOUNT = 5;
-        public static readonly float MINLANEY = 2f;
+        public static readonly float MINLANEY = 2.1f;
         public static float Spawnx = 11;
         public static readonly int SPAWNERCOUNT = 6;
         public static bool debug = true;

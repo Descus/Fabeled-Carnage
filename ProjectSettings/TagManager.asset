@@ -52,3 +52,6 @@ TagManager:
   - name: Wolf
     uniqueID: 4165022531
     locked: 0
+  - name: Forground
+    uniqueID: 8499941
+    locked: 0
