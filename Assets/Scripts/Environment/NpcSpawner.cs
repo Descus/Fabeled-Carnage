@@ -42,9 +42,10 @@ namespace Environment
 
         private void OnSpawnPattern()
         {
-            _nextSpawn = Time.time + spawnCooldownSec;
+            
             if (_enemiesOnField < MaxEnemies)
             {
+                _nextSpawn = Time.time + spawnCooldownSec;
                 LaneManager.GenerateSpawns();
                 if (_enemiesOnField == 0) GeneratePattern(GetNewMap());
             }

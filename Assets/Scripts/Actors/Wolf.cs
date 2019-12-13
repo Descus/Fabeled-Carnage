@@ -130,7 +130,6 @@ namespace Actors
             speed = Mathf.Clamp(speed, 0, 1);
             _npcSpawner.spawnCooldownSec = Mathf.Clamp(_npcSpawner.spawnCooldownSec, 0.1f, 15);
             _scroller.speed = Mathf.Clamp(_scroller.speed, 10, float.MaxValue);
-
         }
 
         private void ResetAttackCooldown()
