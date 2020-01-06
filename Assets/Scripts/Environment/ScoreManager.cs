@@ -12,7 +12,9 @@ namespace Environment
         public int scoreMult = 1;
         public float scoreFrequency;
         public Text textField;
+        #if UNITY_EDITOR
         [ReadOnly][SerializeField]
+        #endif
         private int score = 0;
         private float _update;
         

@@ -1,6 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 namespace Utility
 {
     public class ReadOnlyAttribute : PropertyAttribute
@@ -26,3 +27,4 @@ namespace Utility
         }
     }
 }
+#endif

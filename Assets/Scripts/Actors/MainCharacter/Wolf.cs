@@ -20,9 +20,18 @@ namespace Actors.MainCharacter
         [Header("Attack")]
         public float AttackCooldown;
         public float attackDuration;
-        [ReadOnly] [SerializeField] private float startAttack;
-        [ReadOnly] [SerializeField] private bool _hasAttacked;
-        [ReadOnly] [SerializeField] private bool _attacking = false;
+#if UNITY_EDITOR 
+        [ReadOnly]
+#endif 
+        [SerializeField] private float startAttack;
+#if UNITY_EDITOR 
+        [ReadOnly] 
+#endif 
+        [SerializeField] private bool _hasAttacked;
+#if UNITY_EDITOR 
+        [ReadOnly] 
+#endif 
+        [SerializeField] private bool _attacking = false;
         
         [Header("Killzone")] public BoxCollider2D killzoneCollider;
 
@@ -31,7 +40,11 @@ namespace Actors.MainCharacter
         [Header("Stamina")] public float staminaMult = 2.0f;
         private float _changedStaminaMult;
         private static readonly float maxStamina = 100f;
-        [ReadOnly] [SerializeField] private float stamina = maxStamina;
+        
+#if UNITY_EDITOR 
+        [ReadOnly] 
+#endif 
+        [SerializeField] private float stamina = maxStamina;
 
         private Scroller _scroller;
         private NpcSpawner _npcSpawner;

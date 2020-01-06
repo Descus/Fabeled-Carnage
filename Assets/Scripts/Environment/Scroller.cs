@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Serialization;
 using Utility;
 
 namespace Environment
@@ -12,7 +11,9 @@ namespace Environment
         public float speed = -150f;
         public float slowAmount = 0;
 
-        [ReadOnly]
+#if UNITY_EDITOR 
+        [ReadOnly] 
+#endif 
         public float gameSpeed;
         [Range(0, 300)]
         public int speedIncreaseInterval;
