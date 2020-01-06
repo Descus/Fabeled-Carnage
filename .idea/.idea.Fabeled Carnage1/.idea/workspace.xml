@@ -13,20 +13,26 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Killzone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IsSlowable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UsefulScripts/Utility/ButtonPressed.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structs/Effect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structs/BackgroundTile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -36,14 +42,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/CustomButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Killzone.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/SpriteRandomizer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Structs/BackgriundTile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Structs/BackgroundTile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsSlowable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Sheep.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle/Grass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
       </list>
     </option>
   </component>
@@ -74,10 +92,10 @@
     </option>
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="15024">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="15024" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -104,6 +122,7 @@
       <workItem from="1576062346195" duration="5295000" />
       <workItem from="1576151664392" duration="4246000" />
       <workItem from="1576233132873" duration="5200000" />
+      <workItem from="1578309470243" duration="16848000" />
     </task>
     <servers />
   </component>

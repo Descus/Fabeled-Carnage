@@ -1,4 +1,5 @@
-﻿using Environment;
+﻿using System;
+using Environment;
 using Interfaces;
 using UnityEngine;
 using Utility;
@@ -6,13 +7,14 @@ using Utility;
 namespace Actors
 {
     [RequireComponent(typeof(BoxCollider2D))]
-    public abstract class Animal : GameActor, ISKillable
+    public abstract class Animal : GameActor, ISKillable, IsSlowable
     {
         //Privates
         private bool _bLerp;
         private float _lerpfac;
         public bool leaping;
-        public float speedMult = 1.0f;
+        public float speedMult = 0.8f;
+        public float slowAmount;
 
         [SerializeField] private int staminaAmount = 25;
 
@@ -28,7 +30,8 @@ namespace Actors
             {
                 Transform transform1 = transform;
                 Vector3 pos = transform1.position;
-                transform1.position = new Vector3(pos.x - speed * 0.8f * speedMult, pos.y, pos.z);
+                float moveSpeed = speed * speedMult * (1 - slowAmount);
+                transform1.position = new Vector3(pos.x + moveSpeed, pos.y, pos.z);
                 if (transform.position.x <= -LaneManager.Spawnx)
                 {
                     Destroy(gameObject);
@@ -84,5 +87,25 @@ namespace Actors
         private Vector3 _target;
         private Vector3 _start;
 #pragma warning restore 649
+        
+        public void StartSlow(float amount)
+        {
+            slowAmount = amount / 100;
+        }
+
+        public void EndSlow()
+        {
+            slowAmount = 0;
+        }
+
+        protected override void SubscribeMoveEvent(Scroller.MoveSubsriber move)
+        {
+            Scroller.SubscribeActorMoveEvent(move);
+        }
+
+        protected override void UnSubscribeMoveEvent(Scroller.MoveSubsriber move)
+        {
+            Scroller.UnSubscribeActorMoveEvent(move);
+        }
     }
 }

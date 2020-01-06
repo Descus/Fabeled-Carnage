@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Structs;
+using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
 using Utility;
 
@@ -11,7 +12,7 @@ namespace Environment
         public static float SpawnX ;
         private GameObject latest;
 
-        public GameObject[] backgroundTiles;
+        public BackgroundTile[] backgroundTiles;
         // Start is called before the first frame update
         private void Start()
         {
@@ -31,7 +32,7 @@ namespace Environment
 
         private void SpawnBackground(float x)
         {
-            latest = Instantiate(backgroundTiles[0], new Vector3(x, 5), Quaternion.identity);
+            latest = Instantiate(backgroundTiles[0].tile, new Vector3(x, 5), Quaternion.identity);
         }
         
         

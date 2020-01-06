@@ -1,4 +1,5 @@
-﻿using Enums;
+﻿using Actors;
+using TMPro;
 using UnityEngine;
 using Utility;
 
@@ -7,10 +8,9 @@ namespace Environment
     public class NpcSpawner : MonoBehaviour
     {
         private static int _enemiesOnField;
-        private static readonly int MaxEnemies = 20;
         public static float RightSreenX;
         private Camera _cam;
-        private float _nextSpawn = 6;
+        private float _nextSpawn = 3;
 
         private float _timeStart;
         public ColorPrefab[] colorMappings;
@@ -37,18 +37,14 @@ namespace Environment
         {
             if (Input.GetKeyDown(KeyCode.P)) OnSpawnPattern();
 
-            if (_nextSpawn <= Time.time) OnSpawnPattern();
+            if (_nextSpawn <= Time.time && _enemiesOnField == 0) OnSpawnPattern();
         }
 
         private void OnSpawnPattern()
         {
-            
-            if (_enemiesOnField < MaxEnemies)
-            {
-                _nextSpawn = Time.time + spawnCooldownSec;
+            _nextSpawn = Time.time + spawnCooldownSec;
                 LaneManager.GenerateSpawns();
-                if (_enemiesOnField == 0) GeneratePattern(GetNewMap());
-            }
+                 GeneratePattern(GetNewMap());
         }
 
         private Texture2D GetNewMap()
@@ -76,15 +72,20 @@ namespace Environment
 
         private void SpawnPrefab(int x, int y, Color color)
         {
-            foreach (ColorPrefab colorMapping in colorMappings)
-                if (colorMapping.color.Equals(color))
+            foreach (ColorPrefab colorMapping in colorMappings) {
+                if (colorMapping.CompareColors(color))
+                {
                     if (y <= LaneManager.LANECOUNT && x <= LaneManager.SPAWNERCOUNT)
                     {
                         //TODO Save Animal to array in order to move the whole lane at once on Touch
-                        Instantiate(colorMapping.prefab, LaneManager.Spawns[y, x], Quaternion.identity);
-                        _enemiesOnField++;
+                        GameObject gObject = Instantiate(colorMapping.prefab, LaneManager.Spawns[y, x],
+                            Quaternion.identity);
+                        gObject.GetComponent<GameActor>().lane = y;
+                        if(!gObject.CompareTag("Obstacle"))_enemiesOnField++;
                     }
-        }
+                }
+            }
+        }    
 
         public static void RemoveEnemy()
         {

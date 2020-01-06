@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Movable
   - Manager
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -47,11 +48,23 @@ TagManager:
     uniqueID: 2139847325
     locked: 0
   - name: Enemy
-    uniqueID: 3599032801
+    uniqueID: 1869075995
     locked: 0
-  - name: Wolf
+  - name: Lane1
     uniqueID: 4165022531
     locked: 0
-  - name: Forground
+  - name: Lane2
+    uniqueID: 1124142847
+    locked: 0
+  - name: Lane3
+    uniqueID: 4087472821
+    locked: 0
+  - name: Lane4
+    uniqueID: 1307649369
+    locked: 0
+  - name: Lane5
+    uniqueID: 680285527
+    locked: 0
+  - name: Foreground
     uniqueID: 8499941
     locked: 0

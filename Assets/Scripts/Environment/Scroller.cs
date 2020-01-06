@@ -7,15 +7,18 @@ namespace Environment
     public class Scroller : MonoBehaviour
     {
         public delegate void MoveSubsriber(float speed);
+        
 
-        public float speed = 150f;
+        public float speed = -150f;
+        public float slowAmount = 0;
 
         [ReadOnly]
         public float gameSpeed;
         [Range(0, 300)]
         public int speedIncreaseInterval;
         
-        public static event MoveSubsriber OnMoveUpdate;
+        public static event MoveSubsriber OnActorMoveUpdate;
+        public static event MoveSubsriber OnBackgroundMoveUpdate;
 
         private void Update()
         {
@@ -29,7 +32,8 @@ namespace Environment
                     Time.timeScale = 1f;
             }
 
-            if (OnMoveUpdate != null) OnMoveUpdate(speed / 100 * gameSpeed * Time.deltaTime);
+            if (OnActorMoveUpdate != null) OnActorMoveUpdate(speed / 100 * gameSpeed * (1 - slowAmount) * Time.deltaTime);
+            if (OnBackgroundMoveUpdate != null) OnBackgroundMoveUpdate(speed / 100 * (1 - slowAmount) * gameSpeed * Time.deltaTime);
         }
 
         private float GetGameSpeed()
@@ -37,14 +41,24 @@ namespace Environment
             return  1 + (float)((int) Time.time / (speedIncreaseInterval/2)) / 2;
         }
 
-        public static void SubscribeMoveEvent(MoveSubsriber add)
+        public static void SubscribeActorMoveEvent(MoveSubsriber add)
         {
-            OnMoveUpdate += add;
+            OnActorMoveUpdate += add;
         }
 
-        public static void UnSubscribeMoveEvent(MoveSubsriber sub)
+        public static void UnSubscribeActorMoveEvent(MoveSubsriber sub)
         {
-            OnMoveUpdate -= sub;
+            OnActorMoveUpdate -= sub;
+        }
+        
+        public static void SubscribeBackgroundMoveEvent(MoveSubsriber add)
+        {
+            OnBackgroundMoveUpdate += add;
+        }
+
+        public static void UnSubscribeBackgroundMoveEvent(MoveSubsriber sub)
+        {
+            OnBackgroundMoveUpdate -= sub;
         }
     }
 }
