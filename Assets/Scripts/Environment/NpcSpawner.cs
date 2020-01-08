@@ -81,7 +81,7 @@ namespace Environment
                         GameObject gObject = Instantiate(colorMapping.prefab, LaneManager.Spawns[y, x],
                             Quaternion.identity);
                         gObject.GetComponent<GameActor>().lane = y;
-                        if(!gObject.CompareTag("Obstacle"))_enemiesOnField++;
+                        if(!gObject.CompareTag("Obstacle")) _enemiesOnField++;
                     }
                 }
             }

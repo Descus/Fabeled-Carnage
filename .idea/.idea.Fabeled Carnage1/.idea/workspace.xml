@@ -46,7 +46,6 @@
         <option value="$PROJECT_DIR$/Assets/SpriteRandomizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/BackgriundTile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/BackgroundTile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsSlowable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
@@ -59,11 +58,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ReadonlyAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
       </list>
     </option>
   </component>
@@ -126,6 +126,7 @@
       <workItem from="1576233132873" duration="5200000" />
       <workItem from="1578309470243" duration="16848000" />
       <workItem from="1578327831491" duration="1046000" />
+      <workItem from="1578395628735" duration="1855000" />
     </task>
     <servers />
   </component>

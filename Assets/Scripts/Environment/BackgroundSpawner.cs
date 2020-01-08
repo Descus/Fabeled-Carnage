@@ -12,18 +12,21 @@ namespace Environment
         public static float SpawnX ;
         private GameObject latest;
 
+        private Camera cam;
         public BackgroundTile[] backgroundTiles;
         // Start is called before the first frame update
         private void Start()
         {
-            Camera cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+            cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
             SpawnX = ScreenUtil.GetRightScreenBorderX(cam) + 1;
+            SpawnBackground(-tileWidth);
             SpawnBackground(0);
-            SpawnBackground(16);
+            SpawnBackground(tileWidth);
         }
 
         void Update()
         {
+            SpawnX = ScreenUtil.GetRightScreenBorderX(cam) + 1;
             if (latest.transform.position.x <= tileWidth)
             {
                 SpawnBackground(latest.transform.position.x + tileWidth);

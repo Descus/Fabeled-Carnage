@@ -83,9 +83,9 @@ namespace Actors.MainCharacter
                 if (Input.GetAxis("Vertical") < 0 || _botZone) MoveDown();
             }
 
-            if (Input.GetAxis("Jump") > 0 && !_hasAttacked)
+            if (Input.GetAxis("Jump") > 0)
             {
-                _hasAttacked = true;
+                
                 Attack();
             }
 
@@ -204,14 +204,18 @@ namespace Actors.MainCharacter
             }
         }
 
-        void Attack()
+        public void Attack()
         {
-            startAttack = Time.time;
-            animator.SetTrigger("Attack");
-            _attacking = true;
-            if (debug)
+            if (!_hasAttacked)
             {
-                debugZone.SetActive(true);
+                _hasAttacked = true;
+                startAttack = Time.time;
+                animator.SetTrigger("Attack");
+                _attacking = true;
+                if (debug)
+                {
+                    debugZone.SetActive(true);
+                } 
             }
         }
         
