@@ -72,41 +72,50 @@ namespace Actors.MainCharacter
         private void Update()
         {
             GetTouchInput();
+            GetKeyInput();
             AdjustPos();
             HandleStamina();
             ResetAttackCooldown();
+            HandleKill();
+            EndAttacking();
             
-            if (!_snapToLane && !_attacking)
-            {
-                if (Input.GetAxis("Vertical") > 0 || _topZone) MoveUp();
+            //TODO remove later
+            HandleFixedLaning();
+            HandleDebugKeybinds();
+        }
 
-                if (Input.GetAxis("Vertical") < 0 || _botZone) MoveDown();
-            }
+        private void HandleDebugKeybinds()
+        {
+//Debug Keybinds
+            if (Input.GetKeyDown(KeyCode.Keypad8) && !Input.GetKey(KeyCode.LeftShift)) speed += 0.1f;
+            if (Input.GetKeyDown(KeyCode.Keypad2) && !Input.GetKey(KeyCode.LeftShift)) speed -= 0.1f;
+            if (Input.GetKeyDown(KeyCode.Keypad8) && Input.GetKey(KeyCode.LeftShift)) speed += 0.01f;
+            if (Input.GetKeyDown(KeyCode.Keypad2) && Input.GetKey(KeyCode.LeftShift)) speed -= 0.01f;
 
-            if (Input.GetAxis("Jump") > 0)
-            {
-                
-                Attack();
-            }
 
-            
-            if (_attacking)
-            {
-                GameObject other = _killzone.InKillzone;
-                if (other != null)
-                {
-                    ISKillable toKill = other.GetComponent<ISKillable>();
-                    if (toKill is Animal) AddStamina(((Animal) toKill).GetStamina());
-                    toKill.Kill();
-                }
-            }
+            if (Input.GetKeyDown(KeyCode.KeypadPlus) && !Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec += 1;
+            if (Input.GetKeyDown(KeyCode.KeypadMinus) && !Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec -= 1;
+            if (Input.GetKeyDown(KeyCode.KeypadPlus) && Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec += 0.1f;
+            if (Input.GetKeyDown(KeyCode.KeypadMinus) && Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec -= 0.1f;
 
-            if (startAttack + attackDuration <= Time.time)
-            {
-                _attacking = false;
-                debugZone.SetActive(false);
-            }
-            //Snapping Enabled #Clunky AF
+            if (Input.GetKeyDown(KeyCode.Keypad6) && !Input.GetKey(KeyCode.LeftShift)) _scroller.speed += 10;
+            if (Input.GetKeyDown(KeyCode.Keypad4) && !Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 10;
+            if (Input.GetKeyDown(KeyCode.Keypad6) && Input.GetKey(KeyCode.LeftShift)) _scroller.speed += 1;
+            if (Input.GetKeyDown(KeyCode.Keypad4) && Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 1;
+
+            ClampDebugValues();
+        }
+
+        private void ClampDebugValues()
+        {
+            speed = Mathf.Clamp(speed, 0, 1);
+            _npcSpawner.spawnCooldownSec = Mathf.Clamp(_npcSpawner.spawnCooldownSec, 0.1f, 15);
+            _scroller.speed = Mathf.Clamp(_scroller.speed, float.MinValue, -10);
+        }
+
+        private void HandleFixedLaning()
+        {
+//Snapping Enabled #Clunky AF
             //
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && _snapToLane)
                 if (currentLane < LaneManager.LANECOUNT - 1)
@@ -117,27 +126,49 @@ namespace Actors.MainCharacter
                     currentLane--;
 
             if (_snapToLane) transform.position = new Vector3(xDefault, LaneManager.Spawns[currentLane, 0].y, 0);
+        }
 
-            //Debug Keybinds
-            if (Input.GetKeyDown(KeyCode.Keypad8)&&!Input.GetKey(KeyCode.LeftShift)) speed += 0.1f;
-            if (Input.GetKeyDown(KeyCode.Keypad2)&&!Input.GetKey(KeyCode.LeftShift)) speed -= 0.1f;
-            if (Input.GetKeyDown(KeyCode.Keypad8)&&Input.GetKey(KeyCode.LeftShift)) speed += 0.01f;
-            if (Input.GetKeyDown(KeyCode.Keypad2)&&Input.GetKey(KeyCode.LeftShift)) speed -= 0.01f;
+        private void EndAttacking()
+        {
+            if (AttackFinished())
+            {
+                _attacking = false;
+                debugZone.SetActive(false);
+            }
+        }
 
+        private void HandleKill()
+        {
+            if (_attacking)
+            {
+                GameObject other = _killzone.InKillzone;
+                if (other != null)
+                {
+                    ISKillable toKill = other.GetComponent<ISKillable>();
+                    if (toKill is Animal) AddStamina(((Animal) toKill).GetStamina());
+                    toKill.Kill();
+                }
+            }
+        }
 
-            if (Input.GetKeyDown(KeyCode.KeypadPlus)&&!Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec += 1;
-            if (Input.GetKeyDown(KeyCode.KeypadMinus)&&!Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec -= 1;
-            if (Input.GetKeyDown(KeyCode.KeypadPlus)&&Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec += 0.1f;
-            if (Input.GetKeyDown(KeyCode.KeypadMinus)&&Input.GetKey(KeyCode.LeftShift)) _npcSpawner.spawnCooldownSec -= 0.1f;
-            
-            if (Input.GetKeyDown(KeyCode.Keypad6)&&!Input.GetKey(KeyCode.LeftShift)) _scroller.speed += 10;
-            if (Input.GetKeyDown(KeyCode.Keypad4)&&!Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 10;
-            if (Input.GetKeyDown(KeyCode.Keypad6)&&Input.GetKey(KeyCode.LeftShift)) _scroller.speed += 1;
-            if (Input.GetKeyDown(KeyCode.Keypad4)&&Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 1;
+        private bool AttackFinished()
+        {
+            return startAttack + attackDuration <= Time.time;
+        }
 
-            speed = Mathf.Clamp(speed, 0, 1);
-            _npcSpawner.spawnCooldownSec = Mathf.Clamp(_npcSpawner.spawnCooldownSec, 0.1f, 15);
-            _scroller.speed = Mathf.Clamp(_scroller.speed, float.MinValue ,-10);
+        private void GetKeyInput()
+        {
+            if (!_snapToLane && !_attacking)
+            {
+                if (Input.GetAxis("Vertical") > 0 || _topZone) MoveUp();
+
+                if (Input.GetAxis("Vertical") < 0 || _botZone) MoveDown();
+            }
+
+            if (Input.GetAxis("Jump") > 0)
+            {
+                Attack();
+            }
         }
 
         private void ResetAttackCooldown()
