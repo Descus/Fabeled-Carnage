@@ -6,7 +6,7 @@ namespace Structs
     [Serializable]
     public struct BackgroundTile
     {
-        [SerializeField] private String Name;
+        [SerializeField] private string Name;
         public GameObject tile;
     }
 }

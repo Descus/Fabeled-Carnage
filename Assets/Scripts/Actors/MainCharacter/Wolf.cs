@@ -1,6 +1,8 @@
-﻿using Environment;
+﻿using System.Collections;
+using Environment;
 using Interfaces;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Utility;
 
@@ -10,18 +12,21 @@ namespace Actors.MainCharacter
     public class Wolf : MonoBehaviour, IsSlowable
     {
         private static readonly float maxStamina = 100f;
+        private readonly bool _snapToLane = false;
 #if UNITY_EDITOR
+        [FormerlySerializedAs("_attacking")]
         [ReadOnly]
 #endif
         [SerializeField]
-        private bool _attacking;
+        private bool attacking;
 
         private float _changedStaminaMult;
 #if UNITY_EDITOR
+        [FormerlySerializedAs("_hasAttacked")]
         [ReadOnly]
 #endif
         [SerializeField]
-        private bool _hasAttacked;
+        private bool hasAttacked;
 
         private Killzone _killzone;
         private NpcSpawner _npcSpawner;
@@ -29,7 +34,6 @@ namespace Actors.MainCharacter
         private Scroller _scroller;
         private Image _staminaBar;
         private bool _topZone, _botZone, _attackZone;
-        private readonly bool _snapToLane = false;
         public Animator animator;
 
 
@@ -47,6 +51,7 @@ namespace Actors.MainCharacter
         [SerializeField] public CustomButton pressHandler;
 
         [Header("Movement")] public float speed = .1f;
+        private float _vertSlow = 1;
 
 #if UNITY_EDITOR
         [ReadOnly]
@@ -65,14 +70,17 @@ namespace Actors.MainCharacter
 
         public void StartSlow(float amount)
         {
-            _scroller.slowAmount = amount / 100;
-            _changedStaminaMult *= 1 + amount / 100;
+            float percent = amount / 100;
+            _scroller.slowAmount = percent;
+            _changedStaminaMult = staminaMult + percent;
+            _vertSlow = 1 - percent;
         }
 
         public void EndSlow()
         {
             _scroller.slowAmount = 0.0f;
             _changedStaminaMult = staminaMult;
+            _vertSlow = 1;
         }
 
         private void Start()
@@ -131,7 +139,7 @@ namespace Actors.MainCharacter
         {
             speed = Mathf.Clamp(speed, 0, 1);
             _npcSpawner.spawnCooldownSec = Mathf.Clamp(_npcSpawner.spawnCooldownSec, 0.1f, 15);
-            _scroller.speed = Mathf.Clamp(_scroller.speed, float.MinValue, -10);
+            _scroller.speed = Mathf.Clamp(_scroller.speed, float.MinValue, 0);
         }
 
         private void HandleFixedLaning()
@@ -153,14 +161,14 @@ namespace Actors.MainCharacter
         {
             if (AttackFinished())
             {
-                _attacking = false;
+                attacking = false;
                 debugZone.SetActive(false);
             }
         }
 
         private void HandleKill()
         {
-            if (_attacking)
+            if (attacking)
             {
                 GameObject other = _killzone.InKillzone;
                 if (other != null)
@@ -179,7 +187,7 @@ namespace Actors.MainCharacter
 
         private void GetKeyInput()
         {
-            if (!_snapToLane && !_attacking)
+            if (!_snapToLane && !attacking)
             {
                 if (Input.GetAxis("Vertical") > 0 || _topZone) MoveUp();
 
@@ -191,7 +199,7 @@ namespace Actors.MainCharacter
 
         private void ResetAttackCooldown()
         {
-            if (Time.time >= startAttack + AttackCooldown) _hasAttacked = false;
+            if (Time.time >= startAttack + AttackCooldown) hasAttacked = false;
         }
 
         private void GetTouchInput()
@@ -226,7 +234,7 @@ namespace Actors.MainCharacter
 
         private void AdjustPos()
         {
-            var transform1 = transform;
+            Transform transform1 = transform;
             transform1.position = new Vector3(-NpcSpawner.RightSreenX + xDefault, transform1.position.y);
         }
 
@@ -234,25 +242,30 @@ namespace Actors.MainCharacter
         {
             Vector3 pos = transform.position;
             if (pos.y < LaneManager.MINLANEY + LaneManager.LANEHEIGHT * (LaneManager.LANECOUNT - 1))
-                transform.position = pos + speed * Vector3.up;
+                transform.position = pos + speed * _vertSlow * Vector3.up;
         }
 
         private void MoveDown()
         {
             Vector3 pos = transform.position;
-            if (pos.y > LaneManager.MINLANEY) transform.position = pos + speed * Vector3.down;
+            if (pos.y > LaneManager.MINLANEY) transform.position = pos + speed * _vertSlow * Vector3.down;
         }
 
         public void Attack()
         {
-            if (!_hasAttacked)
+            if (!hasAttacked)
             {
-                _hasAttacked = true;
+                hasAttacked = true;
                 startAttack = Time.time;
                 animator.SetTrigger("Attack");
-                _attacking = true;
+                attacking = true;
                 if (debug) debugZone.SetActive(true);
             }
+        }
+
+        public void Die()
+        {
+            
         }
     }
 }

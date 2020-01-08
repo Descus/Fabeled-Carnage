@@ -1,5 +1,4 @@
-﻿using System;
-using Environment;
+﻿using Environment;
 using Interfaces;
 using Structs;
 using UnityEngine;
@@ -17,7 +16,7 @@ namespace Actors
         {
             return effect;
         }
-        
+
         private void OnEnable()
         {
             SubscribeMoveEvent(Move);

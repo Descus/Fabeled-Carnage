@@ -14,6 +14,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,7 +45,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Killzone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/SpriteRandomizer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/BackgriundTile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/BackgroundTile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsSlowable.cs" />
@@ -53,16 +53,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle/Grass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ReadonlyAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
       </list>
     </option>
@@ -128,11 +129,8 @@
       <workItem from="1578309470243" duration="16848000" />
       <workItem from="1578327831491" duration="1046000" />
       <workItem from="1578395628735" duration="1855000" />
-<<<<<<< HEAD
       <workItem from="1578473527528" duration="2278000" />
-=======
       <workItem from="1578473527528" duration="1364000" />
->>>>>>> 0d3d36cd899e330507ebfa58f79e80fe68115f31
     </task>
     <servers />
   </component>

@@ -6,18 +6,19 @@ namespace Environment
     public class Scroller : MonoBehaviour
     {
         public delegate void MoveSubsriber(float speed);
-        
 
-        public float speed = -150f;
-        public float slowAmount = 0;
-
-#if UNITY_EDITOR 
-        [ReadOnly] 
-#endif 
+#if UNITY_EDITOR
+        [ReadOnly]
+#endif
         public float gameSpeed;
-        [Range(0, 300)]
-        public int speedIncreaseInterval;
-        
+
+        public float slowAmount;
+
+
+        public float speed = -1.5f;
+
+        [Range(0, 300)] public int speedIncreaseInterval;
+
         public static event MoveSubsriber OnActorMoveUpdate;
         public static event MoveSubsriber OnBackgroundMoveUpdate;
 
@@ -33,13 +34,15 @@ namespace Environment
                     Time.timeScale = 1f;
             }
 
-            if (OnActorMoveUpdate != null) OnActorMoveUpdate(speed / 100 * gameSpeed * (1 - slowAmount) * Time.deltaTime);
-            if (OnBackgroundMoveUpdate != null) OnBackgroundMoveUpdate(speed / 100 * (1 - slowAmount) * gameSpeed * Time.deltaTime);
+            if (OnActorMoveUpdate != null)
+                OnActorMoveUpdate(speed * gameSpeed * (1 - slowAmount) * Time.deltaTime);
+            if (OnBackgroundMoveUpdate != null)
+                OnBackgroundMoveUpdate(speed * (1 - slowAmount) * gameSpeed * Time.deltaTime);
         }
 
         private float GetGameSpeed()
         {
-            return  1 + (float)((int) Time.time / (speedIncreaseInterval/2)) / 2;
+            return 1 + (Mathf.Pow(1.01f, (int)Time.time) -1)* 0.2f;
         }
 
         public static void SubscribeActorMoveEvent(MoveSubsriber add)
@@ -51,7 +54,7 @@ namespace Environment
         {
             OnActorMoveUpdate -= sub;
         }
-        
+
         public static void SubscribeBackgroundMoveEvent(MoveSubsriber add)
         {
             OnBackgroundMoveUpdate += add;

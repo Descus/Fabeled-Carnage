@@ -1,5 +1,4 @@
-﻿using System;
-using Environment;
+﻿using Environment;
 using Interfaces;
 using UnityEngine;
 using Utility;
@@ -13,8 +12,8 @@ namespace Actors
         private bool _bLerp;
         private float _lerpfac;
         public bool leaping;
-        public float speedMult = 0.8f;
         public float slowAmount;
+        public float speedMult;
 
         [SerializeField] private int staminaAmount = 25;
 
@@ -24,13 +23,23 @@ namespace Actors
             NpcSpawner.RemoveEnemy();
         }
 
+        public void StartSlow(float amount)
+        {
+            slowAmount = amount / 100;
+        }
+
+        public void EndSlow()
+        {
+            slowAmount = 0;
+        }
+
         public override void Move(float speed)
         {
             if (!leaping)
             {
                 Transform transform1 = transform;
                 Vector3 pos = transform1.position;
-                float moveSpeed = speed * speedMult * (1 - slowAmount);
+                float moveSpeed = speed + speedMult * (1 - slowAmount) * Time.deltaTime;
                 transform1.position = new Vector3(pos.x + moveSpeed, pos.y, pos.z);
                 if (transform.position.x <= -LaneManager.Spawnx)
                 {
@@ -83,20 +92,6 @@ namespace Actors
         }
 
         protected abstract void PlayLeapAnim();
-#pragma warning disable 649
-        private Vector3 _target;
-        private Vector3 _start;
-#pragma warning restore 649
-        
-        public void StartSlow(float amount)
-        {
-            slowAmount = amount / 100;
-        }
-
-        public void EndSlow()
-        {
-            slowAmount = 0;
-        }
 
         protected override void SubscribeMoveEvent(Scroller.MoveSubsriber move)
         {
@@ -107,5 +102,9 @@ namespace Actors
         {
             Scroller.UnSubscribeActorMoveEvent(move);
         }
+#pragma warning disable 649
+        private Vector3 _target;
+        private Vector3 _start;
+#pragma warning restore 649
     }
 }

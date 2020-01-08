@@ -73,8 +73,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lane: 0
   leaping: 0
-  speedMult: 0.9
   slowAmount: 0
+  speedMult: 1.2
   staminaAmount: 10
 --- !u!95 &6159439885728728087
 Animator:

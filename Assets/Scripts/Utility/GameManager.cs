@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 namespace Utility
 {
     public class GameManager : MonoBehaviour
     {
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             /*
         if (Application.platform != RuntimePlatform.Android)
@@ -17,16 +18,15 @@ namespace Utility
         }
         */
         }
-    
-    
+
+
         public void OnCloseGame()
         {
 #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
+            EditorApplication.isPlaying = false;
 #else
         Application.Quit();
 #endif
         }
-
     }
 }
