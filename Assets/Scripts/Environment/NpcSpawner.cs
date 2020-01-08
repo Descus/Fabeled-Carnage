@@ -10,6 +10,7 @@ namespace Environment
         public static float RightSreenX;
         private Camera _cam;
         private float _nextSpawn = 3;
+        public float xPositioning;
 
         private float _timeStart;
         public ColorPrefab[] colorMappings;
@@ -76,7 +77,6 @@ namespace Environment
                 if (colorMapping.CompareColors(color))
                     if (y <= LaneManager.LANECOUNT && x <= LaneManager.SPAWNERCOUNT)
                     {
-                        //TODO Save Animal to array in order to move the whole lane at once on Touch
                         GameObject gObject = Instantiate(colorMapping.prefab, LaneManager.Spawns[y, x],
                             Quaternion.identity);
                         gObject.GetComponent<GameActor>().lane = y;

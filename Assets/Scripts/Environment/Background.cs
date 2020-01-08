@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Environment
 {
-    public class Background : MonoBehaviour, ISScrollable
+    public class Background : MonoBehaviour, IScrollable
     {
         public void Move(float speed)
         {
@@ -15,12 +15,12 @@ namespace Environment
 
         private void OnEnable()
         {
-            Scroller.SubscribeBackgroundMoveEvent(Move);
+            EventHandler.SubscribeBackgroundMoveEvent(Move);
         }
 
         private void OnDisable()
         {
-            Scroller.UnSubscribeBackgroundMoveEvent(Move);
+            EventHandler.UnSubscribeBackgroundMoveEvent(Move);
         }
     }
 }

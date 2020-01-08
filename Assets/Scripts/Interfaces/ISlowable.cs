@@ -1,6 +1,6 @@
 ﻿namespace Interfaces
 {
-    public interface IsSlowable
+    public interface ISlowable
     {
         void StartSlow(float amount);
         void EndSlow();

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Actors.Obstacles
 {
-    public class Grass : Obstacle, ISKillable
+    public class Grass : Obstacle, IKillable
     {
         public float slowAmount;
 
@@ -14,12 +14,12 @@ namespace Actors.Obstacles
 
         private void OnTriggerStay2D(Collider2D other)
         {
-            if (other.GetComponent<IsSlowable>() != null) other.GetComponent<IsSlowable>().StartSlow(slowAmount);
+            if (other.GetComponent<ISlowable>() != null) other.GetComponent<ISlowable>().StartSlow(slowAmount);
         }
 
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (other.GetComponent<IsSlowable>() != null) other.GetComponent<IsSlowable>().EndSlow();
+            if (other.GetComponent<ISlowable>() != null) other.GetComponent<ISlowable>().EndSlow();
         }
 
         private void Start()

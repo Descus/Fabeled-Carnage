@@ -13,14 +13,14 @@ namespace Actors
             if (transform.position.x <= -LaneManager.Spawnx) Destroy(gameObject);
         }
 
-        protected override void SubscribeMoveEvent(Scroller.MoveSubsriber move)
+        protected override void SubscribeMoveEvent(EventHandler.MoveSubsriber move)
         {
-            Scroller.SubscribeBackgroundMoveEvent(move);
+            EventHandler.SubscribeBackgroundMoveEvent(move);
         }
 
-        protected override void UnSubscribeMoveEvent(Scroller.MoveSubsriber move)
+        protected override void UnSubscribeMoveEvent(EventHandler.MoveSubsriber move)
         {
-            Scroller.UnSubscribeBackgroundMoveEvent(move);
+            EventHandler.UnSubscribeBackgroundMoveEvent(move);
         }
     }
 }

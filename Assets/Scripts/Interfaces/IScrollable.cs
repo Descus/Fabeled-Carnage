@@ -1,6 +1,6 @@
 ﻿namespace Interfaces
 {
-    public interface ISScrollable
+    public interface IScrollable
     {
         void Move(float speed);
     }

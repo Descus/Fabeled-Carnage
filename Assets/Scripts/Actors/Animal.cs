@@ -6,7 +6,7 @@ using Utility;
 namespace Actors
 {
     [RequireComponent(typeof(BoxCollider2D))]
-    public abstract class Animal : GameActor, ISKillable, IsSlowable
+    public abstract class Animal : GameActor, IKillable, ISlowable, IPushable
     {
         //Privates
         private bool _bLerp;
@@ -15,8 +15,15 @@ namespace Actors
         public float slowAmount;
         public float speedMult;
 
+        private NpcSpawner spawner;
+
         [SerializeField] private int staminaAmount = 25;
 
+        void Start()
+        {
+            spawner = GameObject.Find("Scroller").GetComponent<NpcSpawner>();
+        }
+        
         public void Kill()
         {
             Destroy(gameObject);
@@ -63,25 +70,18 @@ namespace Actors
                     leaping = false;
                 }
             }
+            if(transform.position.x <= spawner.xPositioning) EventHandler.UnSubscribePushEvent(Push);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.gameObject.CompareTag("Player") && !_bLerp) Leap();
-        }
-
-        private void Leap()
-        {
-            leaping = true;
             GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
             float rightSreenX = ScreenUtil.GetRightScreenBorderX(cam.GetComponent<Camera>());
-            Vector3 pos = transform.position;
-            _start = pos;
-            _target = new Vector3(rightSreenX - 0.5f, pos.y);
-            _bLerp = true;
-            PlayLeapAnim();
+            float distance = (rightSreenX - 0.5f) - transform.position.x;
+            if (other.gameObject.CompareTag("Player") && !_bLerp) EventHandler.OnPushEvent(lane, distance);
         }
 
+        
         public void Stun(float time)
         {
         }
@@ -93,18 +93,44 @@ namespace Actors
 
         protected abstract void PlayLeapAnim();
 
-        protected override void SubscribeMoveEvent(Scroller.MoveSubsriber move)
+        protected override void SubscribeMoveEvent(EventHandler.MoveSubsriber move)
         {
-            Scroller.SubscribeActorMoveEvent(move);
+            EventHandler.SubscribeActorMoveEvent(move);
         }
 
-        protected override void UnSubscribeMoveEvent(Scroller.MoveSubsriber move)
+        protected override void UnSubscribeMoveEvent(EventHandler.MoveSubsriber move)
         {
-            Scroller.UnSubscribeActorMoveEvent(move);
+            EventHandler.UnSubscribeActorMoveEvent(move);
         }
+
+        private new void OnEnable()
+        {
+            EventHandler.SubscribePushEvent(Push);
+            base.OnEnable();
+        }
+
+        private new void OnDisable()
+        {
+            EventHandler.UnSubscribePushEvent(Push);
+            base.OnDisable();
+        }
+
 #pragma warning disable 649
         private Vector3 _target;
         private Vector3 _start;
 #pragma warning restore 649
+        
+        public void Push(int lane, float distance)
+        {
+            if (lane == this.lane)
+            {
+                leaping = true;
+                Vector3 pos = transform.position;
+                _start = pos;
+                _target = new Vector3(pos.x + distance, pos.y);
+                _bLerp = true;
+                PlayLeapAnim();
+            }
+        }
     }
 }

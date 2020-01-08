@@ -643,11 +643,6 @@ PrefabInstance:
       propertyPath: pressHandler
       value: 
       objectReference: {fileID: 1948068037}
-    - target: {fileID: 6957184218333145272, guid: 91d48782a5b7353449cbc3e47f809fb0,
-        type: 3}
-      propertyPath: speed
-      value: 0.09
-      objectReference: {fileID: 0}
     - target: {fileID: 6957184218333145273, guid: 91d48782a5b7353449cbc3e47f809fb0,
         type: 3}
       propertyPath: m_Name

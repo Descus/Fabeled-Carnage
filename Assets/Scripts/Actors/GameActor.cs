@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Actors
 {
-    public abstract class GameActor : MonoBehaviour, ISScrollable
+    public abstract class GameActor : MonoBehaviour, IScrollable
     {
         public Effect effect;
         public int lane;
@@ -17,19 +17,19 @@ namespace Actors
             return effect;
         }
 
-        private void OnEnable()
+        protected void OnEnable()
         {
             SubscribeMoveEvent(Move);
         }
 
-        protected abstract void SubscribeMoveEvent(Scroller.MoveSubsriber move);
+        protected abstract void SubscribeMoveEvent(EventHandler.MoveSubsriber move);
 
 
-        private void OnDisable()
+        protected void OnDisable()
         {
             UnSubscribeMoveEvent(Move);
         }
 
-        protected abstract void UnSubscribeMoveEvent(Scroller.MoveSubsriber move);
+        protected abstract void UnSubscribeMoveEvent(EventHandler.MoveSubsriber move);
     }
 }

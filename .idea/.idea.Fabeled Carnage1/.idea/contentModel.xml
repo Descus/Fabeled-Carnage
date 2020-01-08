@@ -28,6 +28,7 @@
           <e p="Environment" t="Include">
             <e p="Background.cs" t="Include" />
             <e p="BackgroundSpawner.cs" t="Include" />
+            <e p="EventHandler.cs" t="Include" />
             <e p="LaneManager.cs" t="Include" />
             <e p="NpcSpawner.cs" t="Include" />
             <e p="ScoreManager.cs" t="Include" />
@@ -35,9 +36,10 @@
             <e p="SpriteRandomizer.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
-            <e p="IsKillable.cs" t="Include" />
-            <e p="ISScrollable.cs" t="Include" />
-            <e p="IsSlowable.cs" t="Include" />
+            <e p="IKillable.cs" t="Include" />
+            <e p="IPushable.cs" t="Include" />
+            <e p="IScrollable.cs" t="Include" />
+            <e p="ISlowable.cs" t="Include" />
           </e>
           <e p="Menus" t="Include">
             <e p="MainMenu.cs" t="Include" />

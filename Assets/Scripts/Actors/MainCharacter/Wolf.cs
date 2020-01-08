@@ -9,7 +9,7 @@ using Utility;
 namespace Actors.MainCharacter
 {
     [RequireComponent(typeof(BoxCollider2D))]
-    public class Wolf : MonoBehaviour, IsSlowable
+    public class Wolf : MonoBehaviour, ISlowable
     {
         private static readonly float maxStamina = 100f;
         private readonly bool _snapToLane = false;
@@ -37,7 +37,7 @@ namespace Actors.MainCharacter
         public Animator animator;
 
 
-        [Header("Attack")] public float AttackCooldown;
+        [Header("Attack")] public float attackCooldown;
 
         public float attackDuration;
         public int currentLane = 2;
@@ -65,33 +65,19 @@ namespace Actors.MainCharacter
 #endif
         [SerializeField]
         private float startAttack;
-
-        [Header("Positioning")] public int xDefault = 4;
-
-        public void StartSlow(float amount)
-        {
-            float percent = amount / 100;
-            _scroller.slowAmount = percent;
-            _changedStaminaMult = staminaMult + percent;
-            _vertSlow = 1 - percent;
-        }
-
-        public void EndSlow()
-        {
-            _scroller.slowAmount = 0.0f;
-            _changedStaminaMult = staminaMult;
-            _vertSlow = 1;
-        }
-
+        
         private void Start()
         {
             _changedStaminaMult = staminaMult;
-            _staminaBar = GameObject.Find("StaminaBar").GetComponent<Image>();
-            transform.position = new Vector3(xDefault, LaneManager.LANEHEIGHT * 2);
-            _killzone = killzoneCollider.GetComponent<Killzone>();
             GameObject spawner = GameObject.Find("Spawner");
             _scroller = spawner.GetComponent<Scroller>();
             _npcSpawner = spawner.GetComponent<NpcSpawner>();
+            _staminaBar = GameObject.Find("StaminaBar").GetComponent<Image>();
+            transform.position = new Vector3(_npcSpawner.xPositioning, LaneManager.LANEHEIGHT * 2);
+            _killzone = killzoneCollider.GetComponent<Killzone>();
+            
+            
+            
         }
 
         private void Update()
@@ -154,7 +140,7 @@ namespace Actors.MainCharacter
                 if (currentLane > 0)
                     currentLane--;
 
-            if (_snapToLane) transform.position = new Vector3(xDefault, LaneManager.Spawns[currentLane, 0].y, 0);
+            if (_snapToLane) transform.position = new Vector3(_npcSpawner.xPositioning, LaneManager.Spawns[currentLane, 0].y, 0);
         }
 
         private void EndAttacking()
@@ -173,7 +159,7 @@ namespace Actors.MainCharacter
                 GameObject other = _killzone.InKillzone;
                 if (other != null)
                 {
-                    ISKillable toKill = other.GetComponent<ISKillable>();
+                    IKillable toKill = other.GetComponent<IKillable>();
                     if (toKill is Animal) AddStamina(((Animal) toKill).GetStamina());
                     toKill.Kill();
                 }
@@ -199,7 +185,7 @@ namespace Actors.MainCharacter
 
         private void ResetAttackCooldown()
         {
-            if (Time.time >= startAttack + AttackCooldown) hasAttacked = false;
+            if (Time.time >= startAttack + attackCooldown) hasAttacked = false;
         }
 
         private void GetTouchInput()
@@ -224,7 +210,7 @@ namespace Actors.MainCharacter
             stamina -= _changedStaminaMult * _scroller.gameSpeed * Time.deltaTime;
             _staminaBar.fillAmount = stamina / maxStamina;
 
-            if (stamina <= 0) Time.timeScale = 0;
+            if (stamina <= 0) Die();
         }
 
         private void AddStamina(float amount)
@@ -235,7 +221,7 @@ namespace Actors.MainCharacter
         private void AdjustPos()
         {
             Transform transform1 = transform;
-            transform1.position = new Vector3(-NpcSpawner.RightSreenX + xDefault, transform1.position.y);
+            transform1.position = new Vector3(-NpcSpawner.RightSreenX + _npcSpawner.xPositioning, transform1.position.y);
         }
 
         private void MoveUp()
@@ -266,6 +252,20 @@ namespace Actors.MainCharacter
         public void Die()
         {
             
+        }
+        public void StartSlow(float amount)
+        {
+            float percent = amount / 100;
+            _scroller.slowAmount = percent;
+            _changedStaminaMult = staminaMult + percent;
+            _vertSlow = 1 - percent;
+        }
+
+        public void EndSlow()
+        {
+            _scroller.slowAmount = 0.0f;
+            _changedStaminaMult = staminaMult;
+            _vertSlow = 1;
         }
     }
 }

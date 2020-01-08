@@ -1,6 +1,6 @@
 ﻿namespace Interfaces
 {
-    public interface ISKillable
+    public interface IKillable
     {
         void Kill();
     }
