@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8474848911160532876}
   - component: {fileID: 8474848911160532883}
   - component: {fileID: 8474848911160532882}
+  - component: {fileID: 8474848910779626181}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Manager
@@ -66,7 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameSpeed: 0
   slowAmount: 0
-  speed: -1.5
+  speed: -3.5
   speedIncreaseInterval: 60
 --- !u!114 &8474848911160532872
 MonoBehaviour:
@@ -80,6 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 335bd5f8bfa8e2e4f859fa6c04d3a4bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  xPositioning: 4
   colorMappings:
   - color: {r: 0.012, g: 0.663, b: 0.957, a: 1}
     prefab: {fileID: 2321435109530826161, guid: 82e527bfa85d00549b3841a519fb902e,
@@ -162,3 +164,15 @@ MonoBehaviour:
   scoreMult: 1
   scorePerDistance: 1
   textField: {fileID: 0}
+--- !u!114 &8474848910779626181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8474848911160532873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcaeed699176416db84dd7cc22c2273e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

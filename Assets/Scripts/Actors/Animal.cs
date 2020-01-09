@@ -21,7 +21,7 @@ namespace Actors
 
         void Start()
         {
-            spawner = GameObject.Find("Scroller").GetComponent<NpcSpawner>();
+            spawner = GameObject.Find("Spawner").GetComponent<NpcSpawner>();
         }
         
         public void Kill()
@@ -70,7 +70,7 @@ namespace Actors
                     leaping = false;
                 }
             }
-            if(transform.position.x <= spawner.xPositioning) EventHandler.UnSubscribePushEvent(Push);
+            if(transform.position.x <= -NpcSpawner.RightSreenX + spawner.xPositioning) EventHandler.UnSubscribePushEvent(Push);
         }
 
         private void OnTriggerEnter2D(Collider2D other)

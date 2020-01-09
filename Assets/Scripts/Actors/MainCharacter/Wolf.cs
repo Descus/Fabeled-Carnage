@@ -73,11 +73,9 @@ namespace Actors.MainCharacter
             _scroller = spawner.GetComponent<Scroller>();
             _npcSpawner = spawner.GetComponent<NpcSpawner>();
             _staminaBar = GameObject.Find("StaminaBar").GetComponent<Image>();
-            transform.position = new Vector3(_npcSpawner.xPositioning, LaneManager.LANEHEIGHT * 2);
+            transform.position = 
+                new Vector3(-NpcSpawner.RightSreenX + _npcSpawner.xPositioning, LaneManager.LANEHEIGHT * 2);
             _killzone = killzoneCollider.GetComponent<Killzone>();
-            
-            
-            
         }
 
         private void Update()
@@ -220,7 +218,7 @@ namespace Actors.MainCharacter
 
         private void AdjustPos()
         {
-            Transform transform1 = transform;
+            var transform1 = transform;
             transform1.position = new Vector3(-NpcSpawner.RightSreenX + _npcSpawner.xPositioning, transform1.position.y);
         }
 

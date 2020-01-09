@@ -2,7 +2,6 @@
 {
     public enum EffectTypes
     {
-        None,
         Speedup,
         Slow,
         Shield,
