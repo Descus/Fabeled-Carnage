@@ -923,6 +923,11 @@ PrefabInstance:
       propertyPath: pressHandler
       value: 
       objectReference: {fileID: 1948068037}
+    - target: {fileID: 6957184218333145272, guid: 91d48782a5b7353449cbc3e47f809fb0,
+        type: 3}
+      propertyPath: attackDuration
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 6957184218333145273, guid: 91d48782a5b7353449cbc3e47f809fb0,
         type: 3}
       propertyPath: m_Name
@@ -1022,6 +1027,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8474848911160532872, guid: c15b244b8244ac241bcf961c5f155da3,
+        type: 3}
+      propertyPath: colorMappings.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 4904728810443886141, guid: 56ab0d1989727974f8f090878bc3dac3,
+        type: 3}
+    - target: {fileID: 8474848911160532872, guid: c15b244b8244ac241bcf961c5f155da3,
+        type: 3}
+      propertyPath: xPositioning
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8474848911160532873, guid: c15b244b8244ac241bcf961c5f155da3,
         type: 3}
       propertyPath: m_Name

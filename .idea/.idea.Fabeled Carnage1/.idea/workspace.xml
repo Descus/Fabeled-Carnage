@@ -14,13 +14,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UsefulScripts/Utility/ButtonPressed.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structs/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structs/ScoreObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -34,6 +31,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,7 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Stone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/SpriteRandomizer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -71,9 +69,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsPushable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IKillable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISScrollable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IScrollable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISlowable.cs" />
@@ -90,9 +86,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Score Saver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/ScoreObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Utilities.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreSaver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Stone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IKillable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
       </list>
     </option>
   </component>
@@ -124,10 +125,10 @@
     </option>
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="16588">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="2024">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="16588" />
+      <option name="pid" value="2024" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -160,6 +161,7 @@
       <workItem from="1578473527528" duration="2278000" />
       <workItem from="1578473527528" duration="1364000" />
       <workItem from="1578563744764" duration="11986000" />
+      <workItem from="1578647558782" duration="11495000" />
     </task>
     <servers />
   </component>

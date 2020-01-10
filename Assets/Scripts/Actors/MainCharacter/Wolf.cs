@@ -154,12 +154,14 @@ namespace Actors.MainCharacter
         {
             if (attacking)
             {
+                Debug.Log("Attacking");
                 GameObject other = _killzone.InKillzone;
                 if (other != null)
                 {
                     IKillable toKill = other.GetComponent<IKillable>();
-                    if (toKill is Animal) AddStamina(((Animal) toKill).GetStamina());
-                    toKill.Kill();
+                    bool killed = toKill.Kill(gameObject);
+                    if (killed && toKill is Animal) AddStamina(((Animal) toKill).GetStamina());
+                    attacking = false;
                 }
             }
         }
@@ -184,6 +186,11 @@ namespace Actors.MainCharacter
         private void ResetAttackCooldown()
         {
             if (Time.time >= startAttack + attackCooldown) hasAttacked = false;
+        }
+
+        public void ReduceStamina(float amount)
+        {
+            stamina -= amount;
         }
 
         private void GetTouchInput()

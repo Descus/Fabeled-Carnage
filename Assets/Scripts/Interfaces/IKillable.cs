@@ -1,7 +1,9 @@
-﻿namespace Interfaces
+﻿using UnityEngine;
+
+namespace Interfaces
 {
     public interface IKillable
     {
-        void Kill();
+        bool Kill(GameObject killer);
     }
 }

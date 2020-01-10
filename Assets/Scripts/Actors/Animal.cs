@@ -13,21 +13,24 @@ namespace Actors
         private float _lerpfac;
         public bool leaping;
         public float slowAmount;
-        public float speedMult;
+        public float speedMult = 1.1f;
+        protected float TimeCreation;
 
         private NpcSpawner spawner;
 
         [SerializeField] private int staminaAmount = 25;
 
-        void Start()
+        protected void Start()
         {
             spawner = GameObject.Find("Spawner").GetComponent<NpcSpawner>();
+            TimeCreation = Time.time;
         }
         
-        public void Kill()
+        public virtual bool Kill(GameObject killer)
         {
             Destroy(gameObject);
             NpcSpawner.RemoveEnemy();
+            return true;
         }
 
         public void StartSlow(float amount)
@@ -56,7 +59,7 @@ namespace Actors
             }
         }
 
-        private void Update()
+        protected void Update()
         {
             if (_bLerp)
             {
@@ -70,7 +73,7 @@ namespace Actors
                     leaping = false;
                 }
             }
-            if(transform.position.x <= -NpcSpawner.RightSreenX + spawner.xPositioning) EventHandler.UnSubscribePushEvent(Push);
+            if(transform.position.x <= -NpcSpawner.RightSreenX + spawner.xPositioning - 1) EventHandler.UnSubscribePushEvent(Push);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -79,11 +82,6 @@ namespace Actors
             float rightSreenX = ScreenUtil.GetRightScreenBorderX(cam.GetComponent<Camera>());
             float distance = (rightSreenX - 0.5f) - transform.position.x;
             if (other.gameObject.CompareTag("Player") && !_bLerp) EventHandler.OnPushEvent(lane, distance);
-        }
-
-        
-        public void Stun(float time)
-        {
         }
 
         public int GetStamina()
@@ -120,7 +118,7 @@ namespace Actors
         private Vector3 _start;
 #pragma warning restore 649
         
-        public void Push(int lane, float distance)
+        public virtual void Push(int lane, float distance)
         {
             if (lane == this.lane)
             {
