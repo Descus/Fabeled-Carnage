@@ -7,8 +7,15 @@ namespace Environment
     public class BackgroundSpawner : MonoBehaviour
     {
         public static float SpawnX;
-        public BackgroundTile[] backgroundTiles;
+        [SerializeField]
+        private BackgroundTile[] backgroundTilesCity;
+        [SerializeField]
+        private BackgroundTile[] backgroundTransitionCityForest;
+        [SerializeField] 
+        private BackgroundTile[] backgroundTilesForest;
 
+        private int _backgroundsSpawned;
+        
         private Camera _cam;
         private GameObject _latest;
 
@@ -32,12 +39,25 @@ namespace Environment
 
         private void SpawnBackground(float x)
         {
-            _latest = Instantiate(backgroundTiles[0].tile, new Vector3(x, 5), Quaternion.identity);
+            _latest = Instantiate(GetAppendTile(), new Vector3(x, 5), Quaternion.identity);
         }
 
 
-        private void AppendTile()
+        private GameObject GetAppendTile()
         {
+            int CityTilesLength = backgroundTilesCity.Length - 1;
+            if (_backgroundsSpawned < backgroundTilesCity.Length)
+            {
+                return backgroundTilesCity[_backgroundsSpawned++].tile;
+            }
+            else if (_backgroundsSpawned - CityTilesLength < backgroundTransitionCityForest.Length)
+            {
+                return backgroundTransitionCityForest[_backgroundsSpawned++].tile;
+            }
+            else
+            {
+                return backgroundTilesForest[_backgroundsSpawned++].tile;
+            }
         }
     }
 }
