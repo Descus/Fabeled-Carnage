@@ -66,7 +66,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ReadonlyAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsPushable.cs" />
@@ -94,6 +93,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
       </list>
     </option>
   </component>
@@ -162,6 +162,7 @@
       <workItem from="1578473527528" duration="1364000" />
       <workItem from="1578563744764" duration="11986000" />
       <workItem from="1578647558782" duration="11495000" />
+      <workItem from="1579076034224" duration="2570000" />
     </task>
     <servers />
   </component>

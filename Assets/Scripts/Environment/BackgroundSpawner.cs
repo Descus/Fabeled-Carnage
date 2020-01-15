@@ -45,12 +45,12 @@ namespace Environment
 
         private GameObject GetAppendTile()
         {
-            int CityTilesLength = backgroundTilesCity.Length - 1;
+            int cityTilesLength = backgroundTilesCity.Length - 1;
             if (_backgroundsSpawned < backgroundTilesCity.Length)
             {
                 return backgroundTilesCity[_backgroundsSpawned++].tile;
             }
-            else if (_backgroundsSpawned - CityTilesLength < backgroundTransitionCityForest.Length)
+            else if (_backgroundsSpawned - cityTilesLength < backgroundTransitionCityForest.Length)
             {
                 return backgroundTransitionCityForest[_backgroundsSpawned++].tile;
             }
