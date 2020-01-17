@@ -27,10 +27,10 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 1
+    value: 0.435
   smoothness:
-    overrideState: 0
-    value: 0.2
+    overrideState: 1
+    value: 0.221
   roundness:
     overrideState: 0
     value: 1
@@ -44,34 +44,6 @@ MonoBehaviour:
   opacity:
     overrideState: 0
     value: 1
---- !u!114 &-563048456058707472
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
-  m_Name: Grain
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  colored:
-    overrideState: 1
-    value: 1
-  intensity:
-    overrideState: 1
-    value: 0
-  size:
-    overrideState: 1
-    value: 1
-  lumContrib:
-    overrideState: 1
-    value: 0.8
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,5 +57,4 @@ MonoBehaviour:
   m_Name: PPMainMenu
   m_EditorClassIdentifier: 
   settings:
-  - {fileID: -563048456058707472}
   - {fileID: -1716173380613742605}
