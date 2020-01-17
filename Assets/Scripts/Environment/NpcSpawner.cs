@@ -1,6 +1,8 @@
-﻿using Actors;
+﻿using System;
+using Actors;
 using UnityEngine;
 using Utility;
+using Random = UnityEngine.Random;
 
 namespace Environment
 {
@@ -45,6 +47,8 @@ namespace Environment
             _nextSpawn = Time.time + spawnCooldownSec;
             LaneManager.GenerateSpawns();
             GeneratePattern(GetNewMap());
+            
+            
         }
 
         private Texture2D GetNewMap()
@@ -54,11 +58,17 @@ namespace Environment
 
         private void GeneratePattern(Texture2D map)
         {
-            for (int x = 0; x < map.width; x++)
+
             for (int y = 0; y < map.height; y++)
             {
-                if (y > 5) break;
-                GenerateTile(x, y, map);
+                for (int x = 0; x < map.width; x++)
+                {
+                    if (y > LaneManager.LANECOUNT) break;
+                    GenerateTile(x, y, map);
+                }
+
+                float deviancy = GenerateDeviancy();
+                EventHandler.OnDeviacySetEvent(deviancy,y);
             }
         }
 
@@ -94,6 +104,11 @@ namespace Environment
         {
             RightSreenX = ScreenUtil.GetRightScreenBorderX(_cam);
             LaneManager.Spawnx = RightSreenX + 2;
+        }
+
+        private float GenerateDeviancy()
+        {
+            return (float) (.4f * Math.Tanh(Random.Range(-1.6f, 1.6f)));
         }
     }
 }

@@ -13,6 +13,10 @@ namespace Actors
             if (transform.position.x <= -LaneManager.Spawnx) Destroy(gameObject);
         }
 
+        public override void SetSpeedDeviancyforLane(float deviancy, int lane)
+        {
+        }
+
         protected override void SubscribeMoveEvent(EventHandler.MoveSubsriber move)
         {
             EventHandler.SubscribeBackgroundMoveEvent(move);

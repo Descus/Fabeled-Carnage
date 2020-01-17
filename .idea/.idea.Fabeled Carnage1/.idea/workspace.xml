@@ -70,16 +70,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsPushable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISScrollable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IScrollable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISlowable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/SpriteRandomizer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/Score Object.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Score Saver.cs" />
@@ -89,10 +83,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Stone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IKillable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IScrollable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
       </list>
     </option>
@@ -163,6 +163,7 @@
       <workItem from="1578563744764" duration="11986000" />
       <workItem from="1578647558782" duration="11495000" />
       <workItem from="1579076034224" duration="2570000" />
+      <workItem from="1579253562342" duration="8171000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,9 @@
-﻿using Environment;
+﻿using System;
+using Environment;
 using Interfaces;
 using UnityEngine;
 using Utility;
+using EventHandler = Environment.EventHandler;
 
 namespace Actors
 {
@@ -13,17 +15,20 @@ namespace Actors
         private float _lerpfac;
         public bool leaping;
         public float slowAmount;
-        public float speedMult = 1.1f;
+        public float speed = 1.1f;
         protected float TimeCreation;
 
-        private NpcSpawner spawner;
+        protected float SpeedDeviancy = 0;
+
+        private NpcSpawner _spawner;
 
         [SerializeField] private int staminaAmount = 25;
 
         protected void Start()
         {
-            spawner = GameObject.Find("Spawner").GetComponent<NpcSpawner>();
+            _spawner = GameObject.Find("Spawner").GetComponent<NpcSpawner>();
             TimeCreation = Time.time;
+            speed = Mathf.Abs(speed);
         }
         
         public virtual bool Kill(GameObject killer)
@@ -43,13 +48,21 @@ namespace Actors
             slowAmount = 0;
         }
 
+        public override void SetSpeedDeviancyforLane(float deviancy, int lane)
+        {
+            if (lane == this.lane)
+            {
+                SpeedDeviancy = deviancy;
+            }
+        }
+
         public override void Move(float speed)
         {
             if (!leaping)
             {
                 Transform transform1 = transform;
                 Vector3 pos = transform1.position;
-                float moveSpeed = speed + speedMult * (1 - slowAmount) * Time.deltaTime;
+                float moveSpeed = (speed - (this.speed + SpeedDeviancy) * (1 - slowAmount) ) * Time.deltaTime;
                 transform1.position = new Vector3(pos.x + moveSpeed, pos.y, pos.z);
                 if (transform.position.x <= -LaneManager.Spawnx)
                 {
@@ -73,7 +86,7 @@ namespace Actors
                     leaping = false;
                 }
             }
-            if(transform.position.x <= -NpcSpawner.RightSreenX + spawner.xPositioning - 1) EventHandler.UnSubscribePushEvent(Push);
+            if(transform.position.x <= -NpcSpawner.RightSreenX + _spawner.xPositioning - 1) EventHandler.UnSubscribePushEvent(Push);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -104,12 +117,14 @@ namespace Actors
         private new void OnEnable()
         {
             EventHandler.SubscribePushEvent(Push);
+            EventHandler.SubscribeSpeedDeviancyEvent(SetSpeedDeviancyforLane);
             base.OnEnable();
         }
 
         private new void OnDisable()
         {
             EventHandler.UnSubscribePushEvent(Push);
+            EventHandler.UnSubscribeSpeedDeviancyEvent(SetSpeedDeviancyforLane);
             base.OnDisable();
         }
 

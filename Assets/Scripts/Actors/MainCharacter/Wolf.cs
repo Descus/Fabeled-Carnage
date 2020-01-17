@@ -154,7 +154,6 @@ namespace Actors.MainCharacter
         {
             if (attacking)
             {
-                Debug.Log("Attacking");
                 GameObject other = _killzone.InKillzone;
                 if (other != null)
                 {

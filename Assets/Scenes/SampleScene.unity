@@ -1038,6 +1038,12 @@ PrefabInstance:
       propertyPath: xPositioning
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8474848911160532872, guid: c15b244b8244ac241bcf961c5f155da3,
+        type: 3}
+      propertyPath: colorMappings.Array.data[1].prefab
+      value: 
+      objectReference: {fileID: 2321435109530826161, guid: 82e527bfa85d00549b3841a519fb902e,
+        type: 3}
     - target: {fileID: 8474848911160532873, guid: c15b244b8244ac241bcf961c5f155da3,
         type: 3}
       propertyPath: m_Name
@@ -1048,6 +1054,39 @@ PrefabInstance:
       propertyPath: backgroundTiles.Array.size
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8474848911160532878, guid: c15b244b8244ac241bcf961c5f155da3,
+        type: 3}
+      propertyPath: backgroundTilesCity.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8474848911160532878, guid: c15b244b8244ac241bcf961c5f155da3,
+        type: 3}
+      propertyPath: backgroundTransitionCityForest.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8474848911160532878, guid: c15b244b8244ac241bcf961c5f155da3,
+        type: 3}
+      propertyPath: backgroundTilesForest.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8474848911160532878, guid: c15b244b8244ac241bcf961c5f155da3,
+        type: 3}
+      propertyPath: backgroundTilesCity.Array.data[0].tile
+      value: 
+      objectReference: {fileID: 5411972486587539328, guid: 3fe74ca2413010444a09395643d610fe,
+        type: 3}
+    - target: {fileID: 8474848911160532878, guid: c15b244b8244ac241bcf961c5f155da3,
+        type: 3}
+      propertyPath: backgroundTransitionCityForest.Array.data[0].tile
+      value: 
+      objectReference: {fileID: 5411972486587539328, guid: 3fe74ca2413010444a09395643d610fe,
+        type: 3}
+    - target: {fileID: 8474848911160532878, guid: c15b244b8244ac241bcf961c5f155da3,
+        type: 3}
+      propertyPath: backgroundTilesForest.Array.data[0].tile
+      value: 
+      objectReference: {fileID: 5411972486587539328, guid: 3fe74ca2413010444a09395643d610fe,
+        type: 3}
     - target: {fileID: 8474848911160532879, guid: c15b244b8244ac241bcf961c5f155da3,
         type: 3}
       propertyPath: m_LocalPosition.x

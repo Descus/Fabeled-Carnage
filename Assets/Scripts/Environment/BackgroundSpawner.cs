@@ -14,7 +14,7 @@ namespace Environment
         [SerializeField] 
         private BackgroundTile[] backgroundTilesForest;
 
-        private int _backgroundsSpawned;
+        private int _backgroundsSpawned = 0;
         
         private Camera _cam;
         private GameObject _latest;
@@ -50,14 +50,12 @@ namespace Environment
             {
                 return backgroundTilesCity[_backgroundsSpawned++].tile;
             }
-            else if (_backgroundsSpawned - cityTilesLength < backgroundTransitionCityForest.Length)
+            if (_backgroundsSpawned - cityTilesLength < backgroundTransitionCityForest.Length)
             {
-                return backgroundTransitionCityForest[_backgroundsSpawned++].tile;
+                return backgroundTransitionCityForest[_backgroundsSpawned++-cityTilesLength].tile;
             }
-            else
-            {
-                return backgroundTilesForest[_backgroundsSpawned++].tile;
-            }
+            return backgroundTilesForest[0].tile;
+            
         }
     }
 }

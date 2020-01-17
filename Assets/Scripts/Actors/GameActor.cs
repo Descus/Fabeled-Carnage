@@ -11,6 +11,7 @@ namespace Actors
         public int lane;
 
         public abstract void Move(float speed);
+        public abstract void SetSpeedDeviancyforLane(float deviancy, int lane);
 
         public Effect GetEffect()
         {

@@ -4,12 +4,16 @@
     {
         public delegate void MoveSubsriber(float speed);
 
+        public delegate void SpeedDeviancySubcriber(float deviancy, int lane);
+
         public delegate void PushSubscriber(int lane, float distance);
         
-        public static event MoveSubsriber OnActorMoveUpdate;
-        public static event MoveSubsriber OnBackgroundMoveUpdate;
-
-        public static event PushSubscriber PushEvent;
+        private static event MoveSubsriber OnActorMoveUpdate;
+        private static event MoveSubsriber OnBackgroundMoveUpdate;
+        
+        private static event PushSubscriber PushEvent;
+        
+        private static event SpeedDeviancySubcriber DeviancySetEvent;
 
         public static void BroadcastActorMove(float speed)
         {
@@ -27,6 +31,22 @@
         {
             if (PushEvent != null)
                 PushEvent(lane, distance);
+        }
+        
+        public static void OnDeviacySetEvent(float deviancy, int lane)
+        {
+            if (DeviancySetEvent != null)
+                DeviancySetEvent(deviancy, lane);
+        }
+
+        public static void SubscribeSpeedDeviancyEvent(SpeedDeviancySubcriber add)
+        {
+            DeviancySetEvent += add;
+        }
+        
+        public static void UnSubscribeSpeedDeviancyEvent(SpeedDeviancySubcriber sub)
+        {
+            DeviancySetEvent -= sub;
         }
 
         public static void SubscribeActorMoveEvent(MoveSubsriber add)

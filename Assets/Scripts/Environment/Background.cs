@@ -13,6 +13,10 @@ namespace Environment
             if (transform.position.x <= -BackgroundSpawner.SpawnX) Destroy(gameObject);
         }
 
+        public void SetSpeedDeviancyforLane(float deviancy, int lane)
+        {
+        }
+
         private void OnEnable()
         {
             EventHandler.SubscribeBackgroundMoveEvent(Move);
