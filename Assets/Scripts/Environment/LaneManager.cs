@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Environment
 {
@@ -36,6 +37,11 @@ namespace Environment
                     Gizmos.color = Color.green;
                     Gizmos.DrawSphere(Spawns[i, j], 0.2f);
                 }
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Debug.Log(Spawnx);
         }
     }
 }

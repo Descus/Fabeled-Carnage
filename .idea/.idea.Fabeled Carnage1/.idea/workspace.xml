@@ -66,7 +66,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ReadonlyAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsPushable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISScrollable.cs" />
@@ -94,6 +93,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
       </list>
     </option>
@@ -167,7 +167,7 @@
       <workItem from="1579253562342" duration="8171000" />
       <workItem from="1579345937565" duration="235000" />
       <workItem from="1579516606882" duration="1454000" />
-      <workItem from="1579521222239" duration="3468000" />
+      <workItem from="1579521222239" duration="4818000" />
     </task>
     <servers />
   </component>
