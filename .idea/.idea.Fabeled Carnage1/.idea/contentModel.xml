@@ -35,7 +35,7 @@
             <e p="EventHandler.cs" t="Include" />
             <e p="LaneManager.cs" t="Include" />
             <e p="NpcSpawner.cs" t="Include" />
-            <e p="ScoreManager.cs" t="Include" />
+            <e p="ScoreHandler.cs" t="Include" />
             <e p="ScoreSaver.cs" t="Include" />
             <e p="Scroller.cs" t="Include" />
             <e p="SpriteRandomizer.cs" t="Include" />

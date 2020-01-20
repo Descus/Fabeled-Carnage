@@ -1,4 +1,5 @@
 ﻿using Actors.MainCharacter;
+using Environment;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,6 +13,7 @@ namespace Actors.Enemy
         public float rollingTime;
         public float walkingtime;
         private float _lastStateChange;
+        [SerializeField] private float walkingspeed;
         protected override void PlayLeapAnim()
         {
             
@@ -26,12 +28,28 @@ namespace Actors.Enemy
         
         new void Update()
         {
-            if (_lastStateChange <= Time.time + (_isRolling ? rollingTime : walkingtime))
+            if (CanChangeState())
             {
                 _lastStateChange = Time.time - 2;
                 _isRolling ^= true;
+                Speed = GetSpeedForState();
             }
             base.Update();
+        }
+
+        private float GetSpeedForState()
+        {
+            return _isRolling ? baseSpeed : walkingspeed;
+        }
+
+        private bool CanChangeState()
+        {
+            return _lastStateChange <= Time.time + GetTimeInState();
+        }
+
+        private float GetTimeInState()
+        {
+            return _isRolling ? rollingTime : walkingtime;
         }
 
         public override void Push(int lane, float distance)
@@ -45,6 +63,7 @@ namespace Actors.Enemy
         {
             if (!_isRolling) return base.Kill(killer);
             killer.GetComponent<Wolf>().ReduceStamina(staminaLoss);
+            ScoreHandler.Handler.ResetCombo();
             return false;
         }
     }

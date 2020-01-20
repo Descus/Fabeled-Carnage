@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 using Utility;
 
@@ -30,6 +31,7 @@ namespace Environment
         void Start()
         {
             Handler = this;
+            _combo = combos[0];
         }
         // Update is called once per frame
         private void FixedUpdate()
@@ -37,7 +39,7 @@ namespace Environment
             _update += Time.deltaTime;
             if (_update >= scoreFrequency)
             {
-                AddScore(scorePerDistance * scoreMult * _combo);
+                AddScore(scorePerDistance * scoreMult);
                 textField.text = ConvertToScoreFormat(score);
                 _update = 0;
             }
@@ -45,20 +47,22 @@ namespace Environment
 
         public void AddScore(int score)
         {
-            this.score += score;
+            this.score += score * _combo;
         }
 
-        private void IncreaseCombo()
+        public void IncreaseCombo()
         {
             _combo = combos[++_comboState];
+            _comboState = Mathf.Clamp(_comboState, 0, combos.Length - 1);
         }
         
-        private void DecreaseCombo()
+        public void DecreaseCombo()
         {
             _combo = combos[--_comboState];
+            _comboState = Mathf.Clamp(_comboState, 0, combos.Length - 1);
         }
 
-        private void ResetCombo()
+        public void ResetCombo()
         {
             _comboState = 0;
             _combo = combos[_comboState];

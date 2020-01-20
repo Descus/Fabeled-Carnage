@@ -159,7 +159,11 @@ namespace Actors.MainCharacter
                 {
                     IKillable toKill = other.GetComponent<IKillable>();
                     bool killed = toKill.Kill(gameObject);
-                    if (killed && toKill is Animal) AddStamina(((Animal) toKill).GetStamina());
+                    if (killed && toKill is Animal)
+                    {
+                        AddStamina(((Animal) toKill).GetStamina());
+                        ScoreHandler.Handler.AddScore(((Animal) toKill).GetScore());
+                    }
                     attacking = false;
                 }
             }

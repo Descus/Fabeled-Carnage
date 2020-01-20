@@ -41,7 +41,7 @@ namespace Environment
 
         private void OnDrawGizmosSelected()
         {
-            Debug.Log(Spawnx);
+            //Debug.Log(Spawnx);
         }
     }
 }

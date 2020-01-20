@@ -30,7 +30,7 @@ namespace Environment
                     Time.timeScale = 1f;
             }
 
-            EventHandler.BroadcastActorMove(speed * gameSpeed * (1 - slowAmount) * Time.deltaTime);
+            EventHandler.BroadcastActorMove(speed * gameSpeed * Time.deltaTime);
             EventHandler.BroadcastBackgroundMove(speed * (1 - slowAmount) * gameSpeed * Time.deltaTime);
         }
 

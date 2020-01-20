@@ -2,6 +2,7 @@
 using Environment;
 using Interfaces;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using Utility;
 using EventHandler = Environment.EventHandler;
 
@@ -15,8 +16,13 @@ namespace Actors
         private float _lerpfac;
         public bool leaping;
         public float slowAmount;
-        public float speed = 1.1f;
+        public float baseSpeed = 1.1f;
+        protected float Speed;
         protected float TimeCreation;
+        public int score;
+        private int _pushcount;
+        public int maxPusches = 1;
+        public int staminaScalePerPush;
 
         protected float SpeedDeviancy = 0;
 
@@ -28,7 +34,7 @@ namespace Actors
         {
             _spawner = GameObject.Find("Spawner").GetComponent<NpcSpawner>();
             TimeCreation = Time.time;
-            speed = Mathf.Abs(speed);
+            Speed = Mathf.Abs(baseSpeed);
         }
         
         public virtual bool Kill(GameObject killer)
@@ -62,7 +68,7 @@ namespace Actors
             {
                 Transform transform1 = transform;
                 Vector3 pos = transform1.position;
-                float moveSpeed = (speed - (this.speed + SpeedDeviancy) * (1 - slowAmount) ) * Time.deltaTime;
+                float moveSpeed = (speed - (Speed + SpeedDeviancy) * (1 - slowAmount) ) * Time.deltaTime;
                 transform1.position = new Vector3(pos.x + moveSpeed, pos.y, pos.z);
                 if (transform.position.x <= -LaneManager.Spawnx)
                 {
@@ -99,7 +105,7 @@ namespace Actors
 
         public int GetStamina()
         {
-            return staminaAmount;
+            return staminaAmount + _pushcount * staminaScalePerPush;
         }
 
         protected abstract void PlayLeapAnim();
@@ -131,11 +137,12 @@ namespace Actors
 #pragma warning disable 649
         private Vector3 _target;
         private Vector3 _start;
+        
 #pragma warning restore 649
         
         public virtual void Push(int lane, float distance)
         {
-            if (lane == this.lane)
+            if (lane == this.lane && _pushcount < maxPusches)
             {
                 leaping = true;
                 Vector3 pos = transform.position;
@@ -143,7 +150,13 @@ namespace Actors
                 _target = new Vector3(pos.x + distance, pos.y);
                 _bLerp = true;
                 PlayLeapAnim();
+                _pushcount++;
             }
+        }
+
+        public int GetScore()
+        {
+            return score;
         }
     }
 }
