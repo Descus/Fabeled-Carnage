@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1042,7 +1042,7 @@ PrefabInstance:
         type: 3}
       propertyPath: colorMappings.Array.data[1].prefab
       value: 
-      objectReference: {fileID: 1252217499459334243, guid: 41308eadc36177b4194515540981826c,
+      objectReference: {fileID: 2321435109530826161, guid: 82e527bfa85d00549b3841a519fb902e,
         type: 3}
     - target: {fileID: 8474848911160532873, guid: c15b244b8244ac241bcf961c5f155da3,
         type: 3}

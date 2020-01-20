@@ -159,11 +159,7 @@ namespace Actors.MainCharacter
                 {
                     IKillable toKill = other.GetComponent<IKillable>();
                     bool killed = toKill.Kill(gameObject);
-                    if (killed && toKill is Animal)
-                    {
-                        AddStamina(((Animal) toKill).GetStamina());
-                        AddScore(((Animal)toKill).GetScore());
-                    }
+                    if (killed && toKill is Animal) AddStamina(((Animal) toKill).GetStamina());
                     attacking = false;
                 }
             }
@@ -226,14 +222,9 @@ namespace Actors.MainCharacter
             stamina = Mathf.Clamp(stamina + amount, 0, maxStamina);
         }
 
-        private void AddScore(int amount)
-        {
-            ScoreHandler.Handler.AddScore(amount);
-        }
-
         private void AdjustPos()
         {
-            Transform transform1 = transform;
+            var transform1 = transform;
             transform1.position = new Vector3(-NpcSpawner.RightSreenX + _npcSpawner.xPositioning, transform1.position.y);
         }
 

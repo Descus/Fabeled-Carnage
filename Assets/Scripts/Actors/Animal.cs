@@ -23,8 +23,7 @@ namespace Actors
         private NpcSpawner _spawner;
 
         [SerializeField] private int staminaAmount = 25;
-        [SerializeField] private int scoreAmount = 250;
-        
+
         protected void Start()
         {
             _spawner = GameObject.Find("Spawner").GetComponent<NpcSpawner>();
@@ -145,11 +144,6 @@ namespace Actors
                 _bLerp = true;
                 PlayLeapAnim();
             }
-        }
-
-        public int GetScore()
-        {
-            return scoreAmount;
         }
     }
 }
