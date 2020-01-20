@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 namespace Environment
 {
-    [ExecuteAlways]
+    
     public class NpcSpawner : MonoBehaviour
     {
         private static int _enemiesOnField;
