@@ -11,7 +11,7 @@ namespace Environment
         private static int _enemiesOnField;
         public static float RightSreenX;
         private Camera _cam;
-        private float _nextSpawn = 3;
+        private float _nextSpawn = 2;
         public float xPositioning;
 
         private float _timeStart;

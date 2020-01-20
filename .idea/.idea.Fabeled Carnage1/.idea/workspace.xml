@@ -37,7 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Utilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ScoreSaver.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,12 +88,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IScrollable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
       </list>
     </option>
   </component>
@@ -165,6 +166,8 @@
       <workItem from="1579076034224" duration="2570000" />
       <workItem from="1579253562342" duration="8171000" />
       <workItem from="1579345937565" duration="235000" />
+      <workItem from="1579516606882" duration="1454000" />
+      <workItem from="1579521222239" duration="3468000" />
     </task>
     <servers />
   </component>
