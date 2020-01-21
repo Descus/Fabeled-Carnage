@@ -13,7 +13,7 @@ namespace Actors.Enemy
         public float rollingTime;
         public float walkingtime;
         private float _lastStateChange;
-        [SerializeField] private float walkingspeed;
+        [SerializeField] private float walkingspeed = 0.5f;
         protected override void PlayLeapAnim()
         {
             
