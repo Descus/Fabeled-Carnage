@@ -162,11 +162,16 @@ namespace Actors.MainCharacter
                     if (killed && toKill is Animal)
                     {
                         AddStamina(((Animal) toKill).GetStamina());
-                        ScoreHandler.Handler.AddScore(((Animal) toKill).GetScore());
+                        AddScore(((Animal) toKill).GetScore());
                     }
                     attacking = false;
                 }
             }
+        }
+
+        private void AddScore(int score)
+        {
+            ScoreHandler.Handler.AddScore(score);
         }
 
         private bool AttackFinished()

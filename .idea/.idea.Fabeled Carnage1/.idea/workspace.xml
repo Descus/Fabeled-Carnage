@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="607740c3-5502-4610-b0ac-214365174f1a" name="Default Changelist" comment="" />
+    <list default="true" id="607740c3-5502-4610-b0ac-214365174f1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LambReskinTest.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LambReskinTest.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/animation/Lamb/LambReskinTest.psb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/animation/Lamb/LambReskinTest.psb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Flesh Wound SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Flesh Wound SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wolf 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Wolf 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SceneLoader.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Balken.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Balken.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/MenuUI/back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/MenuUI/back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/WolfCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/WolfCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,12 +36,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Temp/Compiled-Shader Graphs-SmokeShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/tmp1DB.tmp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UsefulScripts/Utility/ButtonPressed.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
@@ -25,6 +54,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ReadonlyAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structs/BackgroundTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IKillable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@2.2.1-preview.2/Runtime/SpriteSkin.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IScrollable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,13 +118,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Stone.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +141,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -168,6 +198,8 @@
       <workItem from="1579345937565" duration="235000" />
       <workItem from="1579516606882" duration="1454000" />
       <workItem from="1579521222239" duration="16136000" />
+      <workItem from="1579601019290" duration="544000" />
+      <workItem from="1579601604627" duration="3829000" />
     </task>
     <servers />
   </component>
@@ -199,6 +231,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs</url>
+          <line>9</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" initialLine="9">
+            <startOffsets>
+              <option value="225" />
+            </startOffsets>
+            <endOffsets>
+              <option value="226" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>

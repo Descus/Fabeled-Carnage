@@ -1,4 +1,5 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Utility;
@@ -17,7 +18,7 @@ namespace Environment
         public int scoreMult = 1;
 
         public int scorePerDistance;
-        public Text textField;
+        public TextMeshProUGUI textField;
 
         [SerializeField]
         private int[] combos = { 1,2,4,8 };
@@ -70,7 +71,7 @@ namespace Environment
 
         private string ConvertToScoreFormat(int score)
         {
-            return score.ToString().PadLeft(8, '0');
+            return "<mspace=40>" + score.ToString().PadLeft(8, '0') + "</mspace>";
         }
     }
 }
