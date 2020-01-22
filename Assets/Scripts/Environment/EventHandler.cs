@@ -6,7 +6,7 @@
 
         public delegate void SpeedDeviancySubcriber(float deviancy, int lane);
 
-        public delegate void PushSubscriber(int lane, float distance);
+        public delegate bool PushSubscriber(int lane, float distance);
         
         private static event MoveSubsriber OnActorMoveUpdate;
         private static event MoveSubsriber OnBackgroundMoveUpdate;

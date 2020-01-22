@@ -2,100 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607740c3-5502-4610-b0ac-214365174f1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/WolfAnimHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/WolfAnimHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ComboDisplay.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ComboDisplay.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SceneLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SceneLoader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/Kette.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/Kette.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/SmokeShaderMaterialStamina.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/SmokeShaderMaterialStamina.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/SmokeShaderMaterialTimer.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/SmokeShaderMaterialTimer.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterBackground.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterBackground.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/MainMenu.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/MainMenu.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/Trans Credits.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/Trans Credits.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/Transision.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/Transision.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/Transog.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/Transog.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/back credits.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/back credits.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawner.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UIPrefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UIPrefabs/Cover.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UIPrefabs/Cover.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lamb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lamb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rabbit.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rabbit.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menus/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menus/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Background.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Balken.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Balken.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/ComboTimer.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/ComboTimer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/MainMenu.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/MainMenu.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/Trans Credits.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/Trans Credits.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/Transision.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/Transision.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/Transog.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/Transog.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/back credits.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/back credits.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/Rahmen.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Rahmen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/SmokeShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/SmokeShader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/SmokeShaderMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/SmokeShaderMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterAppear.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterAppear.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterBackground.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterBackground.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.psb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Hedgehog/Hedgehog_rdy_fur_unity.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Hedgehog/Hedgehog_rdy_fur_unity.psb.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf Snap.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf Snap.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +96,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsPushable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISScrollable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISlowable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/SpriteRandomizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/Score Object.cs" />
@@ -179,26 +105,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IKillable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IScrollable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Stone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Teat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Teat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/WolfAnimHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ComboDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" />
       </list>
     </option>
   </component>
@@ -274,7 +201,7 @@
       <workItem from="1579521222239" duration="16136000" />
       <workItem from="1579601019290" duration="544000" />
       <workItem from="1579601604627" duration="3829000" />
-      <workItem from="1579685313166" duration="8123000" />
+      <workItem from="1579685313166" duration="12704000" />
     </task>
     <servers />
   </component>

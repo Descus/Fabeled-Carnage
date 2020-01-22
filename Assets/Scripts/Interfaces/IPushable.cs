@@ -2,6 +2,6 @@
 {
     public interface IPushable
     {
-        void Push(int lane, float distance);
+        bool Push(int lane, float distance);
     }
 }
