@@ -1,5 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
+using UnityEngine.UI;
 using Utility;
 
 namespace Environment
@@ -18,11 +20,15 @@ namespace Environment
         public int scorePerDistance;
         public TextMeshProUGUI textField;
 
-        [SerializeField]
-        private int[] combos = { 1,2,4,8 };
+        private float timeAdder;
+
+        [SerializeField] private int[] combos = {1, 2, 4, 8};
+        [SerializeField] private int[] comboTime = { -1, 12, 8, 4};
+        private int[] killsToIncrease = {1, 12, 20};
+        private int killcount;
 
         private int _combo;
-        private int _comboState;
+        public int _comboState;
 
         public static ScoreHandler Handler;
 
@@ -30,6 +36,8 @@ namespace Environment
 
         public int Combo => _combo;
 
+        public Animator comboAnimator;
+        public Image comboFiller; 
 
         void Start()
         {
@@ -48,15 +56,35 @@ namespace Environment
             }
         }
 
+        void Update()
+        {
+            if (comboTime[_comboState]!=-1)
+                if(comboTime[_comboState] >= timeAdder){
+                    comboFiller.fillAmount = 1 - comboTime[_comboState] / timeAdder;
+                    timeAdder += Time.deltaTime;
+                }
+                else ResetCombo();
+        }
+
         public void AddScore(int score)
         {
             this.score += score * Combo;
+        }
+
+        public void RegisterKill()
+        {
+            killcount++;
+            if (_comboState != 2 && killcount >= killsToIncrease[_comboState])
+            {
+                IncreaseCombo();
+            }
         }
 
         public void IncreaseCombo()
         {
             _combo = combos[++_comboState];
             _comboState = Mathf.Clamp(_comboState, 0, combos.Length - 1);
+            ResetTimer();
         }
         
         public void DecreaseCombo()
@@ -65,10 +93,22 @@ namespace Environment
             _comboState = Mathf.Clamp(_comboState, 0, combos.Length - 1);
         }
 
+        public void ResetTimer()
+        {
+            timeAdder = 0;
+        }
+
         public void ResetCombo()
         {
-            _comboState = 0;
-            _combo = combos[_comboState];
+            if (_combo != 1)
+            {
+                _comboState = 0;
+                _combo = combos[_comboState];
+                timeAdder = 0;
+                killcount = 0;
+                Debug.Log("Reset");
+                comboAnimator.SetTrigger("Reset");
+            }
         }
 
         private string ConvertToScoreFormat(int score)

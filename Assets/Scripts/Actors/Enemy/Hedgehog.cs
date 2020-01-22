@@ -42,7 +42,7 @@ namespace Actors.Enemy
 
             rollCollider.enabled = isRolling;
             walkCollider.enabled = !isRolling;
-            animator.SetBool("isRolling",isRolling);
+            animator.SetBool("isRolling", isRolling);
             base.Update();
         }
 
@@ -65,12 +65,10 @@ namespace Actors.Enemy
         {
             if (base.Push(lane, distance))
             {
-                Debug.Log("Push");
                 isRolling = false;
                 _lastStateChange = Time.time;
                 return true;
             }
-
             return false;
         }
 

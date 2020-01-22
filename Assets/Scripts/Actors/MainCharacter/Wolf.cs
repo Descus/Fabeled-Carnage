@@ -170,6 +170,8 @@ namespace Actors.MainCharacter
         private void AddScore(int score)
         {
             ScoreHandler.Handler.AddScore(score);
+            ScoreHandler.Handler.ResetTimer();
+            ScoreHandler.Handler.RegisterKill();
         }
 
         private bool AttackFinished()

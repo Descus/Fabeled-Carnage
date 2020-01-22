@@ -3,26 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="607740c3-5502-4610-b0ac-214365174f1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lamb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lamb.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rabbit.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rabbit.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterAppear.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterAppear.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterBackground.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterBackground.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.psb.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Hedgehog/Ball.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Hedgehog/Hedgehog_rdy_fur_unity.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Hedgehog/Hedgehog_rdy_fur_unity.psb.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf Snap.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf Snap.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Rahmen.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Rahmen.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/SmokeShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/SmokeShader.shadergraph" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,19 +100,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Stone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Teat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Teat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/WolfAnimHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ComboDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" />
       </list>
     </option>
   </component>
@@ -201,7 +188,7 @@
       <workItem from="1579521222239" duration="16136000" />
       <workItem from="1579601019290" duration="544000" />
       <workItem from="1579601604627" duration="3829000" />
-      <workItem from="1579685313166" duration="12704000" />
+      <workItem from="1579685313166" duration="16751000" />
     </task>
     <servers />
   </component>
