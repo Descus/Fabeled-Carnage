@@ -85,9 +85,7 @@ namespace Actors.MainCharacter
             AdjustPos();
             HandleStamina();
             ResetAttackCooldown();
-            HandleKill();
             EndAttacking();
-
             //TODO remove later
             HandleFixedLaning();
             HandleDebugKeybinds();
@@ -150,7 +148,7 @@ namespace Actors.MainCharacter
             }
         }
 
-        private void HandleKill()
+        public void HandleKill()
         {
             if (attacking)
             {
@@ -159,10 +157,19 @@ namespace Actors.MainCharacter
                 {
                     IKillable toKill = other.GetComponent<IKillable>();
                     bool killed = toKill.Kill(gameObject);
-                    if (killed && toKill is Animal) AddStamina(((Animal) toKill).GetStamina());
+                    if (killed && toKill is Animal)
+                    {
+                        AddStamina(((Animal) toKill).GetStamina());
+                        AddScore(((Animal) toKill).GetScore());
+                    }
                     attacking = false;
                 }
             }
+        }
+
+        private void AddScore(int score)
+        {
+            ScoreHandler.Handler.AddScore(score);
         }
 
         private bool AttackFinished()

@@ -15,12 +15,13 @@ namespace Environment
         public float slowAmount;
 
         public float speed = -1.5f;
-
-        [Range(0, 300)] public int speedIncreaseInterval;
         
+        private float comboInc = 0;
+        
+
         private void Update()
         {
-            gameSpeed = GetGameSpeed();
+            gameSpeed = GetGameSpeed(Time.time);
             if (Input.GetKeyDown(KeyCode.D))
             {
                 // ReSharper disable once CompareOfFloatsByEqualityOperator
@@ -30,13 +31,19 @@ namespace Environment
                     Time.timeScale = 1f;
             }
 
-            EventHandler.BroadcastActorMove(speed * gameSpeed * (1 - slowAmount) * Time.deltaTime);
+            comboInc = ScoreHandler.Handler.Combo != 1? ScoreHandler.Handler.Combo * 0.05f : 0;
+            EventHandler.BroadcastActorMove(speed * gameSpeed * Time.deltaTime);
             EventHandler.BroadcastBackgroundMove(speed * (1 - slowAmount) * gameSpeed * Time.deltaTime);
         }
 
-        private float GetGameSpeed()
+        private float GetGameSpeed(float time)
         {
-            return 1 + (Mathf.Pow(1.01f, (int)Time.time) -1)* 0.2f;
+            if (time < 20) return 0.002f * time + comboInc + 1;
+            if (time < 30) return 0.016f * time + comboInc + 0.72f;
+            if (time < 40) return 0.02f * time + comboInc + 0.6f;
+            if (time < 45) return 0.04f * time + comboInc - 0.2f;
+            if (time < 50) return 0.2f * time + comboInc - 7.4f;
+            return 0.02f * time + comboInc + 1.6f;
         }
 
         

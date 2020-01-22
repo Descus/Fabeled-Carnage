@@ -1,5 +1,5 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using TMPro;
+using UnityEngine;
 using Utility;
 
 namespace Environment
@@ -16,7 +16,7 @@ namespace Environment
         public int scoreMult = 1;
 
         public int scorePerDistance;
-        public Text textField;
+        public TextMeshProUGUI textField;
 
         [SerializeField]
         private int[] combos = { 1,2,4,8 };
@@ -26,10 +26,15 @@ namespace Environment
 
         public static ScoreHandler Handler;
 
+        public int monoSpacingCharacterSize;
+
+        public int Combo => _combo;
+
 
         void Start()
         {
             Handler = this;
+            _combo = combos[0];
         }
         // Update is called once per frame
         private void FixedUpdate()
@@ -37,7 +42,7 @@ namespace Environment
             _update += Time.deltaTime;
             if (_update >= scoreFrequency)
             {
-                AddScore(scorePerDistance * scoreMult * _combo);
+                AddScore(scorePerDistance * scoreMult);
                 textField.text = ConvertToScoreFormat(score);
                 _update = 0;
             }
@@ -45,20 +50,22 @@ namespace Environment
 
         public void AddScore(int score)
         {
-            this.score += score;
+            this.score += score * Combo;
         }
 
-        private void IncreaseCombo()
+        public void IncreaseCombo()
         {
             _combo = combos[++_comboState];
+            _comboState = Mathf.Clamp(_comboState, 0, combos.Length - 1);
         }
         
-        private void DecreaseCombo()
+        public void DecreaseCombo()
         {
             _combo = combos[--_comboState];
+            _comboState = Mathf.Clamp(_comboState, 0, combos.Length - 1);
         }
 
-        private void ResetCombo()
+        public void ResetCombo()
         {
             _comboState = 0;
             _combo = combos[_comboState];
@@ -66,7 +73,8 @@ namespace Environment
 
         private string ConvertToScoreFormat(int score)
         {
-            return score.ToString().PadLeft(8, '0');
+            return "<mspace=" + monoSpacingCharacterSize + 
+                   ">" + score.ToString().PadLeft(6, '0') + "</mspace>";
         }
     }
 }

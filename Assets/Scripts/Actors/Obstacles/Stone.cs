@@ -1,5 +1,6 @@
 ﻿using System;
 using Actors.MainCharacter;
+using Environment;
 using UnityEngine;
 
 namespace Actors.Obstacles
@@ -14,6 +15,7 @@ namespace Actors.Obstacles
             if (other.CompareTag("Player"))
             {
                 other.GetComponent<Wolf>().ReduceStamina(staminaLoss);
+                ScoreHandler.Handler.ResetCombo();
             }
         }
     }

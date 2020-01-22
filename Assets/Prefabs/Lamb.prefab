@@ -74,7 +74,10 @@ MonoBehaviour:
   lane: 0
   leaping: 0
   slowAmount: 0
-  speedMult: 1.2
+  baseSpeed: 1.1
+  score: 10
+  maxPusches: 1
+  staminaScalePerPush: 0
   staminaAmount: 10
 --- !u!95 &6159439885728728087
 Animator:

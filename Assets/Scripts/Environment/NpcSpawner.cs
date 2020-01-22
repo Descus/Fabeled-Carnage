@@ -1,12 +1,13 @@
 ﻿using System;
 using Actors;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Utility;
 using Random = UnityEngine.Random;
 
 namespace Environment
 {
-    [ExecuteAlways]
+    
     public class NpcSpawner : MonoBehaviour
     {
         private static int _enemiesOnField;
@@ -15,7 +16,9 @@ namespace Environment
         private float _nextSpawn = 3;
         public float xPositioning;
 
+        public float cooldownBetweenSpawns = 1;
         private float _timeStart;
+        private float _clearTime;
         public ColorPrefab[] colorMappings;
         public Texture2D[] maps;
         public GameObject[,] onField;
@@ -34,22 +37,27 @@ namespace Environment
         private void Update()
         {
             AdjustSpawnPositions();
+
+            if (_enemiesOnField == 0)
+            {
+                _clearTime = 0;
+            }
+            _clearTime += Time.deltaTime;
         }
 
         private void FixedUpdate()
         {
             if (Input.GetKeyDown(KeyCode.P)) OnSpawnPattern();
 
-            if (_nextSpawn <= Time.time && _enemiesOnField == 0) OnSpawnPattern();
+            if (_nextSpawn <= Time.time && _clearTime <= cooldownBetweenSpawns) OnSpawnPattern();
         }
 
         private void OnSpawnPattern()
         {
             _nextSpawn = Time.time + spawnCooldownSec;
+            
             LaneManager.GenerateSpawns();
             GeneratePattern(GetNewMap());
-            
-            
         }
 
         private Texture2D GetNewMap()
