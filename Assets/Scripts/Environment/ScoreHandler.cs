@@ -1,7 +1,5 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using Utility;
 
 namespace Environment
@@ -28,6 +26,10 @@ namespace Environment
 
         public static ScoreHandler Handler;
 
+        public int monoSpacingCharacterSize;
+
+        public int Combo => _combo;
+
 
         void Start()
         {
@@ -48,7 +50,7 @@ namespace Environment
 
         public void AddScore(int score)
         {
-            this.score += score * _combo;
+            this.score += score * Combo;
         }
 
         public void IncreaseCombo()
@@ -71,7 +73,8 @@ namespace Environment
 
         private string ConvertToScoreFormat(int score)
         {
-            return "<mspace=40>" + score.ToString().PadLeft(8, '0') + "</mspace>";
+            return "<mspace=" + monoSpacingCharacterSize + 
+                   ">" + score.ToString().PadLeft(6, '0') + "</mspace>";
         }
     }
 }

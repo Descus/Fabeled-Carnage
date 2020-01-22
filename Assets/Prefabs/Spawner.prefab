@@ -74,7 +74,6 @@ MonoBehaviour:
   gameSpeed: 0
   slowAmount: 0
   speed: -3.5
-  speedIncreaseInterval: 60
 --- !u!114 &8474848911160532872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +147,7 @@ MonoBehaviour:
   scorePerDistance: 1
   textField: {fileID: 0}
   combos: 01000000020000000400000008000000
+  monoSpacingCharacterSize: 35
 --- !u!114 &8474848910779626181
 MonoBehaviour:
   m_ObjectHideFlags: 0

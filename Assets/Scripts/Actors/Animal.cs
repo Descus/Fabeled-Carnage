@@ -2,7 +2,6 @@
 using Environment;
 using Interfaces;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 using Utility;
 using EventHandler = Environment.EventHandler;
 
@@ -72,8 +71,8 @@ namespace Actors
                 transform1.position = new Vector3(pos.x + moveSpeed, pos.y, pos.z);
                 if (transform.position.x <= -LaneManager.Spawnx)
                 {
-                    Destroy(gameObject);
-                    NpcSpawner.RemoveEnemy();
+                    Kill(_spawner.gameObject);
+                    ScoreHandler.Handler.ResetCombo();
                 }
             }
         }
