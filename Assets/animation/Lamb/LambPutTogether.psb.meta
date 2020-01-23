@@ -101,9 +101,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Tail
-      position: {x: 561.898, y: 433.20312, z: 0}
-      rotation: {x: 0, y: 0, z: -0.9364456, w: 0.3508129}
-      length: 490.77176
+      position: {x: 561.8967, y: 433.20264, z: 0}
+      rotation: {x: 0, y: 0, z: -0.93644565, w: 0.35081285}
+      length: 490.7719
       parentId: -1
     spriteOutline: []
     vertices:
@@ -618,14 +618,14 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Back Thigh
-      position: {x: 161.42578, y: 254.99023, z: 0}
-      rotation: {x: 0, y: 0, z: -0.514855, w: 0.85727733}
-      length: 231.8888
+      position: {x: 161.42468, y: 254.98975, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5148551, w: 0.8572773}
+      length: 231.88889
       parentId: -1
     - name: Back Thigh 2
-      position: {x: 12.853882, y: 202.1648, z: 0}
-      rotation: {x: 0, y: 0, z: -0.54408646, w: 0.83902925}
-      length: 169.9602
+      position: {x: 12.852722, y: 202.1643, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5440865, w: 0.83902913}
+      length: 169.96028
       parentId: -1
     spriteOutline: []
     vertices:
@@ -988,14 +988,14 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Back Hoof
-      position: {x: 259.52896, y: -74.55412, z: 0}
-      rotation: {x: 0, y: 0, z: -0.6471745, w: 0.762342}
-      length: 228.4792
+      position: {x: 259.52957, y: -74.554245, z: 0}
+      rotation: {x: 0, y: 0, z: -0.64717454, w: 0.762342}
+      length: 228.47928
       parentId: 1
     - name: Back Thigh
-      position: {x: 339.42578, y: 484.99023, z: 0}
-      rotation: {x: 0, y: 0, z: -0.514855, w: 0.85727733}
-      length: 231.8888
+      position: {x: 339.42468, y: 484.98975, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5148551, w: 0.8572773}
+      length: 231.88889
       parentId: -1
     spriteOutline: []
     vertices:
@@ -1437,9 +1437,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Front Thigh
-      position: {x: 120.47656, y: 321.1814, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-      length: 290.5406
+      position: {x: 120.47583, y: 321.1811, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.70710677}
+      length: 290.5407
       parentId: -1
     spriteOutline: []
     vertices:
@@ -1855,19 +1855,19 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Front Hoof
-      position: {x: 340.06454, y: -52.82557, z: 0}
-      rotation: {x: 0, y: 0, z: -0.34118247, w: 0.93999714}
-      length: 262.51337
+      position: {x: 340.0651, y: -52.82543, z: 0}
+      rotation: {x: 0, y: 0, z: -0.34118247, w: 0.9399971}
+      length: 262.5135
       parentId: 2
     - name: Front Hoof 2
-      position: {x: 446.73096, y: 247.92651, z: 0}
-      rotation: {x: 0, y: 0, z: -0.9045396, w: 0.42638984}
-      length: 171.20633
+      position: {x: 446.73022, y: 247.92603, z: 0}
+      rotation: {x: 0, y: 0, z: -0.9045396, w: 0.42638975}
+      length: 171.20645
       parentId: -1
     - name: Front Thigh
-      position: {x: 334.47656, y: 568.1814, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-      length: 290.5406
+      position: {x: 334.47583, y: 568.18115, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.70710677}
+      length: 290.5407
       parentId: -1
     spriteOutline: []
     vertices:
@@ -2279,9 +2279,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Ear
-      position: {x: 171.60449, y: 65.8042, z: 0}
-      rotation: {x: 0, y: 0, z: 0.96197665, w: 0.27313197}
-      length: 131.94014
+      position: {x: 171.60376, y: 65.8042, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9619766, w: 0.27313203}
+      length: 131.94023
       parentId: -1
     spriteOutline: []
     vertices:
@@ -2611,9 +2611,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Ear 2
-      position: {x: 177.46191, y: 19.61377, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9317532, w: 0.36309224}
-      length: 165.90326
+      position: {x: 177.46118, y: 19.614014, z: 0}
+      rotation: {x: 0, y: 0, z: 0.93175316, w: 0.36309233}
+      length: 165.90335
       parentId: -1
     spriteOutline: []
     vertices:
@@ -2964,9 +2964,9 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Bell
-      position: {x: 63.4187, y: 111.90527, z: 0}
-      rotation: {x: 0, y: 0, z: -0.53317136, w: 0.84600735}
-      length: 86.53685
+      position: {x: 63.418213, y: 111.90527, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5331714, w: 0.8460072}
+      length: 86.53689
       parentId: -1
     spriteOutline: []
     vertices:
@@ -3297,19 +3297,19 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Head
-      position: {x: 138.60962, y: 366.36975, z: 0}
-      rotation: {x: 0, y: 0, z: -0.14071707, w: 0.9900499}
-      length: 572.543
+      position: {x: 138.60889, y: 366.36975, z: 0}
+      rotation: {x: 0, y: 0, z: -0.14071715, w: 0.9900499}
+      length: 572.54333
       parentId: -1
     - name: Ear 2
-      position: {x: 122.29412, y: 410.57944, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9735755, w: 0.22836585}
-      length: 165.9032
+      position: {x: 122.294044, y: 410.57953, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9735754, w: 0.22836587}
+      length: 165.90332
       parentId: 0
     - name: Ear
-      position: {x: 13.663424, y: 358.43655, z: 0}
-      rotation: {x: 0, y: 0, z: 0.9908391, w: 0.13504772}
-      length: 131.94016
+      position: {x: 13.663343, y: 358.43665, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9908391, w: 0.1350477}
+      length: 131.9402
       parentId: 0
     spriteOutline: []
     vertices:
@@ -3705,29 +3705,29 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Back Thigh
-      position: {x: 922.4133, y: 632.91095, z: 0}
+      position: {x: 922.41345, y: 632.91144, z: 0}
       rotation: {x: 0, y: 0, z: 0.8331567, w: 0.55303705}
-      length: 231.8888
+      length: 231.8889
       parentId: 2
     - name: Front Thigh
-      position: {x: -21.818142, y: 529.47754, z: 0}
-      rotation: {x: 0, y: 0, z: 0.674459, w: 0.7383124}
-      length: 290.54062
+      position: {x: -21.818317, y: 529.4777, z: 0}
+      rotation: {x: 0, y: 0, z: 0.674459, w: 0.73831236}
+      length: 290.54074
       parentId: 2
     - name: Back
-      position: {x: 1284.983, y: 786.53186, z: 0}
-      rotation: {x: 0, y: 0, z: -0.99898016, w: 0.04515121}
-      length: 940.6491
+      position: {x: 1284.9822, y: 786.53174, z: 0}
+      rotation: {x: 0, y: 0, z: -0.99898016, w: 0.04515113}
+      length: 940.6495
       parentId: -1
     - name: Tail
-      position: {x: 1269.1003, y: 164.51361, z: 0}
-      rotation: {x: 0, y: 0, z: 0.30817348, w: 0.9513302}
-      length: 490.77185
+      position: {x: 1269.1008, y: 164.51404, z: 0}
+      rotation: {x: 0, y: 0, z: 0.3081735, w: 0.95133024}
+      length: 490.77206
       parentId: 2
     - name: Back Thigh 2
-      position: {x: 1075.1449, y: 672.1184, z: 0}
-      rotation: {x: 0, y: 0, z: 0.8136074, w: 0.58141476}
-      length: 169.9602
+      position: {x: 1075.1451, y: 672.1189, z: 0}
+      rotation: {x: 0, y: 0, z: 0.81360734, w: 0.58141476}
+      length: 169.9603
       parentId: 2
     spriteOutline: []
     vertices:
@@ -4216,14 +4216,14 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Back Thigh 2
-      position: {x: 101.85388, y: 136.1648, z: 0}
-      rotation: {x: 0, y: 0, z: -0.54408646, w: 0.83902925}
-      length: 169.9602
+      position: {x: 101.85272, y: 136.1643, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5440865, w: 0.83902913}
+      length: 169.96028
       parentId: -1
     - name: Back Thigh
-      position: {x: 250.42578, y: 188.99023, z: 0}
-      rotation: {x: 0, y: 0, z: -0.514855, w: 0.85727733}
-      length: 231.8888
+      position: {x: 250.42468, y: 188.98975, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5148551, w: 0.8572773}
+      length: 231.88889
       parentId: -1
     spriteOutline: []
     vertices:
@@ -4596,24 +4596,24 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Back Hoof 2
-      position: {x: 174.89871, y: -45.600525, z: 0}
-      rotation: {x: 0, y: 0, z: -0.6978876, w: 0.7162073}
-      length: 252.52376
+      position: {x: 174.89894, y: -45.60064, z: 0}
+      rotation: {x: 0, y: 0, z: -0.69788766, w: 0.7162073}
+      length: 252.52385
       parentId: 2
     - name: Back Hoof
-      position: {x: 259.5288, y: -74.55436, z: 0}
-      rotation: {x: 0, y: 0, z: -0.6471745, w: 0.762342}
-      length: 228.4792
+      position: {x: 259.52954, y: -74.554146, z: 0}
+      rotation: {x: 0, y: 0, z: -0.64717454, w: 0.762342}
+      length: 228.47928
       parentId: 3
     - name: Back Thigh 2
-      position: {x: 301.85388, y: 390.1648, z: 0}
-      rotation: {x: 0, y: 0, z: -0.54408646, w: 0.83902925}
-      length: 169.9602
+      position: {x: 301.85272, y: 390.1643, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5440865, w: 0.83902913}
+      length: 169.96028
       parentId: -1
     - name: Back Thigh
-      position: {x: 450.42578, y: 442.99023, z: 0}
-      rotation: {x: 0, y: 0, z: -0.514855, w: 0.85727733}
-      length: 231.8888
+      position: {x: 450.42468, y: 442.98975, z: 0}
+      rotation: {x: 0, y: 0, z: -0.5148551, w: 0.8572773}
+      length: 231.88889
       parentId: -1
     spriteOutline: []
     vertices:
@@ -5055,19 +5055,19 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Front Thigh 2
-      position: {x: 229.46118, y: 225.87982, z: 0}
-      rotation: {x: 0, y: 0, z: -0.76439637, w: 0.6447467}
-      length: 254.56587
+      position: {x: 229.46045, y: 225.87952, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7643964, w: 0.64474666}
+      length: 254.56592
       parentId: -1
     - name: Front Thigh
-      position: {x: 54.476562, y: 229.1814, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-      length: 290.5406
+      position: {x: 54.47583, y: 229.18109, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.70710677}
+      length: 290.5407
       parentId: -1
     - name: Front Hoof 2
-      position: {x: 322.9923, y: -8.392717, z: 0}
-      rotation: {x: 0, y: 0, z: -0.25726804, w: 0.9663401}
-      length: 171.20636
+      position: {x: 322.9924, y: -8.392676, z: 0}
+      rotation: {x: 0, y: 0, z: -0.25726807, w: 0.9663401}
+      length: 171.20639
       parentId: 0
     spriteOutline: []
     vertices:
@@ -5483,24 +5483,24 @@ ScriptedImporter:
     internalID: 0
     spriteBone:
     - name: Front Hoof
-      position: {x: 340.06458, y: -52.82549, z: 0}
-      rotation: {x: 0, y: 0, z: -0.34118247, w: 0.93999714}
-      length: 262.51337
+      position: {x: 340.0647, y: -52.825443, z: 0}
+      rotation: {x: 0, y: 0, z: -0.34118247, w: 0.9399971}
+      length: 262.5135
       parentId: 3
     - name: Front Hoof 2
-      position: {x: 322.99225, y: -8.392763, z: 0}
-      rotation: {x: 0, y: 0, z: -0.25726804, w: 0.9663401}
-      length: 171.20636
+      position: {x: 322.99252, y: -8.392696, z: 0}
+      rotation: {x: 0, y: 0, z: -0.25726807, w: 0.96634007}
+      length: 171.20642
       parentId: 2
     - name: Front Thigh 2
-      position: {x: 455.46118, y: 521.8799, z: 0}
-      rotation: {x: 0, y: 0, z: -0.76439637, w: 0.6447467}
-      length: 254.56587
+      position: {x: 455.46045, y: 521.8794, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7643964, w: 0.64474666}
+      length: 254.56592
       parentId: -1
     - name: Front Thigh
-      position: {x: 280.47656, y: 525.1814, z: 0}
-      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-      length: 290.5406
+      position: {x: 280.47583, y: 525.18115, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.70710677}
+      length: 290.5407
       parentId: -1
     spriteOutline: []
     vertices:
@@ -6115,10 +6115,10 @@ ScriptedImporter:
   characterData:
     bones:
     - name: Back
-      position: {x: 1885.983, y: 1295.5319, z: 0}
-      rotation: {x: 0, y: 0, z: -0.99898016, w: 0.04515121}
+      position: {x: 1169.51, y: -421.11047, z: 0}
+      rotation: {x: 0, y: 0, z: -0.74908984, w: -0.66246855}
       length: 940.6491
-      parentId: -1
+      parentId: 14
     - name: Tail
       position: {x: 1269.1003, y: 164.51361, z: 0}
       rotation: {x: 0, y: 0, z: 0.30817348, w: 0.9513302}
@@ -6184,6 +6184,11 @@ ScriptedImporter:
       rotation: {x: 0, y: 0, z: 0.9735754, w: 0.22836585}
       length: 165.90324
       parentId: 2
+    - name: root
+      position: {x: 1427.3866, y: 140.20572, z: 0}
+      rotation: {x: 0, y: 0, z: 0.6956152, w: 0.71841466}
+      length: 136.74973
+      parentId: -1
     parts:
     - spritePosition:
         x: 75
@@ -6314,34 +6319,36 @@ ScriptedImporter:
     dimension: {x: 0, y: 0}
     characterGroups: []
   boneGOs:
-  - go: {fileID: 7127753483015404177, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: -4506553896867446133, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 0
-  - go: {fileID: 3029849496454978237, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: -3111957032730953745, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 1
-  - go: {fileID: 4640167676269718938, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: -2336124517636275146, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 2
-  - go: {fileID: 296209102377428404, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: -4955843154458285019, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 3
-  - go: {fileID: 7571708366204830667, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: 3684763131663338337, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 4
-  - go: {fileID: -1993859718653351055, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: 4590487464350784599, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 5
-  - go: {fileID: -5072239846367296575, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: 6877674339418071020, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 6
-  - go: {fileID: -6183320302771645760, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: 7382791611487338787, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 7
-  - go: {fileID: -122852300142293891, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: -3916738548869251716, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 8
-  - go: {fileID: -1287687179241043352, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: -7351118940234696546, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 9
-  - go: {fileID: 5974370966345255461, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: -2233999765987477794, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 10
-  - go: {fileID: 3995412225718813671, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: 7153170713229938306, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 11
-  - go: {fileID: -8210562657963344652, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: 9150623225571881667, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 12
-  - go: {fileID: 9075891531859423943, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+  - go: {fileID: 2716654822615625043, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
     index: 13
+  - go: {fileID: -2719909376306953274, guid: 8328ffa75c25f734bbec98c55e690009, type: 3}
+    index: 14
   generateGOHierarchy: 0
   textureAssetName: LambPutTogether Texture
   prefabAssetName: LambPutTogether Prefab
