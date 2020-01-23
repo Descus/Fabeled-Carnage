@@ -2,7 +2,6 @@
 using Environment;
 using Interfaces;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 using Utility;
 using EventHandler = Environment.EventHandler;
 
@@ -24,6 +23,10 @@ namespace Actors
         public int maxPusches = 1;
         public int staminaScalePerPush;
 
+        public SpriteRenderer[] renderers;
+
+        public Animator animator;
+        
         protected float SpeedDeviancy = 0;
 
         private NpcSpawner _spawner;
@@ -35,6 +38,11 @@ namespace Actors
             _spawner = GameObject.Find("Spawner").GetComponent<NpcSpawner>();
             TimeCreation = Time.time;
             Speed = Mathf.Abs(baseSpeed);
+
+            foreach (SpriteRenderer renderer in renderers)
+            {
+                renderer.sortingLayerName = "Lane" + (lane + 1);
+            }
         }
         
         public virtual bool Kill(GameObject killer)
@@ -72,8 +80,8 @@ namespace Actors
                 transform1.position = new Vector3(pos.x + moveSpeed, pos.y, pos.z);
                 if (transform.position.x <= -LaneManager.Spawnx)
                 {
-                    Destroy(gameObject);
-                    NpcSpawner.RemoveEnemy();
+                    Kill(_spawner.gameObject);
+                    ScoreHandler.Handler.ResetCombo();
                 }
             }
         }
@@ -140,7 +148,7 @@ namespace Actors
         
 #pragma warning restore 649
         
-        public virtual void Push(int lane, float distance)
+        public virtual bool Push(int lane, float distance)
         {
             if (lane == this.lane && _pushcount < maxPusches)
             {
@@ -151,7 +159,10 @@ namespace Actors
                 _bLerp = true;
                 PlayLeapAnim();
                 _pushcount++;
+                return true;
             }
+
+            return false;
         }
 
         public int GetScore()

@@ -18,6 +18,7 @@
             <e p="MainCharacter" t="Include">
               <e p="Killzone.cs" t="Include" />
               <e p="Wolf.cs" t="Include" />
+              <e p="WolfAnimHandler.cs" t="Include" />
             </e>
             <e p="Obstacle.cs" t="Include" />
             <e p="Obstacles" t="Include">
@@ -48,11 +49,14 @@
           <e p="Menus" t="Include">
             <e p="MainMenu.cs" t="Include" />
           </e>
-          <e p="SceneLoader.cs" t="Include" />
           <e p="Structs" t="Include">
             <e p="BackgroundTile.cs" t="Include" />
             <e p="Effect.cs" t="Include" />
             <e p="ScoreObject.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="ComboDisplay.cs" t="Include" />
+            <e p="SceneLoader.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
             <e p="ColorPrefab.cs" t="Include" />

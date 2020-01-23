@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Environment;
+using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
 
 namespace Actors.Enemy
@@ -19,13 +20,18 @@ namespace Actors.Enemy
 
         public override bool Kill(GameObject killer)
         {
-            Debug.Log(_canDodge);
-            if (_canDodge)
+            if (!killer.gameObject.GetComponent<Scroller>())
             {
-                Dodge();
-                _canDodge = false;
+                Debug.Log(_canDodge);
+                if (_canDodge)
+                {
+                    Dodge();
+                    _canDodge = false;
+                }
+
+                if (!_dodgeBLerp) return base.Kill(killer);
             }
-            if(!_dodgeBLerp) return base.Kill(killer);
+            else return base.Kill(killer); 
             return false;
         }
 

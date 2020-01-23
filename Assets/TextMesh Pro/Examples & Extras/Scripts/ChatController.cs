@@ -3,39 +3,42 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ChatController : MonoBehaviour
+namespace TextMesh_Pro.Scripts
 {
-    public Scrollbar ChatScrollbar;
-
-
-    public TMP_InputField TMP_ChatInput;
-
-    public TMP_Text TMP_ChatOutput;
-
-    private void OnEnable()
+    public class ChatController : MonoBehaviour
     {
-        TMP_ChatInput.onSubmit.AddListener(AddToChatOutput);
-    }
-
-    private void OnDisable()
-    {
-        TMP_ChatInput.onSubmit.RemoveListener(AddToChatOutput);
-    }
+        public Scrollbar ChatScrollbar;
 
 
-    private void AddToChatOutput(string newText)
-    {
-        // Clear Input Field
-        TMP_ChatInput.text = string.Empty;
+        public TMP_InputField TMP_ChatInput;
 
-        var timeNow = DateTime.Now;
+        public TMP_Text TMP_ChatOutput;
 
-        TMP_ChatOutput.text += "[<#FFFF80>" + timeNow.Hour.ToString("d2") + ":" + timeNow.Minute.ToString("d2") + ":" +
-                               timeNow.Second.ToString("d2") + "</color>] " + newText + "\n";
+        private void OnEnable()
+        {
+            TMP_ChatInput.onSubmit.AddListener(AddToChatOutput);
+        }
 
-        TMP_ChatInput.ActivateInputField();
+        private void OnDisable()
+        {
+            TMP_ChatInput.onSubmit.RemoveListener(AddToChatOutput);
+        }
 
-        // Set the scrollbar to the bottom when next text is submitted.
-        ChatScrollbar.value = 0;
+
+        private void AddToChatOutput(string newText)
+        {
+            // Clear Input Field
+            TMP_ChatInput.text = string.Empty;
+
+            var timeNow = DateTime.Now;
+
+            TMP_ChatOutput.text += "[<#FFFF80>" + timeNow.Hour.ToString("d2") + ":" + timeNow.Minute.ToString("d2") + ":" +
+                                   timeNow.Second.ToString("d2") + "</color>] " + newText + "\n";
+
+            TMP_ChatInput.ActivateInputField();
+
+            // Set the scrollbar to the bottom when next text is submitted.
+            ChatScrollbar.value = 0;
+        }
     }
 }

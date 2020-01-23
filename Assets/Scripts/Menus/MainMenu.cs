@@ -1,40 +1,43 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+namespace Menus
 {
-    public GameObject MenuPageMain;
-    public GameObject MenuPageOptions;
-
-    // Start is called before the first frame update
-    private void Start()
+    public class MainMenu : MonoBehaviour
     {
-    }
+        public GameObject MenuPageMain;
+        public GameObject MenuPageOptions;
 
-    // Update is called once per frame
-    private void Update()
-    {
-    }
+        // Start is called before the first frame update
+        private void Start()
+        {
+        }
 
-    public void StartGame()
-    {
-        SceneManager.LoadScene(1);
-    }
+        // Update is called once per frame
+        private void Update()
+        {
+        }
 
-    public void OpenOptionMenu()
-    {
-        MenuPageMain.SetActive(false);
-        MenuPageOptions.SetActive(true);
-    }
+        public void StartGame()
+        {
+            SceneManager.LoadScene(1);
+        }
 
-    public void CloseOptionMenu()
-    {
-        MenuPageMain.SetActive(true);
-        MenuPageOptions.SetActive(false);
-    }
+        public void OpenOptionMenu()
+        {
+            MenuPageMain.SetActive(false);
+            MenuPageOptions.SetActive(true);
+        }
 
-    public void ExitGame()
-    {
-        Application.Quit();
+        public void CloseOptionMenu()
+        {
+            MenuPageMain.SetActive(true);
+            MenuPageOptions.SetActive(false);
+        }
+
+        public void ExitGame()
+        {
+            Application.Quit();
+        }
     }
 }

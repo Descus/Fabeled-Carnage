@@ -85,9 +85,7 @@ namespace Actors.MainCharacter
             AdjustPos();
             HandleStamina();
             ResetAttackCooldown();
-            HandleKill();
             EndAttacking();
-
             //TODO remove later
             HandleFixedLaning();
             HandleDebugKeybinds();
@@ -150,7 +148,7 @@ namespace Actors.MainCharacter
             }
         }
 
-        private void HandleKill()
+        public void HandleKill()
         {
             if (attacking)
             {
@@ -172,6 +170,8 @@ namespace Actors.MainCharacter
         private void AddScore(int score)
         {
             ScoreHandler.Handler.AddScore(score);
+            ScoreHandler.Handler.ResetTimer();
+            ScoreHandler.Handler.RegisterKill();
         }
 
         private bool AttackFinished()
