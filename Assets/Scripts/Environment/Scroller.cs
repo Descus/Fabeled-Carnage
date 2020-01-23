@@ -32,8 +32,8 @@ namespace Environment
             }
 
             comboInc = ScoreHandler.Handler.Combo != 1? ScoreHandler.Handler.Combo * 0.05f : 0;
-            EventHandler.BroadcastActorMove(speed * gameSpeed * Time.deltaTime);
-            EventHandler.BroadcastBackgroundMove(speed * (1 - slowAmount) * gameSpeed * Time.deltaTime);
+            EventHandler.BroadcastActorMove(speed * gameSpeed);
+            EventHandler.BroadcastBackgroundMove(speed * (1 - slowAmount) * gameSpeed);
         }
 
         private float GetGameSpeed(float time)

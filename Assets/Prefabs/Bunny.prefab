@@ -65,7 +65,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.12}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2636356, y: 0.89614344}
+  m_Size: {x: 1.86, y: 1.17}
   m_EdgeRadius: 0
 --- !u!114 &3569861387437618707
 MonoBehaviour:
@@ -93,7 +93,7 @@ MonoBehaviour:
   lane: 0
   leaping: 0
   slowAmount: 0
-  baseSpeed: 1.1
+  baseSpeed: 2.4
   score: 25
   maxPusches: 99
   staminaScalePerPush: 0
@@ -190,12 +190,12 @@ PrefabInstance:
     - target: {fileID: 1871612692245407126, guid: d1e7483be44682f4abb1e120d7187a9c,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.14
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1871612692245407126, guid: d1e7483be44682f4abb1e120d7187a9c,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.14
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -6502166111188961231, guid: d1e7483be44682f4abb1e120d7187a9c,
