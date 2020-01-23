@@ -1,0 +1,94 @@
+diff a/Assets/animation/Bunny/Bunny.psb.meta b/Assets/animation/Bunny/Bunny.psb.meta	(rejected hunks)
+@@ -7519,6 +7519,7 @@
+     tessellationDetail: 0
+     parentGroupIndex: -1
+     uvTransform: {x: 59, y: 346}
++<<<<<<< HEAD
+   - name: Layer 2
+     originalName: 
+     pivot: {x: 0.5, y: 0.5}
+@@ -8874,6 +8875,12 @@
+   mosaicLayers: 1
+   documentPivot: {x: 0, y: 0}
+   documentAlignment: 7
++=======
++  platformSettings: []
++  mosaicLayers: 1
++  documentPivot: {x: 0, y: 0}
++  documentAlignment: 0
++>>>>>>> b10c68d03fbbc88479a48d5f019ad034928dfcf6
+   importHiddenLayers: 0
+   importedTextureWidth: 1024
+   importedTextureHeight: 2048
+@@ -8881,6 +8888,7 @@
+   paperDollMode: 0
+   keepDupilcateSpriteName: 0
+   spriteCategoryList:
++<<<<<<< HEAD
+     categories:
+     - name: Eye
+       labels: []
+@@ -8890,6 +8898,9 @@
+         spriteId: c8c0471afee403b4997b476cccd50dab
+       - name: Eye copy
+         spriteId: 9b153b69a9a131447a9762d21787c0b0
++=======
++    categories: []
++>>>>>>> b10c68d03fbbc88479a48d5f019ad034928dfcf6
+   textureActualWidth: 1024
+   textureActualHeight: 2048
+   spritePackingTag: 
+@@ -8973,7 +8984,11 @@
+     parentIndex: 7
+     spriteID: 09923c1250a0aed47a096427f01b9d1f
+     layerID: 66
++<<<<<<< HEAD
+     mosaicPosition: {x: 913, y: 239}
++=======
++    mosaicPosition: {x: 818, y: 239}
++>>>>>>> b10c68d03fbbc88479a48d5f019ad034928dfcf6
+   - name: Body
+     spriteName: 
+     isGroup: 1
+@@ -9015,7 +9030,11 @@
+     parentIndex: 13
+     spriteID: 5c0a34babfc9c55429728191d5ee721f
+     layerID: 55
++<<<<<<< HEAD
+     mosaicPosition: {x: 238, y: 876}
++=======
++    mosaicPosition: {x: 909, y: 239}
++>>>>>>> b10c68d03fbbc88479a48d5f019ad034928dfcf6
+   - name: Hind Leg 2
+     spriteName: 
+     isGroup: 1
+@@ -9099,6 +9118,7 @@
+     parentIndex: -1
+     spriteID: c8c0471afee403b4997b476cccd50dab
+     layerID: 5
++<<<<<<< HEAD
+     mosaicPosition: {x: 818, y: 327}
+   - name: Eye copy
+     spriteName: Eye copy
+@@ -9114,6 +9134,9 @@
+     spriteID: 091229dbadd30094b8d99a22f8947275
+     layerID: 70
+     mosaicPosition: {x: 818, y: 239}
++=======
++    mosaicPosition: {x: 818, y: 324}
++>>>>>>> b10c68d03fbbc88479a48d5f019ad034928dfcf6
+   - name: Head
+     spriteName: 
+     isGroup: 1
+@@ -9124,7 +9147,11 @@
+   - name: Head
+     spriteName: Head
+     isGroup: 0
++<<<<<<< HEAD
+     parentIndex: 31
++=======
++    parentIndex: 29
++>>>>>>> b10c68d03fbbc88479a48d5f019ad034928dfcf6
+     spriteID: 9883eb3d2bdece042b7cf0b6861cf6fd
+     layerID: 4
+     mosaicPosition: {x: 712, y: 4}

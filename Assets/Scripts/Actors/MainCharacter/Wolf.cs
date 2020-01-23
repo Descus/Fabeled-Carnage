@@ -65,7 +65,10 @@ namespace Actors.MainCharacter
 #endif
         [SerializeField]
         private float startAttack;
-        
+
+        public float bottomAdjust;
+        public float topAdjust;
+
         private void Start()
         {
             _changedStaminaMult = staminaMult;
@@ -86,6 +89,7 @@ namespace Actors.MainCharacter
             HandleStamina();
             ResetAttackCooldown();
             EndAttacking();
+            
             //TODO remove later
             HandleFixedLaning();
             HandleDebugKeybinds();
@@ -121,7 +125,6 @@ namespace Actors.MainCharacter
         {
             speed = Mathf.Clamp(speed, 0, 1);
             _npcSpawner.spawnCooldownSec = Mathf.Clamp(_npcSpawner.spawnCooldownSec, 0.1f, 15);
-            _scroller.speed = Mathf.Clamp(_scroller.speed, float.MinValue, 0);
         }
 
         private void HandleFixedLaning()
@@ -240,14 +243,14 @@ namespace Actors.MainCharacter
         private void MoveUp()
         {
             Vector3 pos = transform.position;
-            if (pos.y < LaneManager.MINLANEY + LaneManager.LANEHEIGHT * (LaneManager.LANECOUNT - 1))
+            if (pos.y < LaneManager.MINLANEY + LaneManager.LANEHEIGHT * (LaneManager.LANECOUNT - 1) + topAdjust)
                 transform.position = pos + speed * _vertSlow * Vector3.up;
         }
 
         private void MoveDown()
         {
             Vector3 pos = transform.position;
-            if (pos.y > LaneManager.MINLANEY) transform.position = pos + speed * _vertSlow * Vector3.down;
+            if (pos.y > LaneManager.MINLANEY + bottomAdjust) transform.position = pos + speed * _vertSlow * Vector3.down;
         }
 
         public void Attack()

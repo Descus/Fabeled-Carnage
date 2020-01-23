@@ -101,7 +101,7 @@ MonoBehaviour:
   lane: 0
   leaping: 0
   slowAmount: 0
-  baseSpeed: 1.1
+  baseSpeed: 2
   score: 50
   maxPusches: 99
   staminaScalePerPush: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   walkingtime: 2
   rollCollider: {fileID: 2447420912725449082}
   walkCollider: {fileID: 2896824877278592739}
-  walkingspeed: 0.5
+  walkingspeed: 1
 --- !u!1 &4501820279453740159
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,11 +229,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2321435109530826160}
     m_Modifications:
-    - target: {fileID: -6333483207881020600, guid: 2ea892551a375624984c326688d5a84d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: -3230418284791367556, guid: 2ea892551a375624984c326688d5a84d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -292,52 +287,17 @@ PrefabInstance:
     - target: {fileID: -3230418284791367556, guid: 2ea892551a375624984c326688d5a84d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: -3230418284791367556, guid: 2ea892551a375624984c326688d5a84d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: -1664250400018632730, guid: 2ea892551a375624984c326688d5a84d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -1591675759269547786, guid: 2ea892551a375624984c326688d5a84d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -1589870884959655642, guid: 2ea892551a375624984c326688d5a84d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5986260158187409253, guid: 2ea892551a375624984c326688d5a84d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6290538025512426005, guid: 2ea892551a375624984c326688d5a84d,
         type: 3}
       propertyPath: m_Name
       value: Hedgehog_rdy_fur_unity
-      objectReference: {fileID: 0}
-    - target: {fileID: 6290538025512426005, guid: 2ea892551a375624984c326688d5a84d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7869070878681050535, guid: 2ea892551a375624984c326688d5a84d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8341857705725160636, guid: 2ea892551a375624984c326688d5a84d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 7633032536479721136, guid: 2ea892551a375624984c326688d5a84d,

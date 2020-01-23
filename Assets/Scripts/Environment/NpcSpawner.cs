@@ -77,6 +77,7 @@ namespace Environment
                 }
 
                 float deviancy = GenerateDeviancy();
+                Debug.Log(y + ": " + deviancy);
                 EventHandler.OnDeviacySetEvent(deviancy,y);
             }
         }

@@ -76,7 +76,7 @@ namespace Actors
             {
                 Transform transform1 = transform;
                 Vector3 pos = transform1.position;
-                float moveSpeed = (speed - (Speed + SpeedDeviancy) * (1 - slowAmount) ) * Time.deltaTime;
+                float moveSpeed = (((Speed + SpeedDeviancy) * (1 - slowAmount)) - speed) * Time.deltaTime;
                 transform1.position = new Vector3(pos.x + moveSpeed, pos.y, pos.z);
                 if (transform.position.x <= -LaneManager.Spawnx)
                 {
