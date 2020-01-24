@@ -29,7 +29,7 @@ namespace Environment
         {
             _cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
-            LaneManager.GenerateSpawns();
+            LaneManager.manager.GenerateSpawns();
 
             _timeStart = Time.time;
         }
@@ -56,7 +56,7 @@ namespace Environment
         {
             _nextSpawn = Time.time + spawnCooldownSec;
             
-            LaneManager.GenerateSpawns();
+            LaneManager.manager.GenerateSpawns();
             GeneratePattern(GetNewMap());
         }
 
@@ -72,12 +72,11 @@ namespace Environment
             {
                 for (int x = 0; x < map.width; x++)
                 {
-                    if (y > LaneManager.LANECOUNT) break;
+                    if (y > LaneManager.manager.LANECOUNT) break;
                     GenerateTile(x, y, map);
                 }
 
                 float deviancy = GenerateDeviancy();
-                Debug.Log(y + ": " + deviancy);
                 EventHandler.OnDeviacySetEvent(deviancy,y);
             }
         }
@@ -95,15 +94,20 @@ namespace Environment
             foreach (ColorPrefab colorMapping in colorMappings)
             {
                 if (colorMapping.CompareColors(color))
-                    if (y <= LaneManager.LANECOUNT && x <= LaneManager.SPAWNERCOUNT)
+                    if (y <= LaneManager.manager.LANECOUNT && x <= LaneManager.manager.SPAWNERCOUNT)
                     {
-                        GameObject gObject = Instantiate(colorMapping.prefab, LaneManager.Spawns[y, x],
+                        GameObject gObject = Instantiate(colorMapping.prefab, LaneManager.manager.Spawns[y, x],
                             Quaternion.identity);
                         gObject.GetComponent<GameActor>().lane = y;
-                        if (!gObject.CompareTag("Obstacle")) _enemiesOnField++;
                     }
             }
         }
+
+        public static void AddEnemyToField()
+        {
+            _enemiesOnField++;
+        }
+
 
         public static void RemoveEnemy()
         {
@@ -113,7 +117,7 @@ namespace Environment
         private void AdjustSpawnPositions()
         {
             RightSreenX = ScreenUtil.GetRightScreenBorderX(_cam);
-            LaneManager.Spawnx = RightSreenX + 2;
+            LaneManager.manager.Spawnx = RightSreenX + 2;
         }
 
         private float GenerateDeviancy()

@@ -22,9 +22,11 @@ namespace Actors
         private int _pushcount;
         public int maxPusches = 1;
         public int staminaScalePerPush;
-
+        private bool alreadyKilled = false;
         public SpriteRenderer[] renderers;
-
+        public ParticleSystem killParticleSpawner;
+        public GameObject bloodPile;
+        
         public Animator animator;
         
         protected float SpeedDeviancy = 0;
@@ -38,17 +40,33 @@ namespace Actors
             _spawner = GameObject.Find("Spawner").GetComponent<NpcSpawner>();
             TimeCreation = Time.time;
             Speed = Mathf.Abs(baseSpeed);
-
-            foreach (SpriteRenderer renderer in renderers)
-            {
-                renderer.sortingLayerName = "Lane" + (lane + 1);
-            }
+            killParticleSpawner.collision.SetPlane(0, LaneManager.manager.Despawner[lane]);
+            killParticleSpawner.subEmitters.GetSubEmitterSystem(0)
+                .collision.SetPlane(0, LaneManager.manager.Despawner[lane]);
+            foreach (SpriteRenderer renderer in renderers) renderer.sortingLayerName = "Lane" + (lane + 1);
+            NpcSpawner.AddEnemyToField();
         }
         
         public virtual bool Kill(GameObject killer)
         {
-            Destroy(gameObject);
-            NpcSpawner.RemoveEnemy();
+            if (!killer.gameObject.GetComponent<Scroller>() && !alreadyKilled)
+            {
+                if(!killParticleSpawner.isPlaying)killParticleSpawner.Play(true);
+                EventHandler.UnSubscribePushEvent(Push);
+                GetComponent<Collider2D>().enabled = false;
+                foreach (Renderer renderer in renderers) renderer.enabled = false;
+                Instantiate(bloodPile, gameObject.transform.position, Quaternion.identity);
+                alreadyKilled = true;
+                Destroy(gameObject, killParticleSpawner.main.duration);
+                NpcSpawner.RemoveEnemy();
+            } 
+            else if (!alreadyKilled)
+            {
+                Destroy(gameObject);
+                NpcSpawner.RemoveEnemy();
+            }
+            
+            
             return true;
         }
 
@@ -78,10 +96,10 @@ namespace Actors
                 Vector3 pos = transform1.position;
                 float moveSpeed = (((Speed + SpeedDeviancy) * (1 - slowAmount)) - speed) * Time.deltaTime;
                 transform1.position = new Vector3(pos.x + moveSpeed, pos.y, pos.z);
-                if (transform.position.x <= -LaneManager.Spawnx)
+                if (transform.position.x <= -LaneManager.manager.Spawnx)
                 {
                     Kill(_spawner.gameObject);
-                    ScoreHandler.Handler.ResetCombo();
+                    //ScoreHandler.Handler.ResetCombo();
                 }
             }
         }

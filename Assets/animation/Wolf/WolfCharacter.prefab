@@ -2941,7 +2941,7 @@ GameObject:
   - component: {fileID: 7271046823349632810}
   - component: {fileID: 2861982961922589322}
   m_Layer: 0
-  m_Name: WolfCharacter
+  m_Name: Wolf_colo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2955,8 +2955,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8723159750931251493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 8.42, y: 0.72, z: 0}
+  m_LocalScale: {x: 0.38849998, y: 0.36029905, z: 0.74}
   m_Children:
   - {fileID: 1724246639195144981}
   - {fileID: 8832782147257241864}

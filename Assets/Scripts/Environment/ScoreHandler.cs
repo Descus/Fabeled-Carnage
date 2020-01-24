@@ -12,37 +12,39 @@ namespace Environment
 #if UNITY_EDITOR
         [ReadOnly] [SerializeField]
 #endif
-        private int score;
+        public int score;
 
         public float scoreFrequency;
         public int scoreMult = 1;
 
         public int scorePerDistance;
-        public TextMeshProUGUI textField;
+        public TextMeshProUGUI textFieldScore, textFieldCombo;
 
-        private float timeAdder;
+        public float timeAdder;
 
         [SerializeField] private int[] combos = {1, 2, 4, 8};
         [SerializeField] private int[] comboTime = { -1, 12, 8, 4};
         private int[] killsToIncrease = {1, 12, 20};
-        private int killcount;
+        public int killcount;
 
-        private int _combo;
-        public int _comboState;
+        public int combo;
+        public int comboState;
 
         public static ScoreHandler Handler;
 
         public int monoSpacingCharacterSize;
 
-        public int Combo => _combo;
+        public int Combo => combo;
 
         public Animator comboAnimator;
-        public Image comboFiller; 
+        public Image comboFiller;
+        
+        private float _filleramount;
 
         void Start()
         {
             Handler = this;
-            _combo = combos[0];
+            combo = combos[0];
         }
         // Update is called once per frame
         private void FixedUpdate()
@@ -51,19 +53,20 @@ namespace Environment
             if (_update >= scoreFrequency)
             {
                 AddScore(scorePerDistance * scoreMult);
-                textField.text = ConvertToScoreFormat(score);
+                textFieldScore.text = ConvertToScoreFormat(score);
                 _update = 0;
             }
         }
 
         void Update()
         {
-            if (comboTime[_comboState]!=-1)
-                if(comboTime[_comboState] >= timeAdder){
-                    comboFiller.fillAmount = 1 - comboTime[_comboState] / timeAdder;
+            if (comboState!=0)
+                if(comboTime[comboState] >= timeAdder){
+                    _filleramount = (timeAdder / (comboTime[comboState]));
+                    comboFiller.fillAmount = 1 - _filleramount;
                     timeAdder += Time.deltaTime;
                 }
-                else ResetCombo();
+                else DecreaseCombo();
         }
 
         public void AddScore(int score)
@@ -74,7 +77,7 @@ namespace Environment
         public void RegisterKill()
         {
             killcount++;
-            if (_comboState != 2 && killcount >= killsToIncrease[_comboState])
+            if (comboState != 3 && killcount >= killsToIncrease[comboState])
             {
                 IncreaseCombo();
             }
@@ -82,15 +85,24 @@ namespace Environment
 
         public void IncreaseCombo()
         {
-            _combo = combos[++_comboState];
-            _comboState = Mathf.Clamp(_comboState, 0, combos.Length - 1);
+            comboAnimator.SetTrigger("Appear");
+            combo = combos[++comboState];
+            textFieldCombo.text = ConvertToComboFormat(combo);
+            comboState = Mathf.Clamp(comboState, 0, combos.Length - 1);
             ResetTimer();
         }
         
         public void DecreaseCombo()
         {
-            _combo = combos[--_comboState];
-            _comboState = Mathf.Clamp(_comboState, 0, combos.Length - 1);
+            combo = combos[--comboState];
+            if (comboState == 0)
+            {
+                comboAnimator.SetTrigger("Reset");
+            }
+            textFieldCombo.text = ConvertToComboFormat(combo);
+            comboState = Mathf.Clamp(comboState, 0, combos.Length - 1);
+            killcount = 0;
+            ResetTimer();
         }
 
         public void ResetTimer()
@@ -100,13 +112,13 @@ namespace Environment
 
         public void ResetCombo()
         {
-            if (_combo != 1)
+            if (combo != 1)
             {
-                _comboState = 0;
-                _combo = combos[_comboState];
-                timeAdder = 0;
+                Debug.Log("reset");
+                comboState = 0;
+                combo = combos[comboState];
+                ResetTimer();
                 killcount = 0;
-                Debug.Log("Reset");
                 comboAnimator.SetTrigger("Reset");
             }
         }
@@ -115,6 +127,11 @@ namespace Environment
         {
             return "<mspace=" + monoSpacingCharacterSize + 
                    ">" + score.ToString().PadLeft(6, '0') + "</mspace>";
+        }
+
+        private string ConvertToComboFormat(int combo)
+        {
+            return combo.ToString().PadRight(2, 'x');
         }
     }
 }

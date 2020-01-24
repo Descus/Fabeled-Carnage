@@ -46,7 +46,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.4155016, y: 2.519631}
+  m_Offset: {x: 0.13, y: 0.46}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.573511, y: 6.9077196}
+  m_Size: {x: 1.86, y: 1.18}
   m_EdgeRadius: 0
 --- !u!114 &7536587202171079808
 MonoBehaviour:
@@ -99,8 +99,10 @@ MonoBehaviour:
   - {fileID: 6419829771907620286}
   - {fileID: 2289971495676460034}
   - {fileID: 5746030973744185615}
+  killParticleSpawner: {fileID: 0}
+  bloodPile: {fileID: 0}
   animator: {fileID: 8555086216766743413}
-  staminaAmount: 25
+  staminaAmount: 20
   dodgeDistance: 10
 --- !u!1001 &3966350702731004375
 PrefabInstance:
@@ -168,6 +170,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917834617833396493, guid: 3a53cc936b55bc44ba4bbe97f7c236f3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6917834617833396493, guid: 3a53cc936b55bc44ba4bbe97f7c236f3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a53cc936b55bc44ba4bbe97f7c236f3, type: 3}

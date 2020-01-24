@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Utility;
 
 namespace Environment
@@ -15,13 +16,14 @@ namespace Environment
         public float slowAmount;
 
         public float speed = -1.5f;
-        
-        private float comboInc = 0;
+
+        public ParticleSystemForceField forceField;
         
 
         private void Update()
         {
             gameSpeed = GetGameSpeed(Time.time);
+            forceField.directionX = -gameSpeed * speed;
             if (Input.GetKeyDown(KeyCode.D))
             {
                 // ReSharper disable once CompareOfFloatsByEqualityOperator
@@ -30,20 +32,20 @@ namespace Environment
                 else
                     Time.timeScale = 1f;
             }
-
-            comboInc = ScoreHandler.Handler.Combo != 1? ScoreHandler.Handler.Combo * 0.05f : 0;
+            
             EventHandler.BroadcastActorMove(speed * gameSpeed);
             EventHandler.BroadcastBackgroundMove(speed * (1 - slowAmount) * gameSpeed);
         }
 
         private float GetGameSpeed(float time)
         {
-            if (time < 20) return 0.002f * time + comboInc + 1;
-            if (time < 30) return 0.016f * time + comboInc + 0.72f;
-            if (time < 40) return 0.02f * time + comboInc + 0.6f;
-            if (time < 45) return 0.04f * time + comboInc - 0.2f;
-            if (time < 50) return 0.2f * time + comboInc - 7.4f;
-            return 0.02f * time + comboInc + 1.6f;
+            /*if (time < 30) return 0.002f * time + comboInc + 1;
+            if (time < 40) return 0.016f * time + comboInc + 0.72f;
+            if (time < 55) return 0.02f * time + comboInc + 0.6f;
+            if (time < 65) return 0.04f * time + comboInc - 0.2f;
+            if (time < 75) return 0.2f * time + comboInc - 7.4f;
+            return 0.02f * time + comboInc + 1.6f;*/
+            return Mathf.Sqrt(time)/(9- ScoreHandler.Handler.comboState) + 1;
         }
 
         

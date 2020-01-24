@@ -9,7 +9,9 @@
         <e p="Scripts" t="Include">
           <e p="Actors" t="Include">
             <e p="Animal.cs" t="Include" />
+            <e p="BloodEffects.cs" t="Include" />
             <e p="Enemy" t="Include">
+              <e p="Goose.cs" t="Include" />
               <e p="Hedgehog.cs" t="Include" />
               <e p="Rabbit.cs" t="Include" />
               <e p="Sheep.cs" t="Include" />

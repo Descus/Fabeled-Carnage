@@ -35,6 +35,7 @@ namespace Actors.MainCharacter
         private Image _staminaBar;
         private bool _topZone, _botZone, _attackZone;
         public Animator animator;
+        public Transform stopperTop, stopperBottom;
 
 
         [Header("Attack")] public float attackCooldown;
@@ -65,10 +66,7 @@ namespace Actors.MainCharacter
 #endif
         [SerializeField]
         private float startAttack;
-
-        public float bottomAdjust;
-        public float topAdjust;
-
+        
         private void Start()
         {
             _changedStaminaMult = staminaMult;
@@ -77,7 +75,7 @@ namespace Actors.MainCharacter
             _npcSpawner = spawner.GetComponent<NpcSpawner>();
             _staminaBar = GameObject.Find("StaminaBar").GetComponent<Image>();
             transform.position = 
-                new Vector3(-NpcSpawner.RightSreenX + _npcSpawner.xPositioning, LaneManager.LANEHEIGHT * 2);
+                new Vector3(-NpcSpawner.RightSreenX + _npcSpawner.xPositioning, LaneManager.manager.LANEHEIGHT * 2);
             _killzone = killzoneCollider.GetComponent<Killzone>();
         }
 
@@ -117,29 +115,23 @@ namespace Actors.MainCharacter
             if (Input.GetKeyDown(KeyCode.Keypad4) && !Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 10;
             if (Input.GetKeyDown(KeyCode.Keypad6) && Input.GetKey(KeyCode.LeftShift)) _scroller.speed += 1;
             if (Input.GetKeyDown(KeyCode.Keypad4) && Input.GetKey(KeyCode.LeftShift)) _scroller.speed -= 1;
-
-            ClampDebugValues();
         }
 
-        private void ClampDebugValues()
-        {
-            speed = Mathf.Clamp(speed, 0, 1);
-            _npcSpawner.spawnCooldownSec = Mathf.Clamp(_npcSpawner.spawnCooldownSec, 0.1f, 15);
-        }
+        
 
         private void HandleFixedLaning()
         {
 //Snapping Enabled #Clunky AF
             //
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && _snapToLane)
-                if (currentLane < LaneManager.LANECOUNT - 1)
+                if (currentLane < LaneManager.manager.LANECOUNT - 1)
                     currentLane++;
 
             if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow) && _snapToLane)
                 if (currentLane > 0)
                     currentLane--;
 
-            if (_snapToLane) transform.position = new Vector3(_npcSpawner.xPositioning, LaneManager.Spawns[currentLane, 0].y, 0);
+            if (_snapToLane) transform.position = new Vector3(_npcSpawner.xPositioning, LaneManager.manager.Spawns[currentLane, 0].y, 0);
         }
 
         private void EndAttacking()
@@ -223,7 +215,7 @@ namespace Actors.MainCharacter
 
         private void HandleStamina()
         {
-            stamina -= _changedStaminaMult * _scroller.gameSpeed * Time.deltaTime;
+            ReduceStamina(_changedStaminaMult * _scroller.gameSpeed * Time.deltaTime);
             _staminaBar.fillAmount = stamina / maxStamina;
 
             if (stamina <= 0) Die();
@@ -243,14 +235,14 @@ namespace Actors.MainCharacter
         private void MoveUp()
         {
             Vector3 pos = transform.position;
-            if (pos.y < LaneManager.MINLANEY + LaneManager.LANEHEIGHT * (LaneManager.LANECOUNT - 1) + topAdjust)
-                transform.position = pos + speed * _vertSlow * Vector3.up;
+            if (pos.y < stopperTop.position.y)
+                transform.position = pos + speed * _vertSlow * Time.deltaTime * Vector3.up;
         }
 
         private void MoveDown()
         {
             Vector3 pos = transform.position;
-            if (pos.y > LaneManager.MINLANEY + bottomAdjust) transform.position = pos + speed * _vertSlow * Vector3.down;
+            if (pos.y > stopperBottom.position.y) transform.position = pos + speed * _vertSlow * Time.deltaTime * Vector3.down;
         }
 
         public void Attack()

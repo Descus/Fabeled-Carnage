@@ -2,26 +2,145 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607740c3-5502-4610-b0ac-214365174f1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/Madjoe SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Madjoe SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 10.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 8.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 9.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood drip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood drip.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood effect .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood effect .png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Sweat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Sweat.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Body V1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Body V1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Body V2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Body V2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Ear 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Ear 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Ear 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Ear 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg .png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg Foot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg Foot.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg Shin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg Shin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg shoulder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg shoulder.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Head.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Foot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Foot.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Shin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Shin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Thigh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Thigh.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Mouth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Mouth.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Tail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Tail.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Front leg Black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Front leg Black.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Front leg Shoe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Front leg Shoe.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Hind leg Black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Hind leg Black.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Hind leg shoe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Hind leg shoe.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Left Body v1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Left Body v1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Left Body v2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Left Body v2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Right Body v1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Right Body v1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Right Body v2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Right Body v2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Bell Version 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Bell Version 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Bell.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Bell.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Body,Hind Thigh Version 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Body,Hind Thigh Version 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Body.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Body.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear 1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Hoof .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Hoof .png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Hoof, Front Thigh Version 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Hoof, Front Thigh Version 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Thigh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Thigh.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Head,Ear 1,Ear 2 Version 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Head,Ear 1,Ear 2 Version 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Head.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Hoof .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Hoof .png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Hoof Version 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Hoof Version 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Thigh .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Thigh .png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Lamb Heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Lamb Heart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Lamb_Head_At_Screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Lamb_Head_At_Screen.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Tail Version 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Tail Version 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Tail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Tail.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bunny.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lamb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lamb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bunny/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bunny/Bunny.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lamb/Lamb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lamb/Lamb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawner.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wolf 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Wolf 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/Trans Settings.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/Trans Settings.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/back Settings.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/MenuUI/back Settings.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/UIAnimation/appear2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/appear2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/ButtonBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/ButtonBackground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.psb.meta.rej" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.psb.meta.rej.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/WolfCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/WolfCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,6 +170,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structs/BackgroundTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IKillable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@2.2.1-preview.2/Runtime/SpriteSkin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/BloodEffects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IScrollable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,9 +184,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Bunny.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Utilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ScoreSaver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Goose.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/ISlowable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
@@ -108,7 +230,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IScrollable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Stone.cs" />
         <option value="$PROJECT_DIR$/Assets/Teat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Teat.cs" />
@@ -119,13 +240,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/BloodEffects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Goose.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
       </list>
     </option>
   </component>
@@ -157,10 +281,10 @@
     </option>
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="2024">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="17448">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="2024" />
+      <option name="pid" value="17448" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -202,7 +326,7 @@
       <workItem from="1579601019290" duration="544000" />
       <workItem from="1579601604627" duration="3829000" />
       <workItem from="1579685313166" duration="16753000" />
-      <workItem from="1579779188371" duration="4612000" />
+      <workItem from="1579779188371" duration="21423000" />
     </task>
     <servers />
   </component>
@@ -234,19 +358,6 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs</url>
-          <line>9</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" initialLine="9">
-            <startOffsets>
-              <option value="225" />
-            </startOffsets>
-            <endOffsets>
-              <option value="226" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
