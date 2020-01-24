@@ -8,7 +8,6 @@ namespace UI
         public void LoadScene(string name)
         {
             SceneManager.LoadScene(name);
-            Debug.Log("AAAHHHH");
         }
 
         public void QuitGame()

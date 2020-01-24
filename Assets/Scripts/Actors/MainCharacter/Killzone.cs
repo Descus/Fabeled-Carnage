@@ -8,7 +8,7 @@ namespace Actors.MainCharacter
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            InKillzone = other.gameObject;
+            if(InKillzone == null) InKillzone = other.gameObject;
         }
 
         private void OnTriggerExit2D(Collider2D other)

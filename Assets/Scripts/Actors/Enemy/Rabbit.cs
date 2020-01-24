@@ -18,11 +18,15 @@ namespace Actors.Enemy
             
         }
 
+        new void Start()
+        {
+            base.Start();
+        }
+
         public override bool Kill(GameObject killer)
         {
             if (!killer.gameObject.GetComponent<Scroller>())
             {
-                Debug.Log(_canDodge);
                 if (_canDodge)
                 {
                     Dodge();

@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using Actors;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
 using UnityEngine.UI;
@@ -40,6 +41,9 @@ namespace Environment
         public Image comboFiller;
         
         private float _filleramount;
+        public CameraShaker cameraShaker;
+        public float duration;
+        public float magnitude;
 
         void Start()
         {
@@ -86,6 +90,7 @@ namespace Environment
         public void IncreaseCombo()
         {
             comboAnimator.SetTrigger("Appear");
+            //StartCoroutine(cameraShaker.Shake(duration, magnitude));
             combo = combos[++comboState];
             textFieldCombo.text = ConvertToComboFormat(combo);
             comboState = Mathf.Clamp(comboState, 0, combos.Length - 1);
@@ -123,7 +128,7 @@ namespace Environment
             }
         }
 
-        private string ConvertToScoreFormat(int score)
+        public string ConvertToScoreFormat(int score)
         {
             return "<mspace=" + monoSpacingCharacterSize + 
                    ">" + score.ToString().PadLeft(6, '0') + "</mspace>";

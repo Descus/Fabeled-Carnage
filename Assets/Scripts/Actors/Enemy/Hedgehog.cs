@@ -1,4 +1,5 @@
 ﻿
+using System;
 using Actors.MainCharacter;
 using Environment;
 using UnityEngine;
@@ -8,7 +9,7 @@ namespace Actors.Enemy
 {
     public class Hedgehog : Animal
     {
-        [SerializeField] [ReadOnly]
+        [SerializeField]
         private bool isRolling;
         public float staminaLoss;
         public float rollingTime;

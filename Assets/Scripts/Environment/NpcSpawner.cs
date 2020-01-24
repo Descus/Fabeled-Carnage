@@ -1,5 +1,6 @@
 ﻿using System;
 using Actors;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Utility;
@@ -62,7 +63,8 @@ namespace Environment
 
         private Texture2D GetNewMap()
         {
-            return maps[Random.Range(0, maps.Length)];
+            Texture2D tex = maps[Random.Range(0, maps.Length)];
+            return tex;
         }
 
         private void GeneratePattern(Texture2D map)
@@ -98,6 +100,7 @@ namespace Environment
                     {
                         GameObject gObject = Instantiate(colorMapping.prefab, LaneManager.manager.Spawns[y, x],
                             Quaternion.identity);
+                        Debug.Log(gObject);
                         gObject.GetComponent<GameActor>().lane = y;
                     }
             }

@@ -18,12 +18,17 @@ namespace Environment
         public float speed = -1.5f;
 
         public ParticleSystemForceField forceField;
-        
+
+        public static Scroller scroller;
+        void Start()
+        {
+            scroller = this;
+        }
 
         private void Update()
         {
             gameSpeed = GetGameSpeed(Time.time);
-            forceField.directionX = -gameSpeed * speed;
+            forceField.directionX = -gameSpeed * speed * 2;
             if (Input.GetKeyDown(KeyCode.D))
             {
                 // ReSharper disable once CompareOfFloatsByEqualityOperator
@@ -48,6 +53,9 @@ namespace Environment
             return Mathf.Sqrt(time)/(9- ScoreHandler.Handler.comboState) + 1;
         }
 
-        
+        public void ReduceGameSpeed()
+        {
+            Time.timeScale = 0.3f;
+        }
     }
 }

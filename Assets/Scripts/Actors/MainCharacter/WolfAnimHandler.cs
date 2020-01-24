@@ -9,6 +9,16 @@ namespace Actors.MainCharacter
         {
             wolf.HandleKill();
         }
-    
+
+        public void DisplayGameOverScreen()
+        {
+            wolf.DisplayGameOverScreen();
+        }
+
+        public void ReduceGameSpeed()
+        {
+            wolf.ReduceGameSpeed();
+        }
+
     }
 }

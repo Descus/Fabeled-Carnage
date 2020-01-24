@@ -1,6 +1,6 @@
 ﻿namespace Environment
 {
-    public class EventHandler
+    public static class EventHandler
     {
         public delegate void MoveSubsriber(float speed);
 

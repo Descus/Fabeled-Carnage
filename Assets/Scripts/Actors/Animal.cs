@@ -40,8 +40,8 @@ namespace Actors
             _spawner = GameObject.Find("Spawner").GetComponent<NpcSpawner>();
             TimeCreation = Time.time;
             Speed = Mathf.Abs(baseSpeed);
-            killParticleSpawner.collision.SetPlane(0, LaneManager.manager.Despawner[lane]);
-            killParticleSpawner.subEmitters.GetSubEmitterSystem(0)
+            if(killParticleSpawner)killParticleSpawner.collision.SetPlane(0, LaneManager.manager.Despawner[lane]);
+            if(killParticleSpawner)killParticleSpawner.subEmitters.GetSubEmitterSystem(0)
                 .collision.SetPlane(0, LaneManager.manager.Despawner[lane]);
             foreach (SpriteRenderer renderer in renderers) renderer.sortingLayerName = "Lane" + (lane + 1);
             NpcSpawner.AddEnemyToField();
@@ -51,13 +51,13 @@ namespace Actors
         {
             if (!killer.gameObject.GetComponent<Scroller>() && !alreadyKilled)
             {
-                if(!killParticleSpawner.isPlaying)killParticleSpawner.Play(true);
+                if(killParticleSpawner && !killParticleSpawner.isPlaying)killParticleSpawner.Play(true);
                 EventHandler.UnSubscribePushEvent(Push);
                 GetComponent<Collider2D>().enabled = false;
                 foreach (Renderer renderer in renderers) renderer.enabled = false;
                 Instantiate(bloodPile, gameObject.transform.position, Quaternion.identity);
                 alreadyKilled = true;
-                Destroy(gameObject, killParticleSpawner.main.duration);
+                Destroy(gameObject, killParticleSpawner?killParticleSpawner.main.duration:0);
                 NpcSpawner.RemoveEnemy();
             } 
             else if (!alreadyKilled)
@@ -108,7 +108,7 @@ namespace Actors
         {
             if (_bLerp)
             {
-                _lerpfac += Time.deltaTime;
+                _lerpfac += Time.deltaTime/2;
                 Vector3 niew = Vector3.Lerp(_start, _target, _lerpfac);
                 transform.position = niew;
                 if (_lerpfac >= 1)

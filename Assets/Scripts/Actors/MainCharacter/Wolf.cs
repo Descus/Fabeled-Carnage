@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using Environment;
 using Interfaces;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -36,7 +37,8 @@ namespace Actors.MainCharacter
         private bool _topZone, _botZone, _attackZone;
         public Animator animator;
         public Transform stopperTop, stopperBottom;
-
+        private bool movingUp, movingDown;
+        public GameObject uiScreen, gameOverScreen;
 
         [Header("Attack")] public float attackCooldown;
 
@@ -53,6 +55,8 @@ namespace Actors.MainCharacter
 
         [Header("Movement")] public float speed = .1f;
         private float _vertSlow = 1;
+        public TextMeshProUGUI score;
+        private float stunEnd;
 
 #if UNITY_EDITOR
         [ReadOnly]
@@ -87,10 +91,13 @@ namespace Actors.MainCharacter
             HandleStamina();
             ResetAttackCooldown();
             EndAttacking();
-            
+            //animator.SetFloat("GameSpeed", Scroller.scroller.gameSpeed);
+            animator.SetBool("MovingUpDown", movingUp || movingDown);
             //TODO remove later
             HandleFixedLaning();
             HandleDebugKeybinds();
+            
+            if(Time.time >= stunEnd) animator.SetBool("IsStunned", false);
         }
 
         private void HandleDebugKeybinds()
@@ -179,8 +186,9 @@ namespace Actors.MainCharacter
             if (!_snapToLane && !attacking)
             {
                 if (Input.GetAxis("Vertical") > 0 || _topZone) MoveUp();
-
+                else movingUp = false;
                 if (Input.GetAxis("Vertical") < 0 || _botZone) MoveDown();
+                else movingDown = false;
             }
 
             if (Input.GetAxis("Jump") > 0) Attack();
@@ -236,13 +244,25 @@ namespace Actors.MainCharacter
         {
             Vector3 pos = transform.position;
             if (pos.y < stopperTop.position.y)
+            {
                 transform.position = pos + speed * _vertSlow * Time.deltaTime * Vector3.up;
+                movingUp = true;
+            }
+            else movingUp = false;
+                
         }
 
         private void MoveDown()
         {
             Vector3 pos = transform.position;
-            if (pos.y > stopperBottom.position.y) transform.position = pos + speed * _vertSlow * Time.deltaTime * Vector3.down;
+            if (pos.y > stopperBottom.position.y)
+            {
+                transform.position = pos + speed * _vertSlow * Time.deltaTime * Vector3.down;
+                movingDown = true;
+            }
+            else movingDown = false;
+
+
         }
 
         public void Attack()
@@ -259,7 +279,7 @@ namespace Actors.MainCharacter
 
         public void Die()
         {
-            
+            // animator.SetTrigger("Death");
         }
         public void StartSlow(float amount)
         {
@@ -274,6 +294,25 @@ namespace Actors.MainCharacter
             _scroller.slowAmount = 0.0f;
             _changedStaminaMult = staminaMult;
             _vertSlow = 1;
+        }
+
+        public void DisplayGameOverScreen()
+        {
+            score.text = ScoreHandler.Handler.ConvertToScoreFormat(ScoreHandler.Handler.score);
+            Time.timeScale = 0;
+            uiScreen.SetActive(false);
+            gameOverScreen.SetActive(true);
+        }
+
+        public void ReduceGameSpeed()
+        {
+            Scroller.scroller.ReduceGameSpeed();
+        }
+
+        public void Stun(float time)
+        {
+            stunEnd = Time.time + time;
+            animator.SetBool("IsStunned", true);
         }
     }
 }

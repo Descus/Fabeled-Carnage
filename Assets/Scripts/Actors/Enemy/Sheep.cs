@@ -5,5 +5,10 @@
         protected override void PlayLeapAnim()
         {
         }
+
+        new void Start()
+        {
+            base.Start();
+        }
     }
 }

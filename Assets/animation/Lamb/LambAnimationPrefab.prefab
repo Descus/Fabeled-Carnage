@@ -583,9 +583,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2907523260878569636}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 5.266786, y: 10.692974, z: 0}
-  m_LocalScale: {x: 1.0000002, y: 1.0000002, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3697099358561653172}
   - {fileID: 6943312425642441890}
@@ -594,8 +594,8 @@ Transform:
   - {fileID: 5992371318855427152}
   - {fileID: 7947014526179426452}
   - {fileID: 3009764815319705229}
-  m_Father: {fileID: 949663858916627439}
-  m_RootOrder: 0
+  m_Father: {fileID: 2890412893207713631}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &3128269529504695304
 GameObject:
@@ -802,37 +802,6 @@ MonoBehaviour:
     m_Center: {x: 4.091807, y: -1.0847383, z: 0}
     m_Extent: {x: 1.9875026, y: 2.824977, z: 0}
   m_UseBatching: 1
---- !u!1 &3705592569027248617
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 949663858916627439}
-  m_Layer: 0
-  m_Name: root
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &949663858916627439
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3705592569027248617}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7816365721679403066}
-  m_Father: {fileID: 2890412893207713631}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3917692165452422595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,7 +1641,7 @@ GameObject:
   - component: {fileID: 2890412893207713631}
   - component: {fileID: 2969732320654538088}
   m_Layer: 0
-  m_Name: LambPutTogether (1)
+  m_Name: LambAnimationPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1702,7 +1671,7 @@ Transform:
   - {fileID: 4063530678258815723}
   - {fileID: 8590568105631367420}
   - {fileID: 7433555122595011121}
-  - {fileID: 949663858916627439}
+  - {fileID: 7816365721679403066}
   - {fileID: 5645181034662927690}
   m_Father: {fileID: 0}
   m_RootOrder: 0

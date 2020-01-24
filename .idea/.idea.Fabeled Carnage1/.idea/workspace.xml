@@ -2,146 +2,156 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607740c3-5502-4610-b0ac-214365174f1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Rendering/New Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Rendering/New Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Rendering/Shaders/FogShader.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Rendering/Shaders/FogShader.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Rendering/Shaders/FogShaderMaterial.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Rendering/Shaders/FogShaderMaterial.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Rendering/Shaders/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Rendering/Shaders/Textures/FogShaderTexture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Rendering/Shaders/Textures/FogShaderTexture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Rendering/Shaders/WhiteTexture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Rendering/Shaders/WhiteTexture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny/Bunny.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Stone.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Stone.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/LightingData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/LightingData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/CameraShaker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/CameraShaker.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Stein.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Stein.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternBunny.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternBunny.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternGrass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternGrass.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternHedgehog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternHedgehog.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternStone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternStone.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternsheep.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternsheep.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern4.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern5.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern6.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern7.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/Pattern8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/UIPrefabs/CameraHolder.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/UIPrefabs/CameraHolder.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/UIPrefabs/GameOver.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/UIPrefabs/GameOver.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/animation/Hedgehog/Hedgehog_rdy_fur_unity.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/animation/Hedgehog/Hedgehog_rdy_fur_unity.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Staub.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Staub.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Staubwolke.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Staubwolke.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Madjoe SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Madjoe SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 10.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 6.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 7.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 8.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood Pile 9.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood drip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood drip.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood effect .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Blood effect .png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Sweat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Blood Effects/Sweat.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Body V1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Body V1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Body V2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Body V2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Ear 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Ear 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Ear 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Ear 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg .png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg Foot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg Foot.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg Shin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg Shin.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg shoulder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Front leg shoulder.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Head.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Head.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Foot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Foot.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Shin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Shin.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Thigh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg Thigh.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Hind leg.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Mouth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Mouth.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Tail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Bunny/Tail.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Front leg Black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Front leg Black.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Front leg Shoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Front leg Shoe.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Hind leg Black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Hind leg Black.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Hind leg shoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Hind leg shoe.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Left Body v1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Left Body v1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Left Body v2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Left Body v2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Right Body v1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Right Body v1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Right Body v2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Hedgehog/Right Body v2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Bell Version 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Bell Version 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Bell.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Bell.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Body,Hind Thigh Version 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Body,Hind Thigh Version 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Body.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Body.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Ear.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Hoof .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Hoof .png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Hoof, Front Thigh Version 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Hoof, Front Thigh Version 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Thigh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Front Thigh.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Head,Ear 1,Ear 2 Version 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Head,Ear 1,Ear 2 Version 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Head.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Head.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Hoof .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Hoof .png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Hoof Version 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Hoof Version 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Thigh .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Hind Thigh .png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Lamb Heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Lamb Heart.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Lamb_Head_At_Screen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Lamb_Head_At_Screen.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Tail Version 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Tail Version 2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Tail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Gore/Lamb/Tail.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bunny.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bunny/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bunny/Bunny.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lamb/Lamb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Lamb/Lamb.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawner.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wolf 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Wolf 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Particles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Backgrounds.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Backgrounds.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Backgrounds/BackgroundTiles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Backgrounds/BackgroundTiles.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Backgrounds/BackgroundTiles.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Backgrounds/BackgroundTiles.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Blood effect .prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Blood effect .prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Blood effect .prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Blood effect .prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bunny 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bunny 1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny 1.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bunny.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bunny.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bunny/Bunny.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bunny/Bunny.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny/Bunny.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Canvas.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Goose.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Goose.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Goose/Goose.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Goose/Goose.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Goose/Goose.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Goose/Goose.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Grass.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grass.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Grass.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hedgehog.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog/Hedgehog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hedgehog/Hedgehog.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hedgehog/Hedgehog.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hedgehog/Hedgehog.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lamb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Lamb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lamb/Lamb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Lamb/Lamb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Lamb/Lamb.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Lamb/Lamb.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LambReskinTest.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/LambReskinTest.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LambReskinTest.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/LambReskinTest.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New Sprite 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/New Sprite 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New Sprite 1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/New Sprite 1.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New Sprite 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/New Sprite 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New Sprite 2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/New Sprite 2.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New Sprite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/New Sprite.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/New Sprite.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/New Sprite.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spawner.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawner.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wolf 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wolf 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wolf 1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wolf 1.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wolf.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wolf.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wolf.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wolf.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rendering/PostProcessing/AmbiantFlair.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Rendering/PostProcessing/AmbiantFlair.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UIExit.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UIExit.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Sheep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Sheep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/WolfAnimHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/WolfAnimHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Stone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Stone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/ButtonBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/ButtonBackground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.psb.meta.rej" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.psb.meta.rej.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/SceneLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Gore/Blood Effects/BloodDrips.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Gore/Blood Effects/BloodDrips.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Gore/Lamb/SpriteSheetAnimation.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Gore/Lamb/SpriteSheetAnimation.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/gras_buschel_ding.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/gras_buschel_ding.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/gras_buschel_ding.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/gras_buschel_ding.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPattern2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPattern2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternPhotoshop.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternPhotoshop.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternPhotoshop.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/patterns/Debug/DebugPatternPhotoshop.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterBackground.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/ComboCounterBackground.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/UIAnimation/appear2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/UIAnimation/appear2.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny.psb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny_Running.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny_Running.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny_Scared.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Bunny/Bunny_Scared.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Hedgehog/Hedgehog_rdy_fur_unity.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Hedgehog/Hedgehog_rdy_fur_unity.psb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Lamb/LambAnimationPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Lamb/LambAnimationPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Lamb/LambPutTogether.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Lamb/LambPutTogether.psb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Lamb/Lamb_running_20.01.2020.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Lamb/Lamb_running_20.01.2020.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Lamb/Lamb_scared.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Lamb/Lamb_scared.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/WolfCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/WolfCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_Death.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_Stun.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_Stun.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo 1.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,6 +165,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/CameraShaker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -166,6 +177,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structs/ScoreObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ColorPrefab.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/ReadonlyAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ComboDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Structs/BackgroundTile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IKillable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -184,7 +196,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Bunny.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Utilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Environment/ScoreSaver.cs" root0="FORCE_HIGHLIGHTING" />
@@ -200,7 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ButtonPressed.cs" />
         <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/CustomButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Killzone.cs" />
@@ -210,7 +220,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/BackgroundTile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IsSlowable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Wolf.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Sheep.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle/Grass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ReadonlyAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreManager.cs" />
@@ -226,30 +235,33 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Utilities.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IKillable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IScrollable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/BackgroundSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Stone.cs" />
         <option value="$PROJECT_DIR$/Assets/Teat.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Teat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/WolfAnimHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ComboDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IPushable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Background.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/BloodEffects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/LaneManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Goose.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/WolfAnimHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/CameraShaker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/EventHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Hedgehog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Stone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/SceneLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/NpcSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Rabbit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Enemy/Sheep.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/Obstacles/Grass.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Scroller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Actors/MainCharacter/Killzone.cs" />
       </list>
     </option>
   </component>
@@ -326,7 +338,7 @@
       <workItem from="1579601019290" duration="544000" />
       <workItem from="1579601604627" duration="3829000" />
       <workItem from="1579685313166" duration="16753000" />
-      <workItem from="1579779188371" duration="21423000" />
+      <workItem from="1579779188371" duration="37825000" />
     </task>
     <servers />
   </component>

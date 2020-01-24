@@ -4,15 +4,9 @@ using UnityEngine;
 namespace Actors.Obstacles
 {
     [RequireComponent(typeof(Collider2D))]
-    public class Grass : Obstacle, IKillable
+    public class Grass : Obstacle
     {
         public float slowAmount;
-
-        public bool Kill(GameObject killer)
-        {
-            Destroy(gameObject);
-            return true;
-        }
 
         private void OnTriggerStay2D(Collider2D other)
         {
