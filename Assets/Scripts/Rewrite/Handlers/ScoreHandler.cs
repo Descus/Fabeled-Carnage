@@ -1,67 +1,42 @@
-﻿using Actors;
+﻿using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Utility;
 
-namespace Environment
+namespace Rewrite.Handlers
 {
-    public class ScoreHandler : MonoBehaviour
+    public class ScoreHandler: MonoBehaviour
     {
-        private float _update;
-#if UNITY_EDITOR
-        [ReadOnly] [SerializeField]
-#endif
-        public int score;
-
+        private float _update,_filleramount, timeAdder;
         public float scoreFrequency;
-        public int scoreMult = 1;
+        
+        public int score, scoreMult, scorePerDistance, combo, comboState;
+        private int killcount;
 
-        public int scorePerDistance;
-        public TextMeshProUGUI textFieldScore, textFieldCombo;
-
-        public float timeAdder;
-
-        [SerializeField] private int[] combos = {1, 2, 4, 8};
-        [SerializeField] private int[] comboTime = { -1, 12, 8, 4};
+        private int[] combos = {1, 2, 4, 8};
+        private int[] comboTime = { -1, 12, 8, 4};
         private int[] killsToIncrease = {1, 12, 20};
-        public int killcount;
-
-        public int combo;
-        public int comboState;
+        
+        public TextMeshProUGUI textFieldScore, textFieldCombo;
+        public Image comboFiller;
+        public Animator comboAnimator;
 
         public static ScoreHandler Handler;
 
         public int monoSpacingCharacterSize;
 
-        public int Combo => combo;
-
-        public Animator comboAnimator;
-        public Image comboFiller;
-        
-        private float _filleramount;
-        
-        public CameraShaker cameraShaker;
-        public float duration;
-        public float magnitude;
-
-        void Start()
+        private void Start()
         {
             Handler = this;
             combo = combos[0];
         }
-        // Update is called once per frame
+
         private void FixedUpdate()
         {
-            _update += Time.deltaTime;
-            if (_update >= scoreFrequency)
-            {
-                AddScore(scorePerDistance * scoreMult);
-                textFieldScore.text = ConvertToScoreFormat(score);
-                _update = 0;
-            }
+            IncrementUpdate();
+            OnScoreFrequencyReach();
         }
-
+        
         void Update()
         {
             if (comboState!=0)
@@ -71,30 +46,6 @@ namespace Environment
                     timeAdder += Time.deltaTime;
                 }
                 else DecreaseCombo();
-        }
-
-        public void AddScore(int score)
-        {
-            this.score += score * Combo;
-        }
-
-        public void RegisterKill()
-        {
-            killcount++;
-            if (comboState != 3 && killcount >= killsToIncrease[comboState])
-            {
-                IncreaseCombo();
-            }
-        }
-
-        public void IncreaseCombo()
-        {
-            comboAnimator.SetTrigger("Appear");
-            //StartCoroutine(cameraShaker.Shake(duration, magnitude));
-            combo = combos[++comboState];
-            textFieldCombo.text = ConvertToComboFormat(combo);
-            comboState = Mathf.Clamp(comboState, 0, combos.Length - 1);
-            ResetTimer();
         }
         
         public void DecreaseCombo()
@@ -106,8 +57,32 @@ namespace Environment
             }
             textFieldCombo.text = ConvertToComboFormat(combo);
             comboState = Mathf.Clamp(comboState, 0, combos.Length - 1);
-            killcount = 0;
+            ResetKillcount();
             ResetTimer();
+        }
+        
+        public void RegisterKill()
+        {
+            killcount++;
+            if (comboState != 3 && killcount >= killsToIncrease[comboState])
+            {
+                IncreaseCombo();
+            }
+        }
+        
+        public void IncreaseCombo()
+        {
+            comboAnimator.SetTrigger("Appear");
+            //StartCoroutine(cameraShaker.Shake(duration, magnitude));
+            combo = combos[++comboState];
+            textFieldCombo.text = ConvertToComboFormat(combo);
+            comboState = Mathf.Clamp(comboState, 0, combos.Length - 1);
+            ResetTimer();
+        }
+
+        private void ResetKillcount()
+        {
+            killcount = 0;
         }
 
         public void ResetTimer()
@@ -115,6 +90,21 @@ namespace Environment
             timeAdder = 0;
         }
 
+        private string ConvertToComboFormat(int i)
+        {
+            return combo.ToString().PadRight(2, 'x');
+        }
+
+        private void OnScoreFrequencyReach()
+        {
+            if (_update >= scoreFrequency)
+            {
+                AddScore(scorePerDistance * scoreMult);
+                textFieldScore.text = ConvertToScoreFormat(score);
+                _update = 0;
+            }
+        }
+        
         public void ResetCombo()
         {
             if (combo != 1)
@@ -123,20 +113,25 @@ namespace Environment
                 comboState = 0;
                 combo = combos[comboState];
                 ResetTimer();
-                killcount = 0;
+                ResetKillcount();
                 comboAnimator.SetTrigger("Reset");
             }
         }
 
-        public string ConvertToScoreFormat(int score)
+        public string ConvertToScoreFormat(int i)
         {
             return "<mspace=" + monoSpacingCharacterSize + 
                    ">" + score.ToString().PadLeft(6, '0') + "</mspace>";
         }
 
-        private string ConvertToComboFormat(int combo)
+        public void AddScore(int score)
         {
-            return combo.ToString().PadRight(2, 'x');
+            
+        }
+
+        private void IncrementUpdate()
+        {
+            _update += Time.deltaTime;
         }
     }
 }

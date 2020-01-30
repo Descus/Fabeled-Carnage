@@ -179,7 +179,7 @@ namespace Actors.MainCharacter
         private bool AttackFinished()
         {
             return startAttack + attackDuration <= Time.time;
-        }
+                 }
 
         private void GetKeyInput()
         {

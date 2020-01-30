@@ -54,8 +54,8 @@ namespace Actors
                 if(killParticleSpawner && !killParticleSpawner.isPlaying)killParticleSpawner.Play(true);
                 EventHandler.UnSubscribePushEvent(Push);
                 GetComponent<Collider2D>().enabled = false;
-                foreach (Renderer renderer in renderers) renderer.enabled = false;
-                Instantiate(bloodPile, gameObject.transform.position, Quaternion.identity);
+                DisableAllRenderers();
+                SpawnBloodPile();
                 alreadyKilled = true;
                 Destroy(gameObject, killParticleSpawner?killParticleSpawner.main.duration:0);
                 NpcSpawner.RemoveEnemy();
@@ -68,6 +68,16 @@ namespace Actors
             
             
             return true;
+        }
+
+        private void SpawnBloodPile()
+        {
+            Instantiate(bloodPile, gameObject.transform.position, Quaternion.identity);
+        }
+
+        private void DisableAllRenderers()
+        {
+            foreach (Renderer renderer in renderers) renderer.enabled = false;
         }
 
         public void StartSlow(float amount)

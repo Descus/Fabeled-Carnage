@@ -110,8 +110,7 @@ namespace Environment
         {
             _enemiesOnField++;
         }
-
-
+        
         public static void RemoveEnemy()
         {
             _enemiesOnField--;

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Utility
+namespace Rewrite.Utility
 {
     public static class ScreenUtil
     {

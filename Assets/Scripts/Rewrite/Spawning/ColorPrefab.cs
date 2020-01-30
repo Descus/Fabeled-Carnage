@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Utility
+namespace Rewrite.Spawning
 {
     [Serializable]
     public struct ColorPrefab
