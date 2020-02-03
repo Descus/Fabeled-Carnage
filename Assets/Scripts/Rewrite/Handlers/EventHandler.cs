@@ -19,7 +19,7 @@ namespace Rewrite.Handlers
 
         public static void BroadcastBackgroundMove(float speed) { if (OnBackgroundMoveUpdate != null) OnBackgroundMoveUpdate(speed); }
 
-        public static void OnPushEvent(int lane, float distance) { if (PushEvent != null) PushEvent(lane, distance); Debug.Log(PushEvent);}
+        public static void OnPushEvent(int lane, float distance) { if (PushEvent != null) PushEvent(lane, distance);}
         
         public static void OnDeviacySetEvent(float deviancy, int lane) { if (DeviancySetEvent != null) DeviancySetEvent(deviancy, lane); }
 
@@ -35,8 +35,8 @@ namespace Rewrite.Handlers
 
         public static void UnSubscribeBackgroundMoveEvent(MoveSubsriber sub) { OnBackgroundMoveUpdate -= sub; }
 
-        public static void SubscribePushEvent(PushSubscriber sub) { PushEvent += sub; Debug.Log("Subscribing");}
+        public static void SubscribePushEvent(PushSubscriber sub) { PushEvent += sub;}
         
-        public static void UnSubscribePushEvent(PushSubscriber sub) { PushEvent -= sub; Debug.Log("Unsubscribing");}
+        public static void UnSubscribePushEvent(PushSubscriber sub) { PushEvent -= sub;}
     }
 }

@@ -196,7 +196,7 @@ namespace Rewrite.GameObjects.Actors
         {
             float rightSreenX = ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera);
             float distance = (rightSreenX - 0.5f) - transform.position.x;
-            if (other.gameObject.CompareTag("Player") && !_bLerp) { EventHandler.OnPushEvent(Lane, distance); Debug.Log("Pushing");}
+            if (other.gameObject.CompareTag("Player") && !_bLerp) { EventHandler.OnPushEvent(Lane, distance);}
             
         }
         

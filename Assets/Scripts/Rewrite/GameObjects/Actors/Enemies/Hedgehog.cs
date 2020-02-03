@@ -53,8 +53,11 @@ namespace Rewrite.GameObjects.Actors.Enemies
         {
             if (base.Push(lane, distance))
             {
-                _isRolling = false;
-                _lastStateChange = Time.time;
+                if (_isRolling)
+                {
+                    ScoreHandler.Handler.ResetCombo();
+                    SceneObjectsHandler.Handler.playerObject.ReduceStamina(staminaLoss);
+                }
                 return true;
             }
             return false;
@@ -64,12 +67,11 @@ namespace Rewrite.GameObjects.Actors.Enemies
         {
             if (!killer.gameObject.GetComponent<MovementHandler>())
             {
-                if (!_isRolling) return base.Kill(killer);
                 killer.GetComponent<Wolf>().ReduceStamina(staminaLoss);
-                ScoreHandler.Handler.ResetCombo();
+                return base.Kill(killer);
             }
-            else return base.Kill(killer);
-            return false;
+            return base.Kill(killer);
+            
         }
     }
 }

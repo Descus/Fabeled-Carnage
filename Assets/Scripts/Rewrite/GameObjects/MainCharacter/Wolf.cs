@@ -35,13 +35,13 @@ namespace Rewrite.GameObjects.MainCharacter
         public BoxCollider2D killzoneCollider;
         public CustomButton pressHandler;
         private float _verticalSlow = 1;
-
         public TextMeshProUGUI score;
         
         public float staminaMultiplier;
 
         private void Start()
         {
+            _stamina = maxStamina;
             _changedStaminaMultiplier = staminaMultiplier;
             transform.position = 
                 new Vector3(-ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera) + xPositioning, LaneManager.Manager.laneHeight * 2);

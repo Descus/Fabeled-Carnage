@@ -11,7 +11,7 @@ namespace Rewrite.Handlers
         public float scoreFrequency;
         
         public int score, scoreMult, scorePerDistance, combo, comboState;
-        private int killcount;
+        private int _killcount;
 
         private int[] combos = {1, 2, 4, 8};
         private int[] comboTime = { -1, 12, 8, 4};
@@ -63,8 +63,8 @@ namespace Rewrite.Handlers
         
         public void RegisterKill()
         {
-            killcount++;
-            if (comboState != 3 && killcount >= killsToIncrease[comboState])
+            _killcount++;
+            if (comboState != 3 && _killcount >= killsToIncrease[comboState])
             {
                 IncreaseCombo();
             }
@@ -82,7 +82,7 @@ namespace Rewrite.Handlers
 
         private void ResetKillcount()
         {
-            killcount = 0;
+            _killcount = 0;
         }
 
         public void ResetTimer()
@@ -126,7 +126,7 @@ namespace Rewrite.Handlers
 
         public void AddScore(int score)
         {
-            
+            this.score += score * combo;
         }
 
         private void IncrementUpdate()
