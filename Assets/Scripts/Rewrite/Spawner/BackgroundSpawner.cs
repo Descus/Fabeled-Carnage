@@ -1,4 +1,5 @@
-﻿using Rewrite.Utility;
+﻿using Rewrite.Handlers;
+using Rewrite.Utility;
 using UnityEngine;
 
 
@@ -6,8 +7,8 @@ namespace Rewrite.Spawner
 {
     public class BackgroundSpawner: MonoBehaviour
     {
-        public static BackgroundSpawner spawner;
-        public float despawnXPos;
+        public static BackgroundSpawner Spawner;
+        private float _despawnXPos;
 
         public GameObject[] backgrounds;
         public float tileWidth = 13;
@@ -17,9 +18,14 @@ namespace Rewrite.Spawner
         private Camera _cam;
         private GameObject _latest;
 
+        public float DespawnXPos
+        {
+            get => _despawnXPos;
+        }
+
         private void Start()
         {
-            spawner = this;
+            Spawner = this;
             _cam = SceneObjectsHandler.Handler.mainCamera;
             SetDespawnXPosition();
             SpawnBackground(-tileWidth);
@@ -36,7 +42,7 @@ namespace Rewrite.Spawner
         private void SpawnBackground(float positionX)
         {
             _latest = Instantiate(GetNextTile(), new Vector3(positionX, 5), Quaternion.identity);
-            if (_backgroundsSpawned < backgrounds.Length) _backgroundsSpawned++;
+            if (_backgroundsSpawned + 1 < backgrounds.Length) _backgroundsSpawned++;
         }
 
         private GameObject GetNextTile()
@@ -46,7 +52,7 @@ namespace Rewrite.Spawner
 
         private void SetDespawnXPosition()
         {
-            despawnXPos = -ScreenUtil.GetRightScreenBorderX(_cam) + 1;
+            _despawnXPos = -ScreenUtil.GetRightScreenBorderX(_cam) - 1;
         }
     }
 }

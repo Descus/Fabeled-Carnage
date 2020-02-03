@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using EventHandler = Rewrite.Handlers.EventHandler;
 
 namespace Rewrite.GameObjects.Obstacles
 {

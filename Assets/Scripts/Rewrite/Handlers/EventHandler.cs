@@ -1,6 +1,8 @@
-﻿namespace Rewrite
+﻿using UnityEngine;
+
+namespace Rewrite.Handlers
 {
-    public class EventHandler
+    public static class EventHandler
     {
         public delegate void MoveSubsriber(float speed);
 
@@ -10,16 +12,14 @@
         
         private static event MoveSubsriber OnActorMoveUpdate;
         private static event MoveSubsriber OnBackgroundMoveUpdate;
-        
         private static event PushSubscriber PushEvent;
-        
         private static event SpeedDeviancySubcriber DeviancySetEvent;
 
         public static void BroadcastActorMove(float speed) { if (OnActorMoveUpdate != null) OnActorMoveUpdate(speed); }
 
         public static void BroadcastBackgroundMove(float speed) { if (OnBackgroundMoveUpdate != null) OnBackgroundMoveUpdate(speed); }
 
-        public static void OnPushEvent(int lane, float distance) { if (PushEvent != null) PushEvent(lane, distance); }
+        public static void OnPushEvent(int lane, float distance) { if (PushEvent != null) PushEvent(lane, distance); Debug.Log(PushEvent);}
         
         public static void OnDeviacySetEvent(float deviancy, int lane) { if (DeviancySetEvent != null) DeviancySetEvent(deviancy, lane); }
 
@@ -35,8 +35,8 @@
 
         public static void UnSubscribeBackgroundMoveEvent(MoveSubsriber sub) { OnBackgroundMoveUpdate -= sub; }
 
-        public static void SubscribePushEvent(PushSubscriber sub) { PushEvent += sub; }
+        public static void SubscribePushEvent(PushSubscriber sub) { PushEvent += sub; Debug.Log("Subscribing");}
         
-        public static void UnSubscribePushEvent(PushSubscriber sub) { PushEvent -= sub; }
+        public static void UnSubscribePushEvent(PushSubscriber sub) { PushEvent -= sub; Debug.Log("Unsubscribing");}
     }
 }

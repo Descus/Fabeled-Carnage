@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2321435109530826160}
   - component: {fileID: 2896824877278592739}
   - component: {fileID: 2447420912725449082}
-  - component: {fileID: -4378234454304475668}
+  - component: {fileID: 4850561173885742278}
   m_Layer: 0
   m_Name: Hedgehog
   m_TagString: Untagged
@@ -86,7 +86,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
---- !u!114 &-4378234454304475668
+--- !u!114 &4850561173885742278
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,16 +95,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2321435109530826161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f9daa6dce4e4d079d1de81c0c5037a6, type: 3}
+  m_Script: {fileID: 11500000, guid: ac000af718564125b1c9ed9974b80797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: 0
-  leaping: 0
-  slowAmount: 0
   baseSpeed: 2
   score: 50
-  maxPusches: 99
-  staminaScalePerPush: 5
+  maxPushes: 99
+  staminaScalePerPush: 0
+  staminaAmount: 15
   renderers:
   - {fileID: 5232746629225464017}
   - {fileID: 5233055630982049285}
@@ -118,14 +116,13 @@ MonoBehaviour:
   bloodPile: {fileID: 2287878696314437476, guid: 3c3684dad3af8024994417a207f918ef,
     type: 3}
   animator: {fileID: 8065844994632572228}
-  staminaAmount: 15
-  isRolling: 0
+  leapingDuration: 2
   staminaLoss: 15
   rollingTime: 4
   walkingtime: 2
+  walkingspeed: 1
   rollCollider: {fileID: 2447420912725449082}
   walkCollider: {fileID: 2896824877278592739}
-  walkingspeed: 1
 --- !u!1001 &2614661964964273373
 PrefabInstance:
   m_ObjectHideFlags: 0

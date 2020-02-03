@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Actors.MainCharacter
+namespace Rewrite.GameObjects.MainCharacter
 {
     public class WolfAnimHandler : MonoBehaviour
     {

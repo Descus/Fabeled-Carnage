@@ -2,6 +2,7 @@
 using Rewrite.GameObjects;
 using Rewrite.Spawning;
 using UnityEngine;
+using EventHandler = Rewrite.Handlers.EventHandler;
 using Random = UnityEngine.Random;
 
 namespace Rewrite.Spawner

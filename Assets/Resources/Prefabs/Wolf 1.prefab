@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &1890218132
+--- !u!114 &5019687469954200238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eaee449ba08cd541a495ba81366047d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wolf: {fileID: 6957184218333145272}
+  wolf: {fileID: 3532684516826761775}
 --- !u!1 &6957184218333145273
 GameObject:
   m_ObjectHideFlags: 0
@@ -23,7 +23,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6957184218333145277}
   - component: {fileID: 6957184218333145275}
-  - component: {fileID: 6957184218333145272}
+  - component: {fileID: 3532684516826761775}
   - component: {fileID: 6860926977175363416}
   - component: {fileID: 8463592471127801839}
   - component: {fileID: 8463592471127801838}
@@ -72,7 +72,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6957184218333145272
+--- !u!114 &3532684516826761775
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -81,11 +81,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6957184218333145273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48e2dfec567144eca4ce5acc82cddd5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e2c1299ef955284abfb905cdcb4779c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attacking: 0
-  hasAttacked: 0
+  slowAmount: 0
+  speed: 5
+  maxStamina: 100
+  xPositioning: 0
+  killzone: {fileID: 238338665900718807}
+  staminaBar: {fileID: 0}
   animator: {fileID: 5431510887395061425}
   stopperTop: {fileID: 0}
   stopperBottom: {fileID: 0}
@@ -93,16 +97,12 @@ MonoBehaviour:
   gameOverScreen: {fileID: 0}
   attackCooldown: 0.8
   attackDuration: 0.6
-  currentLane: 2
-  debug: 0
-  debugZone: {fileID: 8463592471433352950}
+  verticalSpeed: 8
+  Lane: 2
   killzoneCollider: {fileID: 8463592472143345023}
   pressHandler: {fileID: 0}
-  speed: 8
   score: {fileID: 0}
-  stamina: 100
-  staminaMult: 3
-  startAttack: 0
+  staminaMultiplier: 3
 --- !u!61 &6860926977175363416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 8463592472143345017}
   - component: {fileID: 8463592472143345022}
   - component: {fileID: 8463592472143345023}
-  - component: {fileID: 8463592472143345016}
+  - component: {fileID: 238338665900718807}
   m_Layer: 8
   m_Name: KillZone
   m_TagString: Untagged
@@ -686,7 +686,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 21.1, y: 11.46}
   m_EdgeRadius: 0
---- !u!114 &8463592472143345016
+--- !u!114 &238338665900718807
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -695,7 +695,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8463592472143345018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27e6d5283f5e4676a4f02610736aa67f, type: 3}
+  m_Script: {fileID: 11500000, guid: fac361aed5284ff0a3de8acd54bfef6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &7842829672818977851

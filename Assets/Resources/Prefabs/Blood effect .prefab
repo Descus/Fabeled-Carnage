@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7964876966549963215}
   - component: {fileID: 2329557120792563434}
-  - component: {fileID: 8437682792350409758}
+  - component: {fileID: 6986399486589504091}
   m_Layer: 0
   m_Name: 'Blood effect '
   m_TagString: Untagged
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8437682792350409758
+--- !u!114 &6986399486589504091
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,6 +90,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2287878696314437476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 718329e0b694ae240be2cfc2252f3feb, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ecaac3213aa4621a63035aeb00beec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

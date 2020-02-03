@@ -1,7 +1,7 @@
 ﻿using Rewrite.GameObjects.MainCharacter;
 using UnityEngine;
 
-namespace Rewrite
+namespace Rewrite.Handlers
 {
     public class SceneObjectsHandler: MonoBehaviour
     {

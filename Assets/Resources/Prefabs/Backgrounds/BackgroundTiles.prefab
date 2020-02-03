@@ -90,8 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 403461766710786142}
   - component: {fileID: 5130906113187755093}
-  - component: {fileID: 1309129517724959183}
-  - component: {fileID: 7200022582085556487}
+  - component: {fileID: 8756469653353164408}
   m_Layer: 0
   m_Name: BackgroundTiles
   m_TagString: Untagged
@@ -164,7 +163,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1309129517724959183
+--- !u!114 &8756469653353164408
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,31 +172,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5411972486587539328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e207c0d9d139a0a45a523152d475823b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lower:
-  - {fileID: 21300000, guid: cb6e4f58a5c3c8f4d90c0d3052e813e9, type: 3}
-  - {fileID: 21300000, guid: 75d2fba0e44b9584d87951c4ba2d02a6, type: 3}
-  lowRenderer: {fileID: 7377160013590174797}
-  upper:
-  - {fileID: 21300000, guid: aa583ba79636f8e4789432da965046a2, type: 3}
-  - {fileID: 21300000, guid: b46c227f7bc96d847addc927f636f23f, type: 3}
-  - {fileID: 21300000, guid: 6e4e88a2a82e6a64699a60e517ec39de, type: 3}
-  - {fileID: 21300000, guid: 60ac420ad67dc3f43beeaf068f4e6642, type: 3}
-  - {fileID: 21300000, guid: ee08e021714c2f14b94b338eb00238c0, type: 3}
-  - {fileID: 21300000, guid: b0fb2d2ab99c25d49a354ad8d706bfba, type: 3}
-  upRenderer: {fileID: 1700355760048418217}
---- !u!114 &7200022582085556487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5411972486587539328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba93a6cb8603b73449acd5c5a5fbb7e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7762850ff1791064390a1bfd024c7642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6787046132324017392

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7983579571817058575}
   - component: {fileID: 5289027320204822836}
-  - component: {fileID: 8079738304167848143}
   - component: {fileID: 1163088843183016122}
+  - component: {fileID: 4318259674387815406}
   m_Layer: 0
   m_Name: Grass
   m_TagString: Obstacle
@@ -82,21 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8079738304167848143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1252217499459334243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb051032a153f947b94a90bcee343bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lane: 0
-  renderer: {fileID: 5289027320204822836}
-  slowAmount: 20
 --- !u!61 &1163088843183016122
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -123,3 +108,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4318259674387815406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252217499459334243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8865960c8ebb6b246bb745b312998621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 5289027320204822836}
+  slowAmount: 20

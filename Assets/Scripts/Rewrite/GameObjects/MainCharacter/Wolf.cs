@@ -34,7 +34,7 @@ namespace Rewrite.GameObjects.MainCharacter
         public int Lane;
         public BoxCollider2D killzoneCollider;
         public CustomButton pressHandler;
-        private float _verticalSlow;
+        private float _verticalSlow = 1;
 
         public TextMeshProUGUI score;
         
@@ -201,13 +201,13 @@ namespace Rewrite.GameObjects.MainCharacter
             if (!_hasAttacked)
             {
                 _hasAttacked = true;
-                setAttackStartTime();
+                SetAttackStartTime();
                 animator.SetTrigger("Attack");
                 _attacking = true;
             }
         }
 
-        private void setAttackStartTime()
+        private void SetAttackStartTime()
         {
             _startAttack = Time.time;
         }

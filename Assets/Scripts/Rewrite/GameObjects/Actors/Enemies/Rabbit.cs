@@ -37,7 +37,7 @@ namespace Rewrite.GameObjects.Actors.Enemies
             _dodgeStart = pos;
             _dodgeTarget = new Vector3(pos.x + dodgeDistance, pos.y);
             _dodgeBLerp = true;
-            _leaping = true;
+            Leaping = true;
         }
         
         new void Update()
@@ -51,7 +51,7 @@ namespace Rewrite.GameObjects.Actors.Enemies
                 {
                     _dodgeLerpFactor = 0;
                     _dodgeBLerp = false;
-                    _leaping = false;
+                    Leaping = false;
                 }
             }
             base.Update();

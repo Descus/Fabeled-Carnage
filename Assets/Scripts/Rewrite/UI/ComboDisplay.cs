@@ -2,7 +2,7 @@
 
 namespace Rewrite.UI
 {
-    public class ComboDisplay
+    public class ComboDisplay : MonoBehaviour
     {
         public GameObject comboCounter;
         

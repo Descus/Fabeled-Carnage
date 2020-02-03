@@ -1,7 +1,7 @@
 ﻿using Interfaces;
 using UnityEngine;
 
-namespace Actors.Obstacles
+namespace Rewrite.GameObjects.Obstacles
 {
     [RequireComponent(typeof(Collider2D))]
     public class Grass : Obstacle
@@ -20,7 +20,7 @@ namespace Actors.Obstacles
 
         private void Start()
         {
-            GetComponent<SpriteRenderer>().sortingLayerName = "Lane" + (lane + 1);
+            GetComponent<SpriteRenderer>().sortingLayerName = "Lane" + (Lane + 1);
         }
     }
 }

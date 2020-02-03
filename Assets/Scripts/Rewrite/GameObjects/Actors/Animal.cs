@@ -1,17 +1,16 @@
-﻿using System;
-using Interfaces;
-using Rewrite.GameObjects.MainCharacter;
+﻿using Interfaces;
 using Rewrite.Handlers;
 using Rewrite.Spawner;
 using Rewrite.Utility;
 using UnityEngine;
+using EventHandler = Rewrite.Handlers.EventHandler;
 
 namespace Rewrite.GameObjects.Actors
 {
     public class Animal: FGameObject, IKillable, ISlowable, IPushable
     {
         private bool _bLerp, _alreadyKilled;
-        protected bool _leaping;
+        protected bool Leaping;
 
         private float _lerpFactor, _slowAmount;
         public float baseSpeed;
@@ -30,6 +29,8 @@ namespace Rewrite.GameObjects.Actors
         
         private Vector3 _target, _start;
         
+        public float leapingDuration;
+
 
         protected void Start()
         {
@@ -44,17 +45,17 @@ namespace Rewrite.GameObjects.Actors
         {
             if (_bLerp)
             {
-                _lerpFactor += Time.deltaTime/2;
+                _lerpFactor += Time.deltaTime/leapingDuration;
                 Vector3 niew = Vector3.Lerp(_start, _target, _lerpFactor);
                 transform.position = niew;
                 if (_lerpFactor >= 1)
                 {
                     _lerpFactor = 0;
                     _bLerp = false;
-                    _leaping = false;
+                    Leaping = false;
                 }
             }
-            if(transform.position.x <= ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera) + SceneObjectsHandler.Handler.playerObject.xPositioning - 1) EventHandler.UnSubscribePushEvent(Push);
+            if(transform.position.x <= -ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera) + SceneObjectsHandler.Handler.playerObject.xPositioning - 1) EventHandler.UnSubscribePushEvent(Push);
         }
 
         private void SetSpriteRendererSortingLayers()
@@ -97,7 +98,7 @@ namespace Rewrite.GameObjects.Actors
 
         public override void Move(float speed)
         {
-            if (!_leaping)
+            if (!Leaping)
             {
                 Transform trans = transform;
                 Vector3 pos = trans.position;
@@ -164,7 +165,7 @@ namespace Rewrite.GameObjects.Actors
         {
             if (lane == Lane && _pushcount < maxPushes)
             {
-                _leaping = true;
+                Leaping = true;
                 Vector3 pos = transform.position;
                 _start = pos;
                 _target = new Vector3(pos.x + distance, pos.y);
@@ -195,7 +196,8 @@ namespace Rewrite.GameObjects.Actors
         {
             float rightSreenX = ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera);
             float distance = (rightSreenX - 0.5f) - transform.position.x;
-            if (other.gameObject.CompareTag("Player") && !_bLerp) EventHandler.OnPushEvent(Lane, distance);
+            if (other.gameObject.CompareTag("Player") && !_bLerp) { EventHandler.OnPushEvent(Lane, distance); Debug.Log("Pushing");}
+            
         }
         
     }

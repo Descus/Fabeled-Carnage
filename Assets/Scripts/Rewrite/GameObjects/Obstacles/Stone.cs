@@ -1,9 +1,8 @@
-﻿using System;
-using Actors.MainCharacter;
-using Environment;
+﻿using Rewrite.GameObjects.MainCharacter;
+using Rewrite.Handlers;
 using UnityEngine;
 
-namespace Actors.Obstacles
+namespace Rewrite.GameObjects.Obstacles
 {
     [RequireComponent(typeof(Collider2D))]
     public class Stone : Obstacle

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8838639472473427342}
   - component: {fileID: 6610881528311563661}
-  - component: {fileID: 7536587202171079808}
+  - component: {fileID: 1188121928175732492}
   m_Layer: 0
   m_Name: Bunny
   m_TagString: Untagged
@@ -59,7 +59,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.86, y: 1.18}
   m_EdgeRadius: 0
---- !u!114 &7536587202171079808
+--- !u!114 &1188121928175732492
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,16 +68,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6857932417023957649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1b4fa42c7115ca4db0d9b5c6343a396, type: 3}
+  m_Script: {fileID: 11500000, guid: 559b6bde413c42c3b823f487d84ea059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: 0
-  leaping: 0
-  slowAmount: 0
   baseSpeed: 2.4
   score: 40
-  maxPusches: 99
+  maxPushes: 99
   staminaScalePerPush: 0
+  staminaAmount: 20
   renderers:
   - {fileID: 4480999067267260168}
   - {fileID: 1211619653571967227}
@@ -103,7 +101,6 @@ MonoBehaviour:
   bloodPile: {fileID: 2287878696314437476, guid: 3c3684dad3af8024994417a207f918ef,
     type: 3}
   animator: {fileID: 8555086216766743413}
-  staminaAmount: 20
   dodgeDistance: 10
 --- !u!1001 &3966350702731004375
 PrefabInstance:

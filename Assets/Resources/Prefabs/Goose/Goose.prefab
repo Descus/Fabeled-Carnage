@@ -1836,7 +1836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6299706286336006121}
   - component: {fileID: 6299706286336006126}
-  - component: {fileID: 6299706286336006127}
+  - component: {fileID: 3588975722512499731}
   m_Layer: 0
   m_Name: Goose
   m_TagString: Untagged
@@ -1885,7 +1885,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6299706286336006127
+--- !u!114 &3588975722512499731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1894,16 +1894,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6299706286336006124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fd3c75eab7f9ef4b95b97b6704465dc, type: 3}
+  m_Script: {fileID: 11500000, guid: d46b7c8a76a649048476b4d5c4668a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: 0
-  leaping: 0
-  slowAmount: 0
   baseSpeed: 1.1
-  score: 0
-  maxPusches: 1
+  score: 30
+  maxPushes: 99
   staminaScalePerPush: 0
+  staminaAmount: 25
   renderers:
   - {fileID: 8020114885311619789}
   - {fileID: 2358385677289774114}
@@ -1929,9 +1927,10 @@ MonoBehaviour:
   - {fileID: 674831403416966731}
   - {fileID: 8608967380100813837}
   killParticleSpawner: {fileID: 0}
-  bloodPile: {fileID: 0}
+  bloodPile: {fileID: 2287878696314437476, guid: 3c3684dad3af8024994417a207f918ef,
+    type: 3}
   animator: {fileID: 6411254760643266527}
-  staminaAmount: 25
+  leapingDuration: 2
 --- !u!1 &6411254760643266524
 GameObject:
   m_ObjectHideFlags: 0

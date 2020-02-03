@@ -4763,7 +4763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2718373407628347526}
   - component: {fileID: 8437089876634397215}
-  - component: {fileID: 7158253187711862733}
+  - component: {fileID: 3027297827775420147}
   m_Layer: 0
   m_Name: Lamb
   m_TagString: Untagged
@@ -4813,7 +4813,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.42, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7158253187711862733
+--- !u!114 &3027297827775420147
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4822,16 +4822,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5674944129489189740}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c2bbe1ed3f2b8b4fba91cb8957ef818, type: 3}
+  m_Script: {fileID: 11500000, guid: b584089f759a4363afeda520166471b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: 0
-  leaping: 0
-  slowAmount: 0
   baseSpeed: 2.2
   score: 25
-  maxPusches: 99
-  staminaScalePerPush: 2
+  maxPushes: 99
+  staminaScalePerPush: 0
+  staminaAmount: 10
   renderers:
   - {fileID: 1730412390004491471}
   - {fileID: 5714155122394659374}
@@ -4851,7 +4849,7 @@ MonoBehaviour:
   bloodPile: {fileID: 2287878696314437476, guid: 3c3684dad3af8024994417a207f918ef,
     type: 3}
   animator: {fileID: 4932645924638382491}
-  staminaAmount: 10
+  leapingDuration: 2
 --- !u!1 &6019958507963161557
 GameObject:
   m_ObjectHideFlags: 0

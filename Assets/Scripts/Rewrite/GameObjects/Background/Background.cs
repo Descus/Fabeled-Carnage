@@ -1,4 +1,5 @@
 ﻿using Interfaces;
+using Rewrite.Handlers;
 using Rewrite.Spawner;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ namespace Rewrite.GameObjects.Background
             Transform trans = transform;
             Vector3 pos = trans.position;
             trans.position = new Vector3(pos.x - speed * Time.deltaTime, pos.y, pos.z);
-            if(transform.position.x <= BackgroundSpawner.spawner.despawnXPos) Destroy(gameObject);
+            if(transform.position.x <= BackgroundSpawner.Spawner.DespawnXPos) Destroy(gameObject);
         }
         public void SetSpeedDeviancyforLane(float deviancy, int lane) { }
 

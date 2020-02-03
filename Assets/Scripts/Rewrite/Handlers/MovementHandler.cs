@@ -16,6 +16,7 @@ namespace Rewrite.Handlers
         private void Start()
         {
             Handler = this;
+            wolf = SceneObjectsHandler.Handler.playerObject;
         }
 
         private void Update()

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9095629130964180065}
   - component: {fileID: 3674715136960089485}
   - component: {fileID: 4179511495925181242}
-  - component: {fileID: 780185158264639286}
+  - component: {fileID: 6734727785116489197}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -108,7 +108,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &780185158264639286
+--- !u!114 &6734727785116489197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,10 +117,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5765658920725503943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e9a0ff7bcfe4dc1990a28864150b19b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b4a488be56e3654796dc445086b9546, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: 0
   renderer: {fileID: 3674715136960089485}
   staminaLoss: 20
   stunLength: 2
