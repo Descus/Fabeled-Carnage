@@ -2,25 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607740c3-5502-4610-b0ac-214365174f1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/Enums.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/Enums/EnemyType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/Enums/EnemyType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/ScoreFloating.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/ScoreFloating.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Metal.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Metal/(FREE) Heavy Metal Trap Beat - _Bang_.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Metal/_FREE_ Heavy Metal Trap Beat _Trap Metal_ _Rock Guitar Rap Instrumental Hybrid 2019_.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Metal/blutrausch.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/endscreen.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/UIPrefabs/ScoreFloater.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/UIPrefabs/ScoreFloater.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny/Bunny.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Goose/Goose.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Goose/Goose.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Grass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Grass.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hedgehog/Hedgehog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hedgehog/Hedgehog.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Stone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Stone.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wolf 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Wolf 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Lamb/Lamb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Lamb/Lamb.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Animal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Grass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Grass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Stone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Stone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Stein.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Stein.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/gras_buschel_ding.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/gras_buschel_ding.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf_colo.psb.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/SceneObjectsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/SceneObjectsHandler.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Spawner/BackgroundSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.14f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Spawner/NpcSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/ScoreFloating.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/SceneObjectsHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@2.2.1-preview.2/Runtime/SpriteSkin.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO8C999CFB/EventHandler.cs" root0="SKIP_HIGHLIGHTING" />
@@ -73,7 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/ISlowable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/SpriteRandomizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/Score Object.cs" />
@@ -115,15 +113,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/MovementHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Spawner/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Ambient/BloodEffects.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/SceneObjectsHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/EventHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/ScoreHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Hedgehog.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Enums/EnemyType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Grass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Stone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/SceneObjectsHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/ScoreFloating.cs" />
       </list>
     </option>
   </component>
@@ -203,7 +202,7 @@
       <workItem from="1579779188371" duration="38423000" />
       <workItem from="1580724728027" duration="12993000" />
       <workItem from="1580817538268" duration="77000" />
-      <workItem from="1580817744491" duration="6268000" />
+      <workItem from="1580817744491" duration="13383000" />
     </task>
     <servers />
   </component>

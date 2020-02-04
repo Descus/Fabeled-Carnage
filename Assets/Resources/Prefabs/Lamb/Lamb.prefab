@@ -4825,6 +4825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b584089f759a4363afeda520166471b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
   baseSpeed: 2.2
   score: 25
   maxPushes: 99
@@ -4849,6 +4850,9 @@ MonoBehaviour:
   bloodPile: {fileID: 2287878696314437476, guid: 3c3684dad3af8024994417a207f918ef,
     type: 3}
   animator: {fileID: 4932645924638382491}
+  scoreFloater: {fileID: 6146897930506135630, guid: 0faedd4d0a0d4384da8fd4e88375c19f,
+    type: 3}
+  scoreParent: {fileID: 0}
   leapingDuration: 2
 --- !u!1 &6019958507963161557
 GameObject:

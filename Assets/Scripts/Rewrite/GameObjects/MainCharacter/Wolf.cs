@@ -43,6 +43,7 @@ namespace Rewrite.GameObjects.MainCharacter
         public TextMeshProUGUI score;
         
         public float staminaMultiplier;
+        
 
         private void Start()
         {

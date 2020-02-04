@@ -10,6 +10,7 @@ namespace Rewrite.Handlers
         public Camera mainCamera;
         public Wolf playerObject;
         public GameObject mainHud;
+        public RectTransform scoreParent;
 
         private void Start()
         {

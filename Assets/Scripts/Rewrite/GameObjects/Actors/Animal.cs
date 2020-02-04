@@ -3,6 +3,7 @@ using Rewrite.Enums;
 using Rewrite.GameObjects.MainCharacter;
 using Rewrite.Handlers;
 using Rewrite.Spawner;
+using Rewrite.UI;
 using Rewrite.Utility;
 using UnityEngine;
 using EventHandler = Rewrite.Handlers.EventHandler;
@@ -30,8 +31,9 @@ namespace Rewrite.GameObjects.Actors
         public ParticleSystem killParticleSpawner;
         public GameObject bloodPile;
         public Animator animator;
-        private RectTransform _transform;
-        
+        public GameObject scoreFloater;
+        public RectTransform scoreParent;
+
         private Vector3 _target, _start;
         
         public float leapingDuration;
@@ -39,12 +41,12 @@ namespace Rewrite.GameObjects.Actors
 
         protected void Start()
         {
-            
             CreationTime = Time.time;
             Speed = baseSpeed;
             SetupParticleSystemPlanes();
             SetSpriteRendererSortingLayers();
             NpcSpawner.AddEnemyToField();
+            scoreParent = SceneObjectsHandler.Handler.scoreParent;
         }
         
         protected void Update()
@@ -135,6 +137,7 @@ namespace Rewrite.GameObjects.Actors
                 GetComponent<Collider2D>().enabled = false;
                 DisableAllRenderers();
                 SpawnBloodPile();
+                SpawnScoreText();
                 _alreadyKilled = true;
                 Destroy(gameObject, killParticleSpawner?killParticleSpawner.main.duration:0);
                 NpcSpawner.RemoveEnemyFromField();
@@ -145,6 +148,13 @@ namespace Rewrite.GameObjects.Actors
                 NpcSpawner.RemoveEnemyFromField();
             }
             return true;
+        }
+
+        private void SpawnScoreText()
+        {
+            GameObject instance = Instantiate(scoreFloater, SceneObjectsHandler.Handler.mainCamera.WorldToScreenPoint(transform.position), Quaternion.identity, scoreParent.transform);
+            instance.GetComponent<ScoreFloating>().start =
+                SceneObjectsHandler.Handler.mainCamera.WorldToScreenPoint(transform.position);
         }
 
         private void SpawnBloodPile()
