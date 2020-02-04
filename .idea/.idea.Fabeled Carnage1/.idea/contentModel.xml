@@ -8,6 +8,9 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Rewrite" t="Include">
+            <e p="Enums" t="Include">
+              <e p="EnemyType.cs" t="Include" />
+            </e>
             <e p="GameObjects" t="Include">
               <e p="Actors" t="Include">
                 <e p="Ambient" t="Include">

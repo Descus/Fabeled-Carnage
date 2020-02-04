@@ -1,4 +1,6 @@
 ﻿using Interfaces;
+using Rewrite.Enums;
+using Rewrite.GameObjects.MainCharacter;
 using Rewrite.Handlers;
 using Rewrite.Spawner;
 using Rewrite.Utility;
@@ -11,6 +13,8 @@ namespace Rewrite.GameObjects.Actors
     {
         private bool _bLerp, _alreadyKilled;
         protected bool Leaping;
+
+        public EnemyType type;
 
         private float _lerpFactor, _slowAmount;
         public float baseSpeed;
@@ -26,6 +30,7 @@ namespace Rewrite.GameObjects.Actors
         public ParticleSystem killParticleSpawner;
         public GameObject bloodPile;
         public Animator animator;
+        private RectTransform _transform;
         
         private Vector3 _target, _start;
         
@@ -34,6 +39,7 @@ namespace Rewrite.GameObjects.Actors
 
         protected void Start()
         {
+            
             CreationTime = Time.time;
             Speed = baseSpeed;
             SetupParticleSystemPlanes();
@@ -194,10 +200,9 @@ namespace Rewrite.GameObjects.Actors
         
         private void OnTriggerEnter2D(Collider2D other)
         {
-            float rightSreenX = ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera);
-            float distance = (rightSreenX - 0.5f) - transform.position.x;
-            if (other.gameObject.CompareTag("Player") && !_bLerp) { EventHandler.OnPushEvent(Lane, distance);}
-            
+            float rightScreenX = ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera);
+            float distance = (rightScreenX - 0.5f) - transform.position.x;
+            if (other.gameObject.CompareTag("Player") && other.GetComponent<Wolf>().Lane == Lane && !_bLerp) { EventHandler.OnPushEvent(Lane, distance);}
         }
         
     }

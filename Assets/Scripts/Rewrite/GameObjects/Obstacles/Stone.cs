@@ -13,9 +13,13 @@ namespace Rewrite.GameObjects.Obstacles
         {
             if (other.CompareTag("Player"))
             {
-                other.GetComponent<Wolf>().ReduceStamina(staminaLoss);
-                other.GetComponent<Wolf>().Stun(stunLength);
-                ScoreHandler.Handler.ResetCombo();
+                Wolf wolf = other.GetComponent<Wolf>();
+                if (wolf.Lane == Lane)
+                {
+                    wolf.ReduceStamina(staminaLoss);
+                    wolf.Stun(stunLength);
+                    ScoreHandler.Handler.ResetCombo();
+                }
             }
         }
     }

@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac000af718564125b1c9ed9974b80797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 2
   baseSpeed: 2
   score: 50
   maxPushes: 99

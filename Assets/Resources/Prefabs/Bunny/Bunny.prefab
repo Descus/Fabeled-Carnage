@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 559b6bde413c42c3b823f487d84ea059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 1
   baseSpeed: 2.4
   score: 40
   maxPushes: 99
@@ -101,6 +102,7 @@ MonoBehaviour:
   bloodPile: {fileID: 2287878696314437476, guid: 3c3684dad3af8024994417a207f918ef,
     type: 3}
   animator: {fileID: 8555086216766743413}
+  leapingDuration: 0
   dodgeDistance: 10
 --- !u!1001 &3966350702731004375
 PrefabInstance:

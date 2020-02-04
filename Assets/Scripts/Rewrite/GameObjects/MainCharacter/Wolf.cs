@@ -1,4 +1,6 @@
-﻿using Interfaces;
+﻿using System;
+using Interfaces;
+using Rewrite.Enums;
 using Rewrite.GameObjects.Actors;
 using Rewrite.Handlers;
 using Rewrite.UI;
@@ -18,20 +20,23 @@ namespace Rewrite.GameObjects.MainCharacter
 
         private bool _attacking, _hasAttacked, _topZone, _botZone, _attackZone, _movingUp, _movingDown;
         private float _changedStaminaMultiplier, _stunEnd, _stamina, _startAttack;
+        private int _killsOfSameType;
+        private EnemyType _lastKillType;
         
         
         
         public Killzone killzone;
-        public Image staminaBar;
+        public Image staminaBar, furyBar;
         public Animator animator;
         public Transform stopperTop, stopperBottom;
         public GameObject uiScreen, gameOverScreen;
+        public SpriteRenderer[] renderers;
 
         public float attackCooldown;
         public float attackDuration;
         public float verticalSpeed;
         
-        public int Lane;
+        public int Lane, killsForFury;
         public BoxCollider2D killzoneCollider;
         public CustomButton pressHandler;
         private float _verticalSlow = 1;
@@ -53,11 +58,32 @@ namespace Rewrite.GameObjects.MainCharacter
             GetKeyInput();
             AdjustPositionAccordingToScreenSize();
             UpdateStamina();
+            UpdateFury();
             ResetAttackCooldown();
             EndAttacking();
+            AdjustLanePoistion();
+            AdjustLaneLayer();
             //animator.SetFloat("GameSpeed", Scroller.scroller.gameSpeed);
             animator.SetBool("MovingUpDown", _movingUp || _movingDown);
             if(Time.time >= _stunEnd) animator.SetBool("IsStunned", false);
+        }
+
+        private void AdjustLaneLayer()
+        {
+            foreach (SpriteRenderer renderer in renderers) renderer.sortingLayerName = "Lane" + (Lane + 1);
+        }
+
+        private void AdjustLanePoistion()
+        {
+            Transform trans = transform;
+            Vector3 pos = trans.position;
+            pos = new Vector3(pos.x, Lane * LaneManager.Manager.laneHeight + LaneManager.Manager.spawnOffsetY, pos.z);
+            trans.position = pos;
+        }
+
+        private void UpdateFury()
+        {
+            furyBar.fillAmount = (float)_killsOfSameType / killsForFury;
         }
 
         public void StartSlow(float amount)
@@ -91,17 +117,31 @@ namespace Rewrite.GameObjects.MainCharacter
                 if (other != null)
                 {
                     IKillable toKill = other.GetComponent<IKillable>();
-                    bool killed = toKill.Kill(gameObject);
-                    if (killed && toKill is Animal)
+                    if (((FGameObject)toKill).Lane == Lane && toKill.Kill(gameObject) && toKill is Animal)
                     {
                         AddStamina(((Animal) toKill).GetStamina());
                         AddScore(((Animal) toKill).GetScore());
+                        ManageFury(((Animal) toKill).type);
                     }
                     _attacking = false;
                 }
             }
         }
-        
+
+        private void ManageFury(EnemyType type)
+        {
+            if (type == _lastKillType)
+            {
+                _killsOfSameType++;
+            }
+            else
+            {
+                _killsOfSameType = 0;
+                _lastKillType = type;
+                _killsOfSameType++;
+            }
+        }
+
         private void AddScore(int score)
         {
             ScoreHandler.Handler.AddScore(score);
@@ -118,9 +158,9 @@ namespace Rewrite.GameObjects.MainCharacter
         {
             if (!_attacking)
             {
-                if (Input.GetAxis("Vertical") > 0 || _topZone) MoveUp();
+                if (Input.GetKeyDown(KeyCode.W) || _topZone) MoveUp();
                 else _movingUp = false;
-                if (Input.GetAxis("Vertical") < 0 || _botZone) MoveDown();
+                if (Input.GetKeyDown(KeyCode.S) || _botZone) MoveDown();
                 else _movingDown = false;
             }
 
@@ -135,6 +175,7 @@ namespace Rewrite.GameObjects.MainCharacter
         public void ReduceStamina(float amount)
         {
             _stamina -= amount;
+            _stamina = Mathf.Clamp(_stamina, 0, maxStamina);
         }
         
         private void GetTouchInput()
@@ -175,25 +216,30 @@ namespace Rewrite.GameObjects.MainCharacter
         
         private void MoveUp()
         {
-            Vector3 pos = transform.position;
+            /*Vector3 pos = transform.position;
             if (pos.y < stopperTop.position.y)
             {
                 transform.position = pos + verticalSpeed * _verticalSlow * Time.deltaTime * Vector3.up;
                 _movingUp = true;
             }
-            else _movingUp = false;
-                
+            else _movingUp = false;*/
+            Lane++;
+            Lane = Mathf.Clamp(Lane, 0, 3);
+
         }
         
         private void MoveDown()
         {
-            Vector3 pos = transform.position;
+            /*Vector3 pos = transform.position;
             if (pos.y > stopperBottom.position.y)
             {
                 transform.position = pos + verticalSpeed * _verticalSlow * Time.deltaTime * Vector3.down;
                 _movingDown = true;
             }
-            else _movingDown = false;
+            else _movingDown = false;*/
+            
+            Lane--;
+            Lane = Mathf.Clamp(Lane, 0, 3);
         }
         
         public void Attack()

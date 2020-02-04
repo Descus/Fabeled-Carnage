@@ -928,6 +928,16 @@ PrefabInstance:
       propertyPath: xPositioning
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3532684516826761775, guid: 91d48782a5b7353449cbc3e47f809fb0,
+        type: 3}
+      propertyPath: furyBar
+      value: 
+      objectReference: {fileID: 1456032561}
+    - target: {fileID: 3532684516826761775, guid: 91d48782a5b7353449cbc3e47f809fb0,
+        type: 3}
+      propertyPath: killsForFury
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6957184218333145273, guid: 91d48782a5b7353449cbc3e47f809fb0,
         type: 3}
       propertyPath: m_Name
@@ -990,6 +1000,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91d48782a5b7353449cbc3e47f809fb0, type: 3}
+--- !u!114 &1456032561 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4352057417755825015, guid: 78246970d40d627419a9e2bf0648a9ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 789106304}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1533784693
 GameObject:
   m_ObjectHideFlags: 0
