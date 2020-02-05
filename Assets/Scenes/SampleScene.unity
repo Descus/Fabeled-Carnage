@@ -1713,6 +1713,12 @@ PrefabInstance:
       propertyPath: colorMappings.Array.data[2].color.b
       value: 0.09019608
       objectReference: {fileID: 0}
+    - target: {fileID: 1988863044612473055, guid: c15b244b8244ac241bcf961c5f155da3,
+        type: 3}
+      propertyPath: colorMappings.Array.data[2].prefab
+      value: 
+      objectReference: {fileID: 6299706286336006124, guid: 6d5b994e1605da54ea6030592c93da58,
+        type: 3}
     - target: {fileID: 6397554085058139798, guid: c15b244b8244ac241bcf961c5f155da3,
         type: 3}
       propertyPath: particleDespawnerPlane.Array.data[0]
