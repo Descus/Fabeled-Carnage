@@ -22,9 +22,7 @@ namespace Rewrite.GameObjects.MainCharacter
         private float _changedStaminaMultiplier, _stunEnd, _stamina, _startAttack;
         private int _killsOfSameType;
         private EnemyType _lastKillType;
-        
-        
-        
+
         public Killzone killzone;
         public Image staminaBar, furyBar;
         public Animator animator;
@@ -41,10 +39,9 @@ namespace Rewrite.GameObjects.MainCharacter
         public CustomButton pressHandler;
         private float _verticalSlow = 1;
         public TextMeshProUGUI score;
-        private float formerScreenSize;
+        private float _formerScreenSize;
         
         public float staminaMultiplier;
-        
 
         private void Start()
         {
@@ -121,7 +118,7 @@ namespace Rewrite.GameObjects.MainCharacter
                 if (other != null)
                 {
                     IKillable toKill = other.GetComponent<IKillable>();
-                    if (((FGameObject)toKill).Lane == Lane && toKill.Kill(gameObject) && toKill is Animal)
+                    if (toKill != null && ((FGameObject)toKill).Lane == Lane && toKill.Kill(gameObject) && toKill is Animal)
                     {
                         AddStamina(((Animal) toKill).GetStamina());
                         ManageFury(((Animal) toKill).type);
@@ -220,9 +217,9 @@ namespace Rewrite.GameObjects.MainCharacter
 
         private bool ScreenSizeChanged()
         {
-            if (ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera) != formerScreenSize)
+            if (ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera) != _formerScreenSize)
             {
-                formerScreenSize = ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera);
+                _formerScreenSize = ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera);
                 return true;
             }
             return false;
@@ -298,6 +295,5 @@ namespace Rewrite.GameObjects.MainCharacter
             _stunEnd = Time.time + time;
             animator.SetBool("IsStunned", true);
         }
-        
     }
 }

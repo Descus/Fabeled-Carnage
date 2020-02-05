@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="607740c3-5502-4610-b0ac-214365174f1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Goose/Goose.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Goose/Goose.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Goose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Goose.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny/Bunny.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hedgehog/Hedgehog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hedgehog/Hedgehog.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Lamb/Lamb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Lamb/Lamb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,11 +114,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Stone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/SceneObjectsHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/ScoreFloating.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Rabbit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Goose.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" />
       </list>
     </option>
   </component>
@@ -194,7 +199,7 @@
       <workItem from="1580724728027" duration="12993000" />
       <workItem from="1580817538268" duration="77000" />
       <workItem from="1580817744491" duration="13383000" />
-      <workItem from="1580900277890" duration="5165000" />
+      <workItem from="1580900277890" duration="8325000" />
     </task>
     <servers />
   </component>
