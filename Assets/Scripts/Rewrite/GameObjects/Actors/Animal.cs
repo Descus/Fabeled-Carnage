@@ -6,7 +6,7 @@ using Rewrite.Spawner;
 using Rewrite.UI;
 using Rewrite.Utility;
 using UnityEngine;
-using EventHandler = Rewrite.Handlers.EventHandler;
+using Rewrite.Handlers;
 
 namespace Rewrite.GameObjects.Actors
 {
@@ -137,8 +137,9 @@ namespace Rewrite.GameObjects.Actors
                 GetComponent<Collider2D>().enabled = false;
                 DisableAllRenderers();
                 SpawnBloodPile();
-                SpawnScoreText();
+                SpawnScoreText(score);
                 _alreadyKilled = true;
+                AddScore(score);
                 Destroy(gameObject, killParticleSpawner?killParticleSpawner.main.duration:0);
                 NpcSpawner.RemoveEnemyFromField();
             } 
@@ -149,12 +150,20 @@ namespace Rewrite.GameObjects.Actors
             }
             return true;
         }
+        
+        private void AddScore(int score)
+        {
+            ScoreHandler.Handler.AddScore(score);
+            ScoreHandler.Handler.ResetTimer();
+            ScoreHandler.Handler.RegisterKill();
+        }
 
-        private void SpawnScoreText()
+        private void SpawnScoreText(int score)
         {
             GameObject instance = Instantiate(scoreFloater, SceneObjectsHandler.Handler.mainCamera.WorldToScreenPoint(transform.position), Quaternion.identity, scoreParent.transform);
-            instance.GetComponent<ScoreFloating>().start =
-                SceneObjectsHandler.Handler.mainCamera.WorldToScreenPoint(transform.position);
+            ScoreFloating scoreText = instance.GetComponent<ScoreFloating>();
+            scoreText.start = SceneObjectsHandler.Handler.mainCamera.WorldToScreenPoint(transform.position);
+            scoreText.textField.text = score.ToString();
         }
 
         private void SpawnBloodPile()
@@ -199,11 +208,6 @@ namespace Rewrite.GameObjects.Actors
             return staminaAmount + _pushcount * staminaScalePerPush;
         }
         
-        public int GetScore()
-        {
-            return score;
-        }
-
         private void PlayLeapAnimation()
         {
         }

@@ -102,8 +102,12 @@ MonoBehaviour:
   bloodPile: {fileID: 2287878696314437476, guid: 3c3684dad3af8024994417a207f918ef,
     type: 3}
   animator: {fileID: 8555086216766743413}
-  leapingDuration: 0
+  scoreFloater: {fileID: 6146897930506135630, guid: 0faedd4d0a0d4384da8fd4e88375c19f,
+    type: 3}
+  scoreParent: {fileID: 0}
+  leapingDuration: 1
   dodgeDistance: 10
+  dodgeDuration: 0.33
 --- !u!1001 &3966350702731004375
 PrefabInstance:
   m_ObjectHideFlags: 0

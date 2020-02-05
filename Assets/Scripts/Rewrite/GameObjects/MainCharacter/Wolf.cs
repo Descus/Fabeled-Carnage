@@ -41,6 +41,7 @@ namespace Rewrite.GameObjects.MainCharacter
         public CustomButton pressHandler;
         private float _verticalSlow = 1;
         public TextMeshProUGUI score;
+        private float formerScreenSize;
         
         public float staminaMultiplier;
         
@@ -60,13 +61,15 @@ namespace Rewrite.GameObjects.MainCharacter
             AdjustPositionAccordingToScreenSize();
             UpdateStamina();
             UpdateFury();
-            ResetAttackCooldown();
-            EndAttacking();
-            AdjustLanePoistion();
-            AdjustLaneLayer();
             //animator.SetFloat("GameSpeed", Scroller.scroller.gameSpeed);
             animator.SetBool("MovingUpDown", _movingUp || _movingDown);
             if(Time.time >= _stunEnd) animator.SetBool("IsStunned", false);
+        }
+
+        void FixedUpdate()
+        {
+            EndAttacking();
+            ResetAttackCooldown();
         }
 
         private void AdjustLaneLayer()
@@ -121,7 +124,6 @@ namespace Rewrite.GameObjects.MainCharacter
                     if (((FGameObject)toKill).Lane == Lane && toKill.Kill(gameObject) && toKill is Animal)
                     {
                         AddStamina(((Animal) toKill).GetStamina());
-                        AddScore(((Animal) toKill).GetScore());
                         ManageFury(((Animal) toKill).type);
                     }
                     _attacking = false;
@@ -143,12 +145,7 @@ namespace Rewrite.GameObjects.MainCharacter
             }
         }
 
-        private void AddScore(int score)
-        {
-            ScoreHandler.Handler.AddScore(score);
-            ScoreHandler.Handler.ResetTimer();
-            ScoreHandler.Handler.RegisterKill();
-        }
+        
         
         private bool AttackFinished()
         {
@@ -211,10 +208,26 @@ namespace Rewrite.GameObjects.MainCharacter
         
         private void AdjustPositionAccordingToScreenSize()
         {
-            Transform trans = transform;
-            trans.position = new Vector3(-ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera) + xPositioning, trans.position.y);
+            if (ScreenSizeChanged())
+            {
+                Transform trans = transform;
+                trans.position =
+                    new Vector3(
+                        -ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera) + xPositioning,
+                        trans.position.y);
+            }
         }
-        
+
+        private bool ScreenSizeChanged()
+        {
+            if (ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera) != formerScreenSize)
+            {
+                formerScreenSize = ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera);
+                return true;
+            }
+            return false;
+        }
+
         private void MoveUp()
         {
             /*Vector3 pos = transform.position;
@@ -226,7 +239,8 @@ namespace Rewrite.GameObjects.MainCharacter
             else _movingUp = false;*/
             Lane++;
             Lane = Mathf.Clamp(Lane, 0, 3);
-
+            AdjustLanePoistion();
+            AdjustLaneLayer();
         }
         
         private void MoveDown()
@@ -241,6 +255,8 @@ namespace Rewrite.GameObjects.MainCharacter
             
             Lane--;
             Lane = Mathf.Clamp(Lane, 0, 3);
+            AdjustLanePoistion();
+            AdjustLaneLayer();
         }
         
         public void Attack()

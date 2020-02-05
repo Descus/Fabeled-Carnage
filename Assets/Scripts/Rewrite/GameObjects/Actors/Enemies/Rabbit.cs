@@ -9,7 +9,8 @@ namespace Rewrite.GameObjects.Actors.Enemies
         private Vector3 _dodgeTarget, _dodgeStart;
         public float dodgeDistance;
         private float _dodgeLerpFactor;
-        
+        public float dodgeDuration;
+
         new void Start()
         {
             base.Start();
@@ -44,7 +45,7 @@ namespace Rewrite.GameObjects.Actors.Enemies
         {
             if (_dodgeBLerp)
             {
-                _dodgeLerpFactor += 5 * Time.deltaTime;
+                _dodgeLerpFactor += Time.deltaTime/dodgeDuration;
                 Vector3 niew = Vector3.Lerp(_dodgeStart, _dodgeTarget, _dodgeLerpFactor);
                 transform.position = niew;
                 if (_dodgeLerpFactor >= 1)
