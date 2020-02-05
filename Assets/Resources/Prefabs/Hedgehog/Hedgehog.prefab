@@ -123,8 +123,8 @@ MonoBehaviour:
   scoreParent: {fileID: 0}
   leapingDuration: 2
   staminaLoss: 15
-  rollingTime: 4
-  walkingtime: 2
+  rollingTime: 2
+  walkingtime: 3
   walkingspeed: 1
   rollCollider: {fileID: 2447420912725449082}
   walkCollider: {fileID: 2896824877278592739}
