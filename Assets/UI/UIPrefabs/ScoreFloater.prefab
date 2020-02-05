@@ -66,15 +66,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: YEET
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279835095
+  m_fontColor: {r: 0.84313726, g: 0.09803922, b: 0.09803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2314272182703507466}
-    characterCount: 5
+    characterCount: 4
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -173,7 +173,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.002380371
       inSlope: -0
       outSlope: -0
       tangentMode: 0
@@ -181,8 +181,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.2875
     - serializedVersion: 3
-      time: 0.8683355
-      value: 0.27437282
+      time: 0.5808294
+      value: 0.25545192
       inSlope: 1.1476276
       outSlope: 1.1476276
       tangentMode: 0
@@ -190,8 +190,8 @@ MonoBehaviour:
       inWeight: 0.09632808
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.94095564
-      value: 0.5169562
+      time: 0.7784556
+      value: 0.51223385
       inSlope: 1.8515275
       outSlope: 1.8515275
       tangentMode: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
       outWeight: 0.8588633
     - serializedVersion: 3
       time: 1
-      value: 1
+      value: 1.0023804
       inSlope: 2
       outSlope: 2
       tangentMode: 0
@@ -212,4 +212,5 @@ MonoBehaviour:
     m_RotationOrder: 4
   target: {x: 0, y: 0}
   start: {x: 0, y: 0}
-  timeToTarget: 2
+  timeToTarget: 1
+  textField: {fileID: 0}
