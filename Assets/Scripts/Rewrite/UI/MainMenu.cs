@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEditor;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Menus
@@ -11,6 +13,11 @@ namespace Menus
         public void StartGame()
         {
             SceneManager.LoadScene(1);
+        }
+
+        public void LoadScene(String name)
+        {
+            SceneManager.LoadScene(name);
         }
 
         public void OpenOptionMenu()
@@ -27,7 +34,11 @@ namespace Menus
 
         public void ExitGame()
         {
+#if UNITY_EDITOR
+            EditorApplication.isPlaying = false;
+#else
             Application.Quit();
+#endif
         }
     }
 }

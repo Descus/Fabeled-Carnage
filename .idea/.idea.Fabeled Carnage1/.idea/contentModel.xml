@@ -63,6 +63,7 @@
               <e p="ComboDisplay.cs" t="Include" />
               <e p="CustomButton.cs" t="Include" />
               <e p="MainHud.cs" t="Include" />
+              <e p="MainMenu.cs" t="Include" />
               <e p="ScoreFloating.cs" t="Include" />
             </e>
             <e p="Utility" t="Include">

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607740c3-5502-4610-b0ac-214365174f1a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny/Bunny.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Goose/Goose.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Goose/Goose.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hedgehog/Hedgehog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hedgehog/Hedgehog.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Animal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI/UIPrefabs/ScoreFloater.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/UIPrefabs/ScoreFloater.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/MainMenu.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +17,9 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO01987D6D/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO0199625D/ScreenUtil.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO8C98075E/Animal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/ComboDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO8C9E97AB/ScoreHandler.cs" root0="SKIP_HIGHLIGHTING" />
@@ -51,6 +49,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO8C91A553/Animal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/WolfAnimHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Killzone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Background/Background.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Sheep.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,7 +63,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enums/EffectTypes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/Score Object.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Score Saver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Structs/ScoreObject.cs" />
@@ -112,9 +110,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Stone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/SceneObjectsHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/ScoreFloating.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Rabbit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Rabbit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/MainMenu.cs" />
       </list>
     </option>
   </component>
@@ -195,7 +194,7 @@
       <workItem from="1580724728027" duration="12993000" />
       <workItem from="1580817538268" duration="77000" />
       <workItem from="1580817744491" duration="13383000" />
-      <workItem from="1580900277890" duration="2957000" />
+      <workItem from="1580900277890" duration="4006000" />
     </task>
     <servers />
   </component>
