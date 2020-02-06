@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace Rewrite.Handlers
+﻿namespace Rewrite.Handlers
 {
     public static class EventHandler
     {

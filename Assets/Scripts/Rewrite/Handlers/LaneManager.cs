@@ -1,10 +1,7 @@
-﻿using System;
-using Rewrite.Handlers;
-using Rewrite.Utility;
+﻿using Rewrite.Utility;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace Rewrite
+namespace Rewrite.Handlers
 {
     public class LaneManager: MonoBehaviour
     {

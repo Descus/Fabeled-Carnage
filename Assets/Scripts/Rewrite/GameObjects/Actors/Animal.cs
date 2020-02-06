@@ -6,7 +6,6 @@ using Rewrite.Spawner;
 using Rewrite.UI;
 using Rewrite.Utility;
 using UnityEngine;
-using Rewrite.Handlers;
 
 namespace Rewrite.GameObjects.Actors
 {

@@ -7,45 +7,10 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Actors" t="Include">
-            <e p="Animal.cs" t="Include" />
-            <e p="BloodEffects.cs" t="Include" />
-            <e p="CameraShaker.cs" t="Include" />
-            <e p="Enemy" t="Include">
-              <e p="Goose.cs" t="Include" />
-              <e p="Hedgehog.cs" t="Include" />
-              <e p="Rabbit.cs" t="Include" />
-              <e p="Sheep.cs" t="Include" />
-            </e>
-            <e p="GameActor.cs" t="Include" />
-            <e p="MainCharacter" t="Include">
-              <e p="Killzone.cs" t="Include" />
-              <e p="Wolf.cs" t="Include" />
-            </e>
-            <e p="Obstacle.cs" t="Include" />
-            <e p="Obstacles" t="Include">
-              <e p="Grass.cs" t="Include" />
-              <e p="Stone.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Enums" t="Include">
-            <e p="EffectTypes.cs" t="Include" />
-          </e>
-          <e p="Environment" t="Include">
-            <e p="Background.cs" t="Include" />
-            <e p="BackgroundSpawner.cs" t="Include" />
-            <e p="EventHandler.cs" t="Include" />
-            <e p="LaneManager.cs" t="Include" />
-            <e p="NpcSpawner.cs" t="Include" />
-            <e p="ScoreHandler.cs" t="Include" />
-            <e p="ScoreSaver.cs" t="Include" />
-            <e p="Scroller.cs" t="Include" />
-            <e p="SpriteRandomizer.cs" t="Include" />
-          </e>
-          <e p="Menus" t="Include">
-            <e p="MainMenu.cs" t="Include" />
-          </e>
           <e p="Rewrite" t="Include">
+            <e p="Enums" t="Include">
+              <e p="EnemyType.cs" t="Include" />
+            </e>
             <e p="GameObjects" t="Include">
               <e p="Actors" t="Include">
                 <e p="Ambient" t="Include">
@@ -69,7 +34,9 @@
                 <e p="WolfAnimHandler.cs" t="Include" />
               </e>
               <e p="Obstacles" t="Include">
+                <e p="Grass.cs" t="Include" />
                 <e p="Obstacle.cs" t="Include" />
+                <e p="Stone.cs" t="Include" />
               </e>
             </e>
             <e p="Handlers" t="Include">
@@ -96,27 +63,12 @@
               <e p="ComboDisplay.cs" t="Include" />
               <e p="CustomButton.cs" t="Include" />
               <e p="MainHUD.cs" t="Include" />
+              <e p="MainMenu.cs" t="Include" />
+              <e p="ScoreFloating.cs" t="Include" />
             </e>
             <e p="Utility" t="Include">
               <e p="ScreenUtil.cs" t="Include" />
             </e>
-          </e>
-          <e p="Structs" t="Include">
-            <e p="BackgroundTile.cs" t="Include" />
-            <e p="Effect.cs" t="Include" />
-            <e p="ScoreObject.cs" t="Include" />
-          </e>
-          <e p="UI" t="Include">
-            <e p="ComboDisplay.cs" t="Include" />
-            <e p="SceneLoader.cs" t="Include" />
-          </e>
-          <e p="Utility" t="Include">
-            <e p="ColorPrefab.cs" t="Include" />
-            <e p="CustomButton.cs" t="Include" />
-            <e p="GameManager.cs" t="Include" />
-            <e p="ReadonlyAttribute.cs" t="Include" />
-            <e p="ScreenUtil.cs" t="Include" />
-            <e p="Utilities.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
