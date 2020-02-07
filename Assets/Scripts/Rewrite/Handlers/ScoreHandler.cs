@@ -6,10 +6,9 @@ namespace Rewrite.Handlers
 {
     public class ScoreHandler: MonoBehaviour
     {
-        private float _update,_filleramount, timeAdder;
-        public float scoreFrequency;
-        
-        public int score, scoreMult, scorePerDistance, combo, comboState;
+        private float _filleramount, timeAdder;
+
+        public int score, scoreMult, combo, comboState;
         private int _killcount;
 
         private int[] combos = {1, 2, 4, 8};
@@ -32,7 +31,6 @@ namespace Rewrite.Handlers
 
         private void FixedUpdate()
         {
-            IncrementUpdate();
             OnScoreFrequencyReach();
         }
         
@@ -96,12 +94,7 @@ namespace Rewrite.Handlers
 
         private void OnScoreFrequencyReach()
         {
-            if (_update >= scoreFrequency)
-            {
-                AddScore(scorePerDistance * scoreMult);
-                textFieldScore.text = ConvertToScoreFormat(score);
-                _update = 0;
-            }
+           
         }
         
         public void ResetCombo()
@@ -123,14 +116,12 @@ namespace Rewrite.Handlers
                    ">" + score.ToString().PadLeft(6, '0') + "</mspace>";
         }
 
-        public void AddScore(int score)
+        public int AddScore(int score)
         {
-            this.score += score * combo;
-        }
-
-        private void IncrementUpdate()
-        {
-            _update += Time.deltaTime;
+            int add = score * combo;
+            this.score += add;
+            textFieldScore.text = ConvertToScoreFormat(score);
+            return add;
         }
     }
 }

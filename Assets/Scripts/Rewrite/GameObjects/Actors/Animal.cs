@@ -136,9 +136,8 @@ namespace Rewrite.GameObjects.Actors
                 GetComponent<Collider2D>().enabled = false;
                 DisableAllRenderers();
                 SpawnBloodPile();
-                SpawnScoreText(score);
+                SpawnScoreText(AddScore(score));
                 _alreadyKilled = true;
-                AddScore(score);
                 Destroy(gameObject, killParticleSpawner?killParticleSpawner.main.duration:0);
                 NpcSpawner.RemoveEnemyFromField();
             } 
@@ -150,11 +149,11 @@ namespace Rewrite.GameObjects.Actors
             return true;
         }
         
-        private void AddScore(int score)
+        private int AddScore(int score)
         {
-            ScoreHandler.Handler.AddScore(score);
             ScoreHandler.Handler.ResetTimer();
             ScoreHandler.Handler.RegisterKill();
+            return ScoreHandler.Handler.AddScore(score);
         }
 
         private void SpawnScoreText(int score)

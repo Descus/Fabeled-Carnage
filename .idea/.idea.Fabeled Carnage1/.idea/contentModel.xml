@@ -52,12 +52,17 @@
               <e p="IScrollable.cs" t="Include" />
               <e p="ISlowable.cs" t="Include" />
             </e>
+            <e p="Scoreboard" t="Include">
+              <e p="GameSave.cs" t="Include" />
+              <e p="Scoreboard.cs" t="Include" />
+            </e>
             <e p="Spawner" t="Include">
               <e p="BackgroundSpawner.cs" t="Include" />
               <e p="NpcSpawner.cs" t="Include" />
             </e>
             <e p="Spawning" t="Include">
               <e p="ColorPrefab.cs" t="Include" />
+              <e p="Sign.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
               <e p="ComboDisplay.cs" t="Include" />

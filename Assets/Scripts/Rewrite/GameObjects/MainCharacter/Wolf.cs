@@ -192,7 +192,7 @@ namespace Rewrite.GameObjects.MainCharacter
         
         private void UpdateStamina()
         {
-            ReduceStamina(_changedStaminaMultiplier * MovementHandler.GameSpeed * Time.deltaTime);
+            ReduceStamina(_changedStaminaMultiplier * MovementHandler.Handler.GameSpeed * Time.deltaTime);
             staminaBar.fillAmount = _stamina / maxStamina;
 
             if (_stamina <= 0) Die();

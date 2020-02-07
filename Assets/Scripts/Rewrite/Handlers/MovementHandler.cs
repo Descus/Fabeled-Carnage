@@ -1,4 +1,5 @@
 ﻿using Rewrite.GameObjects.MainCharacter;
+using Rewrite.Spawning;
 using UnityEngine;
 
 namespace Rewrite.Handlers
@@ -7,14 +8,15 @@ namespace Rewrite.Handlers
     {
         public static MovementHandler Handler;
 
-        public static float GameSpeed;
+        public float GameSpeed;
 
         private Wolf wolf;
 
         public ParticleSystemForceField forceField;
         private float meterCounter;
-        public GameObject meterShield;
-        public Vector3 meterShieldSpawnpos;
+        public GameObject meterSign;
+        public Vector3 meterSignSpawnpos;
+        private bool spawnFlag;
 
         private void Start()
         {
@@ -33,10 +35,17 @@ namespace Rewrite.Handlers
 
         void IncreaseMeterCounter(float inc)
         {
-            meterCounter += inc;
-            if ((int)meterCounter % 100 == 0)
+            meterCounter += inc * Time.deltaTime;
+            if (!spawnFlag && (int)meterCounter % 100 == 0 && meterCounter > 50)
             {
-                Instantiate(meterShield, meterShieldSpawnpos, Quaternion.identity);
+                GameObject instance = Instantiate(meterSign, meterSignSpawnpos, Quaternion.identity);
+                instance.GetComponent<Sign>().distance = (int)meterCounter;
+                spawnFlag = true;
+            }
+
+            if ((int) meterCounter % 100 == 50)
+            {
+                spawnFlag = false;
             }
         }
         

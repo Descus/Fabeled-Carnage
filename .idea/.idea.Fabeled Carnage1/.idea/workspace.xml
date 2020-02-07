@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="607740c3-5502-4610-b0ac-214365174f1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/Scoreboard/GameSave.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/Scoreboard/GameSave.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Fabeled Carnage1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny/Bunny.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Bunny/Bunny.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hedgehog/Hedgehog.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Hedgehog/Hedgehog.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Lamb/Lamb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Lamb/Lamb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Flesh Wound SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Flesh Wound SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Spawner.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Animal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/MovementHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/MovementHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/ScoreHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/ScoreHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/ComboTimer Foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/ComboTimer Foreground.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf Snap.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/animation/Wolf/Wolf Snap.anim" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +34,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO01987D6D/GameManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Scoreboard/Scoreboard.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Scoreboard/Scoreboard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO0199625D/ScreenUtil.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO8C98075E/Animal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/ComboDisplay.cs" root0="FORCE_HIGHLIGHTING" />
@@ -38,11 +51,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Spawner/NpcSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/ScoreFloating.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/SceneObjectsHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Spawning/Sign.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.animation@2.2.1-preview.2/Runtime/SpriteSkin.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO8C999CFB/EventHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO8C974CEF/Animal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/ScoreHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Stone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/LaneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/MovementHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Grass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Goose.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,6 +68,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Temp/7zO8C91A553/Animal.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/Scoreboard/GameSave.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/WolfAnimHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Killzone.cs" root0="FORCE_HIGHLIGHTING" />
@@ -68,10 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/Score Saver.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Structs/ScoreObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Utilities.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Environment/ScoreSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IKillable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IScrollable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Actors/GameActor.cs" />
@@ -103,22 +115,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/WolfAnimHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Background/Background.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/ComboDisplay.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/MovementHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Spawner/BackgroundSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Ambient/BloodEffects.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/EventHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/ScoreHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Hedgehog.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Enums/EnemyType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Grass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Obstacles/Stone.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/SceneObjectsHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/ScoreFloating.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Rabbit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/UI/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Enemies/Goose.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sign.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/Actors/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Spawning/Sign.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/ScoreHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Handlers/MovementHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/GameObjects/MainCharacter/Wolf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Scoreboard/GameSave.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rewrite/Scoreboard/Scoreboard.cs" />
       </list>
     </option>
   </component>
@@ -200,6 +216,7 @@
       <workItem from="1580817538268" duration="77000" />
       <workItem from="1580817744491" duration="13383000" />
       <workItem from="1580900277890" duration="8325000" />
+      <workItem from="1581067690842" duration="8388000" />
     </task>
     <servers />
   </component>

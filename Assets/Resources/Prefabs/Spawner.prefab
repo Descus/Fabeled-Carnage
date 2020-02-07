@@ -63,7 +63,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20c0b19156fa475f8fa89ead65d30055, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameSpeed: 0
   forceField: {fileID: 0}
+  meterSign: {fileID: 4057333372679254319, guid: 2fb129f5cfd2f3544aa9e8662d0e8f33,
+    type: 3}
+  meterSignSpawnpos: {x: 11, y: 1.75, z: 0}
 --- !u!114 &1988863044612473055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +126,7 @@ MonoBehaviour:
   laneHeight: 1.7
   lanecount: 4
   spawnerCount: 7
-  debug: 0
+  debug: 1
   particleDespawnerPlane:
   - {fileID: 0}
   - {fileID: 0}
@@ -140,10 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4554d8543e9c4039873cfeaa6c362281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreFrequency: 0.1
   score: 0
   scoreMult: 1
-  scorePerDistance: 1
   combo: 0
   comboState: 0
   textFieldScore: {fileID: 0}

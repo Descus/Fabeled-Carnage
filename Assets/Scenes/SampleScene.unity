@@ -463,6 +463,96 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_textAlignment
+      value: 4098
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_horizontalMapping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_verticalMapping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_isRichText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_lineSpacing
+      value: -120
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_overrideHtmlColors
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_margin.y
+      value: -10.313381
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -3.0940247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151427848615916047, guid: 78246970d40d627419a9e2bf0648a9ba,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -3.0939732
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78246970d40d627419a9e2bf0648a9ba, type: 3}
 --- !u!1 &902008802
