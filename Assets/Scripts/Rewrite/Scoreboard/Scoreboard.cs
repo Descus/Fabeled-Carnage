@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using System.Linq;
 using Rewrite.Scoreboard;
 using TMPro;
 using UnityEngine.UI;
@@ -51,6 +52,10 @@ public class Scoreboard : MonoBehaviour
         else file = File.Create(destination);
 
         List<GameSave> data = GetSortedList(new GameSave(){score = Score, name = Name});
+        foreach (var dat in data)
+        {
+            Debug.Log(dat.name);
+        }
         BinaryFormatter bf = new BinaryFormatter();
         bf.Serialize(file, data);
         file.Close();
@@ -72,6 +77,11 @@ public class Scoreboard : MonoBehaviour
         List<GameSave> data = (List<GameSave>) bf.Deserialize(file);
         file.Close();
 
+        foreach (var dat in data)
+        {
+            Debug.Log(dat.name);
+        }
+
         highscores = data;
     }
 
@@ -79,8 +89,12 @@ public class Scoreboard : MonoBehaviour
     {
         List<GameSave> scores = highscores;
         scores.Add(save);
-        scores.Sort((s1,s2) => s1.score.CompareTo(s2.score));
-        return highscores.GetRange(0,10);
+        scores = scores.OrderByDescending(s => s.score).ToList();
+        foreach (var dat in scores)
+        {
+            Debug.Log(dat.name);
+        }
+        return scores.GetRange(0,10);
     }
 
     void SetUi ()
