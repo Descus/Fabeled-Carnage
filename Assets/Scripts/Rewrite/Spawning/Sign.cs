@@ -25,8 +25,11 @@ namespace Rewrite.Spawning
         // Update is called once per frame
         void Update()
         {
-            if (!added && SceneObjectsHandler.Handler.playerObject.transform.position.x <= transform.position.x)
+            float playerX = SceneObjectsHandler.Handler.playerObject.transform.position.x;
+            if (!added && playerX >= transform.position.x)
             {
+                Debug.Log(playerX);
+                Debug.Log(transform.position.x);
                 AddScore();
             }
         }
