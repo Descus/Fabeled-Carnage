@@ -21,7 +21,7 @@ namespace Rewrite.Handlers
 
         private IEnumerator Shake(float length, Vector2 magnitude)
         {
-            Vector3 originalPos = transform.localPosition;
+            Vector3 originalPos = camera.transform.localPosition;
             float timeElapsed = 0.0f;
 
             while (timeElapsed < length)
@@ -29,33 +29,33 @@ namespace Rewrite.Handlers
                 float x = Random.Range(-1f, 1f) * magnitude.x;
                 float y = Random.Range(-1f, 1f) * magnitude.y;
                 
-                transform.localPosition = new Vector3(x, y, originalPos.z);
+                camera.transform.localPosition = new Vector3(x, y, originalPos.z);
 
                 timeElapsed += Time.deltaTime;
                 
                 yield return null;
             }
 
-            transform.localPosition = originalPos;
+            camera.transform.localPosition = originalPos;
         }
         
         private IEnumerator Break(float length, float intensity)
         {
-            Vector3 originalPos = transform.localPosition;
+            Vector3 originalPos = camera.transform.localPosition;
             float timeElapsed = 0.0f;
 
             while (timeElapsed < length)
             {
                 float x = intensity;
                 
-                transform.localPosition = new Vector3(x, originalPos.y, originalPos.z);
+                camera.transform.localPosition = new Vector3(x, originalPos.y, originalPos.z);
 
                 timeElapsed += Time.deltaTime;
                 
                 yield return null;
             }
 
-            transform.localPosition = originalPos;
+            camera.transform.localPosition = originalPos;
         }
         
 

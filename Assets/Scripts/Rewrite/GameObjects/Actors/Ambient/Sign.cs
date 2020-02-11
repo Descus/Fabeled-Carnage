@@ -4,8 +4,7 @@ using Rewrite.UI;
 using TMPro;
 using UnityEngine;
 
-
-namespace Rewrite.Spawning
+namespace Rewrite.GameObjects.Actors.Ambient
 {
     public class Sign : MonoBehaviour, IScrollable
     {
@@ -28,8 +27,6 @@ namespace Rewrite.Spawning
             float playerX = SceneObjectsHandler.Handler.playerObject.transform.position.x;
             if (!added && playerX >= transform.position.x)
             {
-                Debug.Log(playerX);
-                Debug.Log(transform.position.x);
                 AddScore();
             }
         }

@@ -15,6 +15,8 @@
               <e p="Actors" t="Include">
                 <e p="Ambient" t="Include">
                   <e p="BloodEffects.cs" t="Include" />
+                  <e p="Pfosten.cs" t="Include" />
+                  <e p="Sign.cs" t="Include" />
                 </e>
                 <e p="Animal.cs" t="Include" />
                 <e p="Enemies" t="Include">
@@ -45,6 +47,7 @@
               <e p="MovementHandler.cs" t="Include" />
               <e p="SceneObjectsHandler.cs" t="Include" />
               <e p="ScoreHandler.cs" t="Include" />
+              <e p="ScreenHandler.cs" t="Include" />
             </e>
             <e p="Interfaces" t="Include">
               <e p="IKillable.cs" t="Include" />
@@ -52,7 +55,7 @@
               <e p="IScrollable.cs" t="Include" />
               <e p="ISlowable.cs" t="Include" />
             </e>
-            <e p="Scoreboard" t="Include">
+            <e p="Scoreboards" t="Include">
               <e p="GameSave.cs" t="Include" />
               <e p="Scoreboard.cs" t="Include" />
             </e>
@@ -62,7 +65,6 @@
             </e>
             <e p="Spawning" t="Include">
               <e p="ColorPrefab.cs" t="Include" />
-              <e p="Sign.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
               <e p="ComboDisplay.cs" t="Include" />

@@ -67,7 +67,9 @@ MonoBehaviour:
   forceField: {fileID: 0}
   meterSign: {fileID: 4057333372679254319, guid: 2fb129f5cfd2f3544aa9e8662d0e8f33,
     type: 3}
+  pfosten: {fileID: 3793925441001379329, guid: 4ebd728dd7f996f499812df8bea3d315, type: 3}
   meterSignSpawnpos: {x: 11, y: 1.75, z: 0}
+  pfostenSpawnPos: {x: 11, y: 9, z: 0}
 --- !u!114 &1988863044612473055
 MonoBehaviour:
   m_ObjectHideFlags: 0

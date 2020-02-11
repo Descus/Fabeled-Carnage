@@ -108,6 +108,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2718373407628347526}
     m_Modifications:
+    - target: {fileID: 457576189336979281, guid: 1f15e3aa7beceff42bb982f921845387,
+        type: 3}
+      propertyPath: ExternalForcesModule.influenceMask.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1552196381481677297, guid: 1f15e3aa7beceff42bb982f921845387,
+        type: 3}
+      propertyPath: ExternalForcesModule.influenceMask.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 7008974717834465017, guid: 1f15e3aa7beceff42bb982f921845387,
         type: 3}
       propertyPath: m_LocalPosition.x

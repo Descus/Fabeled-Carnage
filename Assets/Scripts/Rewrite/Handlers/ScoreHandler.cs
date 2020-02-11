@@ -31,7 +31,6 @@ namespace Rewrite.Handlers
 
         private void FixedUpdate()
         {
-            OnScoreFrequencyReach();
         }
         
         void Update()
@@ -92,16 +91,10 @@ namespace Rewrite.Handlers
             return combo.ToString().PadRight(2, 'x');
         }
 
-        private void OnScoreFrequencyReach()
-        {
-           
-        }
-        
         public void ResetCombo()
         {
             if (combo != 1)
             {
-                Debug.Log("reset");
                 comboState = 0;
                 combo = combos[comboState];
                 ResetTimer();
@@ -110,17 +103,30 @@ namespace Rewrite.Handlers
             }
         }
 
-        public string ConvertToScoreFormat(int i)
+        public string ConvertToScoreFormat()
         {
             return "<mspace=" + monoSpacingCharacterSize + 
-                   ">" + score.ToString().PadLeft(6, '0') + "</mspace>";
+                   ">" + ConvertToUnspacedScoreFormat() + "</mspace>";
+        }
+        public string ConvertToUnspacedScoreFormat()
+        {
+            return  score.ToString().PadLeft(6, '0');
+        }
+
+        public string GetScoreAsScoreFormat()
+        {
+            return ConvertToScoreFormat();
+        }
+        public string GetScoreAsUnspacedScoreFormat()
+        {
+            return ConvertToUnspacedScoreFormat();
         }
 
         public int AddScore(int score)
         {
             int add = score * combo;
             this.score += add;
-            textFieldScore.text = ConvertToScoreFormat(score);
+            textFieldScore.text = ConvertToScoreFormat();
             return add;
         }
     }
