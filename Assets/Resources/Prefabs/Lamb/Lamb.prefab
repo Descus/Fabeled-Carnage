@@ -75,10 +75,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   baseSpeed: 2.2
-  score: 25
-  maxPushes: 99
+  score: 20
+  maxPushes: 3
   staminaScalePerPush: 0
-  staminaAmount: 10
+  staminaAmount: 15
   renderers:
   - {fileID: 1730412390004491471}
   - {fileID: 5714155122394659374}

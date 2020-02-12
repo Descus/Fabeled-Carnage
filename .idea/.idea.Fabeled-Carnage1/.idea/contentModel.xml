@@ -72,6 +72,7 @@
               <e p="CustomButton.cs" t="Include" />
               <e p="MainHUD.cs" t="Include" />
               <e p="MainMenu.cs" t="Include" />
+              <e p="PauseMenu.cs" t="Include" />
               <e p="ScoreFloating.cs" t="Include" />
             </e>
             <e p="Utility" t="Include">
@@ -80,6 +81,7 @@
           </e>
           <e p="SoundManager.cs" t="Include" />
         </e>
+        <e p="SettingMenu.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
             <e p="Fonts" t="Include">

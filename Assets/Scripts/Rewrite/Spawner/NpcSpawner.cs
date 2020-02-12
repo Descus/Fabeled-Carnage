@@ -11,7 +11,7 @@ namespace Rewrite.Spawner
 {
     public class NpcSpawner : MonoBehaviour
     {
-        private static int _enemiesOnField;
+        private int _enemiesOnField;
         public float initialSpawnCooldown;
 
         public float cooldownBetweenClearAndSpawn, spawnCooldownSeconds;
@@ -98,12 +98,12 @@ namespace Rewrite.Spawner
 
         public static void AddEnemyToField()
         {
-            _enemiesOnField++;
+            Spawner._enemiesOnField++;
         }
         
         public static void RemoveEnemyFromField()
         {
-            _enemiesOnField--;
+            Spawner._enemiesOnField--;
         }
         
         private Texture2D GetNewMap()

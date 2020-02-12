@@ -61,7 +61,7 @@ namespace Rewrite.GameObjects.MainCharacter
             _stamina = maxStamina;
             _changedStaminaMultiplier = staminaMultiplier;
             transform.position = 
-                new Vector3(-ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera) + xPositioning, LaneManager.Manager.laneHeight * Lane);
+                new Vector3(-ScreenUtil.GetRightScreenBorderX(SceneObjectsHandler.Handler.mainCamera) + xPositioning, LaneManager.Manager.laneHeight * Lane + LaneManager.Manager.spawnOffsetY);
         }
 
         private void Update()

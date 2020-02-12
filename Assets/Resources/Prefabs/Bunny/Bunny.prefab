@@ -31,7 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6271925614672548058}
-  - {fileID: 7009400967768822486}
+  - {fileID: 708446736637785}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48,7 +48,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13, y: 0.46}
+  m_Offset: {x: -0.09328371, y: 0.63290346}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -59,7 +59,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.86, y: 1.18}
+  m_Size: {x: 1.7066945, y: 1.2723422}
   m_EdgeRadius: 0
 --- !u!114 &1188121928175732492
 MonoBehaviour:
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   baseSpeed: 2.4
-  score: 40
+  score: 60
   maxPushes: 99
   staminaScalePerPush: 0
   staminaAmount: 20
@@ -100,7 +100,7 @@ MonoBehaviour:
   - {fileID: 6419829771907620286}
   - {fileID: 2289971495676460034}
   - {fileID: 5746030973744185615}
-  killParticleSpawner: {fileID: 458002988893461374}
+  killParticleSpawner: {fileID: 708446736637894}
   bloodPile: {fileID: 2287878696314437476, guid: 3c3684dad3af8024994417a207f918ef,
     type: 3}
   animator: {fileID: 8555086216766743413}
@@ -239,7 +239,7 @@ PrefabInstance:
     - target: {fileID: 7008974717834465017, guid: 1f15e3aa7beceff42bb982f921845387,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.671
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7008974717834465017, guid: 1f15e3aa7beceff42bb982f921845387,
         type: 3}
@@ -293,13 +293,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f15e3aa7beceff42bb982f921845387, type: 3}
---- !u!4 &7009400967768822486 stripped
+--- !u!4 &708446736637785 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7008974717834465017, guid: 1f15e3aa7beceff42bb982f921845387,
     type: 3}
   m_PrefabInstance: {fileID: 708446736636975}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &458002988893461374 stripped
+--- !u!198 &708446736637894 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 457576189336979281, guid: 1f15e3aa7beceff42bb982f921845387,
     type: 3}
@@ -326,6 +326,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 857226861212048212, guid: 3a53cc936b55bc44ba4bbe97f7c236f3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 857226861212048212, guid: 3a53cc936b55bc44ba4bbe97f7c236f3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1079490210598771992, guid: 3a53cc936b55bc44ba4bbe97f7c236f3,
         type: 3}
@@ -520,12 +530,12 @@ PrefabInstance:
     - target: {fileID: 6917834617833396493, guid: 3a53cc936b55bc44ba4bbe97f7c236f3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.328
       objectReference: {fileID: 0}
     - target: {fileID: 6917834617833396493, guid: 3a53cc936b55bc44ba4bbe97f7c236f3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.899
       objectReference: {fileID: 0}
     - target: {fileID: 6917834617833396493, guid: 3a53cc936b55bc44ba4bbe97f7c236f3,
         type: 3}
