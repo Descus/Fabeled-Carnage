@@ -5,6 +5,7 @@
         Sheep,
         Bunny,
         Hedgehog,
-        Goose
+        Goose,
+        Steak
     }
 }

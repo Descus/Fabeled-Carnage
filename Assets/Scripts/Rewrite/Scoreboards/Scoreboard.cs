@@ -17,17 +17,26 @@ namespace Rewrite.Scoreboards
     
         public string Score;
         public string Name;
+
+        public GameSave latestSave;
     
         public TextMeshProUGUI ScoreText;
         public TMP_InputField inputField;
+        public string numberSpace, textSpace;
 
         // Start is called before the first frame update
 
         public void OpenScoreboardScreen()
         {
-            
             LoadFile();
+            latestSave = new GameSave() {score = Score, name = Name};
+            highscores = GetSortedList(latestSave);
             SetUi();
+        }
+
+        private void OnEnable()
+        {
+            OpenScoreboardScreen();
         }
 
         public void CloseScoreboardScreen(int followScene)
@@ -48,8 +57,9 @@ namespace Rewrite.Scoreboards
  
             if(File.Exists(destination)) file = File.OpenWrite(destination);
             else file = File.Create(destination);
-
-            List<GameSave> data = GetSortedList(new GameSave(){score = Score, name = Name});
+            
+            UpdateName();
+            List<GameSave> data = highscores;
             BinaryFormatter bf = new BinaryFormatter();
             bf.Serialize(file, data);
             file.Close();
@@ -64,7 +74,6 @@ namespace Rewrite.Scoreboards
             else
             {
                 File.Create(destination);
-                SetStandardValues();
                 return;
             }
  
@@ -75,13 +84,11 @@ namespace Rewrite.Scoreboards
             highscores = data;
         }
 
-        private void SetStandardValues()
+        public void OnType()
         {
-            foreach (GameSave highscore in highscores)
-            {
-                highscore.SetName("");;
-                highscore.SetScore("0");
-            }
+            UpdateName();
+            latestSave.SetName(Name);
+            SetUi();
         }
 
         public List<GameSave> GetSortedList(GameSave save)
@@ -96,10 +103,20 @@ namespace Rewrite.Scoreboards
         {
             for (int i = 0; highscoreTexts.Length > i; i++)
             {
-                highscoreTexts[i].text = i+1 + ". " + highscores[i].name.PadLeft(8) + " " + highscores[i].score.PadLeft(6);
+                highscoreTexts[i].SetText(
+                    ApplyMonoSpacing((i + 1) + ". ", numberSpace) 
+                    + ApplyMonoSpacing(highscores[i].name.PadRight(8), textSpace) 
+                    + ApplyMonoSpacing(" " + highscores[i].score.PadLeft(6,'0'), numberSpace)
+                    );
             }
             ScoreText.text = Score;
         }
+
+        private string ApplyMonoSpacing(string text, string space)
+        {
+            return "<mspace=" + space + ">" + text + "</mspace>";
+        }
+
 
         public void LoadScene(int id)
         {

@@ -186,6 +186,7 @@ namespace Rewrite.GameObjects.MainCharacter
         {
             fury = true;
             ScreenHandler.ShakeScreen(0.5f, new Vector2(0.1f,0.1f));
+            EventHandler.BroadcastFuryEvent();
             ppVolume.profile = furyFlair;
 
         }
@@ -194,6 +195,7 @@ namespace Rewrite.GameObjects.MainCharacter
             fury = false;
             ScreenHandler.ShakeScreen(0.5f, new Vector2(0.1f,0.1f));
             ppVolume.profile = ambiantFlair;
+            EventHandler.BroadcastSteakKill();
             _killsOfSameType = 0;
             _furyTime = 0;
         }
@@ -335,7 +337,6 @@ namespace Rewrite.GameObjects.MainCharacter
         {
             score.text = ScoreHandler.Handler.GetScoreAsUnspacedScoreFormat();
             Scoreboard.Score = ScoreHandler.Handler.GetScoreAsUnspacedScoreFormat();
-            Scoreboard.OpenScoreboardScreen();
             Time.timeScale = 0;
             uiScreen.SetActive(false);
             gameOverScreen.SetActive(true);

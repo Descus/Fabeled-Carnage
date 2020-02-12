@@ -2,6 +2,7 @@
 using Rewrite.GameObjects;
 using Rewrite.Handlers;
 using Rewrite.Spawning;
+using Unity.Mathematics;
 using UnityEngine;
 using EventHandler = Rewrite.Handlers.EventHandler;
 using Random = UnityEngine.Random;
@@ -18,6 +19,7 @@ namespace Rewrite.Spawner
 
         public ColorPrefab[] colorMappings;
         public Texture2D[] patternMapping;
+        public GameObject steak;
 
         public static NpcSpawner Spawner;
         
@@ -72,7 +74,12 @@ namespace Rewrite.Spawner
         {
             Color pixelColor = newMap.GetPixel(x, y);
             if(pixelColor.a == 0) return;
-            SpawnPrefab(x, y, pixelColor);
+            if (!SceneObjectsHandler.Handler.playerObject.fury) SpawnPrefab(x, y, pixelColor);
+            else
+            {
+                GameObject gObject = Instantiate(steak, LaneManager.Manager.Spawns[y, x], Quaternion.identity);
+                gObject.GetComponent<FGameObject>().Lane = y;
+            }
         }
 
         private void SpawnPrefab(int x, int y, Color pixelColor)
@@ -111,7 +118,7 @@ namespace Rewrite.Spawner
 
         private void OnFieldEmpty()
         {
-            if (_enemiesOnField == 0) ResetClearTimer();
+            if (_enemiesOnField == 0 || SceneObjectsHandler.Handler.playerObject.fury) ResetClearTimer();
         }
 
         private void ResetClearTimer()

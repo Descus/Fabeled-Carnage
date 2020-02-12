@@ -5,6 +5,7 @@ using Rewrite.Handlers;
 using Rewrite.Spawner;
 using Rewrite.UI;
 using Rewrite.Utility;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Rewrite.GameObjects.Actors
@@ -32,6 +33,7 @@ namespace Rewrite.GameObjects.Actors
         public Animator animator;
         public GameObject scoreFloater;
         public RectTransform scoreParent;
+        public GameObject kotlett;
 
         private Vector3 _target, _start;
         
@@ -74,7 +76,7 @@ namespace Rewrite.GameObjects.Actors
         {
             if (killParticleSpawner)
                 killParticleSpawner.collision.SetPlane(0, LaneManager.Manager.particleDespawnerPlane[Lane]);
-            if (killParticleSpawner)
+            if (killParticleSpawner && type != EnemyType.Steak)
                 killParticleSpawner.subEmitters.GetSubEmitterSystem(0)
                     .collision.SetPlane(0, LaneManager.Manager.particleDespawnerPlane[Lane]);
         }
@@ -89,17 +91,19 @@ namespace Rewrite.GameObjects.Actors
             EventHandler.UnSubscribeActorMoveEvent(move);
         }
         
-        private new void OnEnable()
+        protected new virtual void OnEnable()
         {
             EventHandler.SubscribePushEvent(Push);
             EventHandler.SubscribeSpeedDeviancyEvent(SetSpeedDeviancyforLane);
+            EventHandler.SubscribeFuryEnterEvent(TurnToSteak);
             base.OnEnable();
         }
 
-        private new void OnDisable()
+        protected new virtual void OnDisable()
         {
             EventHandler.UnSubscribePushEvent(Push);
             EventHandler.UnSubscribeSpeedDeviancyEvent(SetSpeedDeviancyforLane);
+            EventHandler.UnSubscribeFuryEnterEvent(TurnToSteak);
             base.OnDisable();
         }
 
@@ -126,10 +130,21 @@ namespace Rewrite.GameObjects.Actors
                 SpeedDeviancy = deviancy;
             }
         }
+        
+        private void TurnToSteak()
+        {
+            if (!_alreadyKilled && type != EnemyType.Steak)
+            {
+                Instantiate(kotlett, transform.position, quaternion.identity);
+                Destroy(gameObject);
+                NpcSpawner.RemoveEnemyFromField();
+            }
+        }
+    
 
         public virtual bool Kill(GameObject killer)
         {
-            if (!killer.gameObject.GetComponent<MovementHandler>() && !_alreadyKilled)
+            if (killer.gameObject.GetComponent<Wolf>() && !_alreadyKilled)
             {
                 if(killParticleSpawner && !killParticleSpawner.isPlaying)killParticleSpawner.Play(true);
                 EventHandler.UnSubscribePushEvent(Push);

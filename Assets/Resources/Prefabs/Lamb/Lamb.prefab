@@ -100,6 +100,7 @@ MonoBehaviour:
   scoreFloater: {fileID: 6146897930506135630, guid: 0faedd4d0a0d4384da8fd4e88375c19f,
     type: 3}
   scoreParent: {fileID: 0}
+  kotlett: {fileID: 8694984446927486129, guid: 7ffec03ca1eec7f4aad29dd6dc100b3c, type: 3}
   leapingDuration: 2
 --- !u!1001 &4054774812053636831
 PrefabInstance:

@@ -8,7 +8,7 @@ namespace Rewrite.GameObjects.MainCharacter
         
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if(InKillzone == null) InKillzone = other.gameObject;
+            if (InKillzone == null) InKillzone = other.gameObject;
         }
 
         private void OnTriggerExit2D(Collider2D other)

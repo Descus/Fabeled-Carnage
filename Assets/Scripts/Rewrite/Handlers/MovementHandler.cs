@@ -23,6 +23,7 @@ namespace Rewrite.Handlers
 
         private void Start()
         {
+            Time.timeScale = 1;
             Handler = this;
             wolf = SceneObjectsHandler.Handler.playerObject;
             baseForce = forceField.directionX.constant;
@@ -30,7 +31,7 @@ namespace Rewrite.Handlers
 
         private void Update()
         {
-            GameSpeed = GetGameSpeed(Time.time);
+            GameSpeed = GetGameSpeed(Time.timeSinceLevelLoad);
             forceField.directionX = -GameSpeed * wolf.speed + baseForce;
             IncreaseMeterCounter(GameSpeed * wolf.speed);
             EventHandler.BroadcastActorMove(wolf.speed * GameSpeed);
