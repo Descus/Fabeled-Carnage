@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1599,8 +1599,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.5, y: -75}
-  m_SizeDelta: {x: -762.3, y: -350}
+  m_AnchoredPosition: {x: 15.5, y: -83.6}
+  m_SizeDelta: {x: -762.3, y: -309}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &884734432
 MonoBehaviour:
@@ -1633,15 +1633,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.75
-  m_Text: "Music : www.bensound.com                        Special Thanks to\n           ryinibeats
-    \                                     Lennard Hiller \n           Mars (youtoube)
-    \                            .\n           Zapsplat.com                                  .\n
-    \          Freesound.org\n\nProduction : Lammkotlet studios\n                  \n
-    \                 Niklas Schmiede -                    Sofia Eleni Thoma -        \n
-    \                 Programmer, Visionkeeper        Game Designe    \n\n                  Leif
-    Kluge -                             Jennifer Nguyen-\n                  Art                                         Art\n
-    \             \n                  Alexander Bernau -\n                  Programmer\n
-    \                               "
+  m_Text: "Music : www.bensound.com                        Special Thanks to :\n\n
+    \          ryinibeats                                     Lennard Hiller \n           Mars
+    (youtoube)                           Soeren Huth\n           Zapsplat.com                                Jana
+    Rothermel\n           Freesound.org                          Everyone from GA-BSI
+    2019/20\n\nProduction : Lammkotlet studios\n                  \n                  Niklas
+    Schmiede -                    Sofia Eleni Thoma -        \n                 Programmer,
+    Visionkeeper       Game Designe, Sound-Design    \n\n                  Leif Kluge
+    -                             Jennifer Nguyen-\n                 Digital-Art,
+    Sound-design         Digital-Art\n              \n                  Alexander
+    Bernau -\n                 Programmer\n                                "
 --- !u!222 &884734433
 CanvasRenderer:
   m_ObjectHideFlags: 0
