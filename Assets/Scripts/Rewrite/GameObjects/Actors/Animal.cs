@@ -34,6 +34,7 @@ namespace Rewrite.GameObjects.Actors
         public GameObject scoreFloater;
         public RectTransform scoreParent;
         public GameObject kotlett;
+        public AudioSource splat;
 
         private Vector3 _target, _start;
         
@@ -135,7 +136,8 @@ namespace Rewrite.GameObjects.Actors
         {
             if (!_alreadyKilled && type != EnemyType.Steak)
             {
-                Instantiate(kotlett, transform.position, quaternion.identity);
+                GameObject instance = Instantiate(kotlett, transform.position, quaternion.identity);
+                instance.GetComponent<FGameObject>().Lane = Lane;
                 Destroy(gameObject);
                 NpcSpawner.RemoveEnemyFromField();
             }
@@ -152,6 +154,7 @@ namespace Rewrite.GameObjects.Actors
                 DisableAllRenderers();
                 SpawnBloodPile();
                 SpawnScoreText(AddScore(score));
+                splat.Play();
                 _alreadyKilled = true;
                 Destroy(gameObject, killParticleSpawner?killParticleSpawner.main.duration:0);
                 NpcSpawner.RemoveEnemyFromField();

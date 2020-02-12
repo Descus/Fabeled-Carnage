@@ -52,6 +52,7 @@ namespace Rewrite.GameObjects.MainCharacter
         public bool fury;
         public float furyDuration;
         private float _furyTime;
+        public AudioSource chomp, howl, mainMusic, furyMusic;
         
         public float staminaMultiplier;
 
@@ -176,7 +177,7 @@ namespace Rewrite.GameObjects.MainCharacter
                 _killsOfSameType++;
             }
 
-            if (_killsOfSameType == killsForFury)
+            if (_killsOfSameType == killsForFury && !fury)
             {
                 EnterFuryState();
             }
@@ -184,11 +185,14 @@ namespace Rewrite.GameObjects.MainCharacter
 
         private void EnterFuryState()
         {
+            
             fury = true;
             ScreenHandler.ShakeScreen(0.5f, new Vector2(0.1f,0.1f));
             EventHandler.BroadcastFuryEvent();
             ppVolume.profile = furyFlair;
-
+            howl.Play();
+            mainMusic.Pause();
+            furyMusic.Play();
         }
         private void EndFuryState()
         {
@@ -198,6 +202,8 @@ namespace Rewrite.GameObjects.MainCharacter
             EventHandler.BroadcastSteakKill();
             _killsOfSameType = 0;
             _furyTime = 0;
+            furyMusic.Stop();
+            mainMusic.UnPause();
         }
 
         private bool AttackFinished()
@@ -316,6 +322,7 @@ namespace Rewrite.GameObjects.MainCharacter
         {
             if (!_hasAttacked)
             {
+                chomp.Play();
                 _hasAttacked = true;
                 SetAttackStartTime();
                 animator.SetTrigger("Attack");
@@ -335,18 +342,15 @@ namespace Rewrite.GameObjects.MainCharacter
         
         public void DisplayGameOverScreen()
         {
+            mainMusic.Stop();
+            furyMusic.Stop();
             score.text = ScoreHandler.Handler.GetScoreAsUnspacedScoreFormat();
             Scoreboard.Score = ScoreHandler.Handler.GetScoreAsUnspacedScoreFormat();
             Time.timeScale = 0;
             uiScreen.SetActive(false);
             gameOverScreen.SetActive(true);
         }
-        
-        public void ReduceGameSpeed()
-        {
-            MovementHandler.Handler.ReduceGameSpeed();
-        }
-        
+
         public void Stun(float time)
         {
             _stunEnd = Time.time + time;

@@ -21,6 +21,11 @@ namespace Rewrite.Handlers
         private float baseForce;
         private bool spawnPost;
 
+        private float gameSpeedMult = 1;
+        public AnimationCurve speedCurve;
+        public AnimationCurve fadeOut;
+        private bool fade;
+
         private void Start()
         {
             Time.timeScale = 1;
@@ -31,7 +36,8 @@ namespace Rewrite.Handlers
 
         private void Update()
         {
-            GameSpeed = GetGameSpeed(Time.timeSinceLevelLoad);
+            if (fade) gameSpeedMult -= Time.deltaTime;
+            GameSpeed = GetGameSpeed(Time.timeSinceLevelLoad, gameSpeedMult);
             forceField.directionX = -GameSpeed * wolf.speed + baseForce;
             IncreaseMeterCounter(GameSpeed * wolf.speed);
             EventHandler.BroadcastActorMove(wolf.speed * GameSpeed);
@@ -59,14 +65,15 @@ namespace Rewrite.Handlers
         }
         
 
-        private float GetGameSpeed(float time)
+        private float GetGameSpeed(float time, float fadeOut)
         {
-            return Mathf.Sqrt(time) / (9 - ScoreHandler.Handler.comboState) + 1;
+            if (fadeOut < 1) return this.fadeOut.Evaluate(fadeOut);
+                return speedCurve.Evaluate(time);
         }
         
-        public void ReduceGameSpeed()
+        public void ReduceGameSpeed(float speed)
         {
-            Time.timeScale = 0.3f;
+            gameSpeedMult = speed;
         }
     }
 }
